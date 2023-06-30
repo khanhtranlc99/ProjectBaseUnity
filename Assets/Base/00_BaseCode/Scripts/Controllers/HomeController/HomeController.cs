@@ -14,7 +14,7 @@ public class HomeController : Singleton<HomeController>
 
     private void Start()
     {
-      
+        homeScene.Init();
     }
 
 }

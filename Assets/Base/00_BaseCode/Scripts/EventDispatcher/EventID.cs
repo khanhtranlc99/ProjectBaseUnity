@@ -13,6 +13,6 @@
     MINI_GAME_CONNECT_BIRD_EGG = 9,
 
     ScrollEndChange = 100,
-
+    CHANGE_COIN = 101,
 
 }

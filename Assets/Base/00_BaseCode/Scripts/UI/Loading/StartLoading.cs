@@ -23,16 +23,16 @@ public class StartLoading : MonoBehaviour
 
         // we start loading the scene
         //scene_name = GameUtils.SceneName.HOME_SCENE;
-        if (UseProfile.IsFirstTimeInstall || PlayerPrefs.GetInt("Level_1") == 0)
-        {
-            UseProfile.CurrentLevel = 1;
-            sceneName = "GamePlay";
-        }
-        else
-        {
-            sceneName = "HomeScene";
-        }
-
+        //if (UseProfile.IsFirstTimeInstall || PlayerPrefs.GetInt("Level_1") == 0)
+        //{
+        //    UseProfile.CurrentLevel = 1;
+        //    sceneName = "GamePlay";
+        //}
+        //else
+        //{
+        //    sceneName = "HomeScene";
+        //}
+        sceneName = "HomeScene";
         var _asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
         //_asyncOperation.allowSceneActivation = false;
         //Debug.Log("_asyncOperation " + _asyncOperation.progress);
