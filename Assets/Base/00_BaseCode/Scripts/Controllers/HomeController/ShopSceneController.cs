@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class ShopSceneController : SceneBase
 {
+
+    public List<PackInShop> lsPackInShops;
     public override void Init()
     {
-     
+      foreach(var item in lsPackInShops)
+        {
+            item.Init();
+        }
     }
 }

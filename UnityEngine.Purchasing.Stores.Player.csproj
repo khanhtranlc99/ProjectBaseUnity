@@ -99,8 +99,8 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Util\IRetryPolicy.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Android\ScriptingStoreCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Android\GooglePlay\AAR\GoogleFinishTransactionService.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Android\GooglePlay\AAR\Interfaces\ISkuDetailsResponseConsolidator.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\BaseStore\MetricizedJsonStore.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Android\GooglePlay\AAR\Interfaces\ISkuDetailsResponseConsolidator.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Android\GooglePlay\AAR\Utils\AndroidJavaObjectWrapper.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\WindowsStore\IMicrosoftConfiguration.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.3.0\Runtime\Stores\Android\GooglePlay\Interfaces\IGooglePlayConfiguration.cs" />

@@ -40,7 +40,8 @@ public class GiftDatabase : SerializedScriptableObject
         switch (giftType)
         {
             case GiftType.Coin:
-               
+                UseProfile.Coin += amount;
+                EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_COIN);
                 break;
             case GiftType.Heart:
                 UseProfile.Heart += amount;
@@ -50,13 +51,13 @@ public class GiftDatabase : SerializedScriptableObject
                 //GameController.Instance.admobAds.DestroyBanner();
                 break;
             case GiftType.RedoBooster:
-          
+                UseProfile.RedoBooster += 1;
                 break;
             case GiftType.SuportBooster:
-              
+                UseProfile.SuportBooster += 1;
                 break;
             case GiftType.ShuffleBooster:
-               
+                UseProfile.ShuffleBooster += 1;
                 break;
 
 

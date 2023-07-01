@@ -26,9 +26,9 @@ public class GoogleAdmobe : MonoBehaviour
     [HideInInspector]
     public UnityEvent OnAdClosedEvent;
     #endregion
-    public const string BANNER_ID = "ca-app-pub-8063947267674831/4748858596";
-    public const string INTERS_ID = "ca-app-pub-8063947267674831/8605215266";
-    public const string VIDEO_ID = "ca-app-pub-8063947267674831/2674231734";
+    public const string BANNER_ID = "ca-app-pub-3940256099942544/6300978111";
+    public const string INTERS_ID = "ca-app-pub-3940256099942544/1033173712";
+    public const string VIDEO_ID = "ca-app-pub-3940256099942544/5224354917";
 
 
     public void InitAds()
@@ -46,7 +46,7 @@ public class GoogleAdmobe : MonoBehaviour
 
     private void HandleInitCompleteAction(InitializationStatus initstatus)
     {
-        Debug.LogError("Initialization complete.");
+        Debug.Log("Initialization complete.");
       
         InitInterstitial();
         InitRewarded();
@@ -68,7 +68,7 @@ public class GoogleAdmobe : MonoBehaviour
         }
 
         // Create a 320x50 banner at top of the screen
-        bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Top);
+        bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
 
         // Add Event Handlers
         bannerView.OnAdLoaded += (sender, args) =>
@@ -258,7 +258,7 @@ public class GoogleAdmobe : MonoBehaviour
 
     private void RewardedAd_OnAdLoaded(object sender, EventArgs e)
     {
-        Debug.LogError("====== load video ====");
+      //  Debug.LogError("====== load video ====");
     }
 
     public void HandleRewardedAdClosed(object sender, EventArgs args)

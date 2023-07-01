@@ -142,6 +142,30 @@ public class IAPPack
 
       
             }
+
+        }
+        if (typeBuy == TypeBuy.Coin)
+        {
+            List<GiftRewardShow> lstReward = new List<GiftRewardShow>();
+            foreach (var item in itemsResult)
+            {
+                GameController.Instance.dataContain.giftDatabase.Claim(item.Key, item.Value);
+
+                GiftRewardShow rw = new GiftRewardShow();
+                rw.type = item.Key;
+                rw.amount = item.Value;
+
+                lstReward.Add(rw);
+            }
+            if (lstReward.Count <= 1)
+            {
+                RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+            }
+            else
+            {
+                RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+            }
+
         }
 
         if (typeBuy == TypeBuy.Video)

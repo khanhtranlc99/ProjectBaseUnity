@@ -521,7 +521,7 @@ public class IapController : MonoBehaviour, IStoreListener
 
     public void BuyProductNotInapp(TypePackIAP typePack)
     {
-
+   
         this.PostEvent(EventID.BUY_PRODUCT_SUCCESS_FIRST, typePack.ToString());
 
         var item = inappDatabase.GetPackNotInapp(typePack);
@@ -552,24 +552,33 @@ public class IapController : MonoBehaviour, IStoreListener
         }
         else if (item.typeBuy == TypeBuy.Coin)
         {
-            //int myCoin = GameController.Instance.useProfile.Coin;
+            int myCoin = UseProfile.Coin;
 
-            //if (myCoin >= item.price)
-            //{
-            //    GameController.Instance.dataContain.giftDatabase.Claim(GiftType.Coin, -item.price);
-            //    item.Claim();
+            if (myCoin >= item.price)
+            {
+                GameController.Instance.dataContain.giftDatabase.Claim(GiftType.Coin, -item.price);
+                item.Claim();
 
-            //    //RewardIAPBox rwBox = RewardIAPBox.Setup();
-            //    //rwBox.Show(item);
-            //}
-            //else
-            //{
-            //    //Confirm box
-            //    // ConfirmBox.Setup().AddMessageYesNo(Localization.Get("s_noti"), Localization.Get("s_not_enough_coin"),
-            //    //() => { InappBox.Setup(TypeItem.Coin).Show(); }, null, stringYes: Localization.Get("s_BuyNow"), stringNo: Localization.Get("s_No"));
-            //    //InappBox.Setup(TypeItem.Coin).Show();
+                //RewardIAPBox rwBox = RewardIAPBox.Setup();
+                //rwBox.Show(item);
+            }
+            else
+            {
 
-            //}
+
+                //GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp
+                //    (
+                //    buttnRewardVideo.transform.position,
+                //    "not_enough_coin",
+                //    Color.white,
+                //    isSpawnItemPlayer: true
+                //    );
+                //Confirm box
+                // ConfirmBox.Setup().AddMessageYesNo(Localization.Get("s_noti"), Localization.Get("s_not_enough_coin"),
+                //() => { InappBox.Setup(TypeItem.Coin).Show(); }, null, stringYes: Localization.Get("s_BuyNow"), stringNo: Localization.Get("s_No"));
+                //InappBox.Setup(TypeItem.Coin).Show();
+
+            }
         }
         else if (item.typeBuy == TypeBuy.Video)
         {
@@ -579,17 +588,8 @@ public class IapController : MonoBehaviour, IStoreListener
                 this.PostEvent(EventID.BUY_PRODUCT_SUCCESS, typePack.ToString());
                 //RewardIAPBox rwBox = RewardIAPBox.Setup();
                 //rwBox.Show(item);
-            },
-            () =>
-            {
-                GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp
-                (
-               Camera.main.ScreenToWorldPoint(Input.mousePosition),
-                "No video at the moment!",
-                Color.white,
-                isSpawnItemPlayer: true
-                );
-            }, () => { }, ActionWatchVideo.None, null);
+            }
+            );
         }
         else
         {

@@ -57,51 +57,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeSettings.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\RangeSliderEditor.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Editor\ArabicSupportTool.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\uGUITools.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceManifestProcessor.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Editor\CustomPostprocessScript.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IAdapterSettings.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\AccordionElementEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\CUIBezierCurveEditor.cs" />
     <Compile Include="Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenPreviewManager.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceMediationSettingsInspector.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustSettings.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\FancyScrollView\ScrollerEditor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustCustomEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\CUITextEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\UIExtensionsMenuOptions.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\ColorPickerPresetsEditor.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceMediatedNetworkSettingsInspector.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicIconListCopier.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Editor\ConfigBuild.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\CanvasGroupActivator.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceMediatedNetworkSettings.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\MobileDependencyResolverInstallerLp.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeEditorTools.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustSettingsEditor.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceDependenciesManagerConstants.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\ScrollPositionControllerEditor.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\UILocalizeEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\BoxSliderEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\CUIGraphicEditor.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeParse.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicIconEditor.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceDependenciesManager.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\BezierLineRendererEditor.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourcePlistProcessor.cs" />
     <Compile Include="Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceMenu.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\NonDrawingGraphicEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicRenameEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicEditor.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\com.unity.uiextensions\Editor\CUIImageEditor.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceBuildPostprocessor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustEditorPreprocessor.cs" />
     <Compile Include="Assets\Base\IronSource\Editor\IronSourceEditorCoroutines.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\uGUITools.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\CUIBezierCurveEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\NonDrawingGraphicEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\ReadOnlyDrawer.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\RangeSliderEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\CUIGraphicEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicIconListCopier.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\CUIImageEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\CanvasGroupActivator.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\FancyScrollView\ScrollerEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\ColorPickerPresetsEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\CUITextEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicRenameEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\ScrollPositionControllerEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\AccordionElementEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicIconEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\BoxSliderEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\BezierLineRendererEditor.cs" />
-    <Compile Include="Assets\com.unity.uiextensions\Editor\UIExtensionsMenuOptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Base\3Party\Demigiant\DemiLib\Core\Editor\DemiEditor.dll" />
@@ -896,6 +896,10 @@
       <Project>{3646515D-D5C2-30E7-645A-E96577796D3E}</Project>
       <Name>ACTk.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Editor.csproj">
+      <Project>{76ED5807-9ED4-7B41-66ED-609D62C0C96C}</Project>
+      <Name>Unity.Recorder.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="ACTk.Examples.Genuine.Runtime.csproj">
       <Project>{AD7BF85B-4D5C-3C1E-5890-C785971052D5}</Project>
       <Name>ACTk.Examples.Genuine.Runtime</Name>
@@ -907,6 +911,10 @@
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{CF367244-A642-26C1-2361-AD2128227C84}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Base.csproj">
+      <Project>{52226A00-AF8A-831E-AC9D-8D81ED7BE90D}</Project>
+      <Name>Unity.Recorder.Base</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.csproj">
       <Project>{34029EDA-A939-4D77-2CFF-18B5C68FFDA1}</Project>
@@ -1023,6 +1031,10 @@
     <ProjectReference Include="GoogleMobileAds.Editor.csproj">
       <Project>{4123BDBC-28E0-7343-B298-A28852B1371F}</Project>
       <Name>GoogleMobileAds.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.csproj">
+      <Project>{3938058D-2E29-C5B7-779F-AE897FE919D5}</Project>
+      <Name>Unity.Recorder</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

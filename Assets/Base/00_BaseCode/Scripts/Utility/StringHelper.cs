@@ -44,6 +44,7 @@ public static class StringHelper
     public const string SPECIAL_FEATHER = "special_feather";
     public const string REDO_BOOSTER = "redo_booster";
     public const string SUPORT_BOOSTER = "suport_booster";
+    public const string SHUFFLE_BOOSTER = "shuffle_booster";
 }
 
 public class PathPrefabs

@@ -31,9 +31,10 @@ public class GamePlayController1 : Singleton<GamePlayController1>
 
     public void Init()
     {
-
-
+      
+        gameScene.Init();
     }
 
   
+
 }

@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
 {
     public static GameController Instance;
 
-    [HideInInspector] public MoneyEffectController moneyEffectController;
+     public MoneyEffectController moneyEffectController;
      public UseProfile useProfile;
     public DataContain dataContain;
     [HideInInspector] public MusicManagerGameBase musicManager;

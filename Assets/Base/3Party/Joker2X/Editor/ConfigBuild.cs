@@ -492,7 +492,7 @@ public class ConfigBuild
     [MenuItem("Open Scene/Loading Scene")]
     public static void OpenSceneStartLoading()
     {
-        string localPath = "Assets/01_BirdGoodMatchGame/Scenes/LoadingScene.unity";
+        string localPath = "Assets/Scenes/LoadScene.unity";
         EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
         EditorSceneManager.OpenScene(localPath);
     }
@@ -500,7 +500,7 @@ public class ConfigBuild
     [MenuItem("Open Scene/Home Scene")]
     public static void OpenSceneMainHome()
     {
-        string localPath = "Assets/01_BirdGoodMatchGame/Scenes/HomeScene.unity";
+        string localPath = "Assets/Scenes/HomeScene.unity";
         EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
         EditorSceneManager.OpenScene(localPath);
     }
@@ -508,7 +508,7 @@ public class ConfigBuild
     [MenuItem("Open Scene/Game Play")]
     public static void OpenSceneGamePlay()
     {
-        string localPath = "Assets/01_BirdGoodMatchGame/Scenes/GamePlay.unity";
+        string localPath = "Assets/Scenes/GamePlay.unity";
         EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
         EditorSceneManager.OpenScene(localPath);
     }

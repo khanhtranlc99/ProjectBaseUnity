@@ -34,7 +34,7 @@ public class UseProfile : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.COIN, 0);
+            return PlayerPrefs.GetInt(StringHelper.COIN, 1000);
         }
         set
         {
@@ -92,6 +92,20 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    public static int ShuffleBooster
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.SHUFFLE_BOOSTER, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.SHUFFLE_BOOSTER, value);
+            PlayerPrefs.Save();
+        }
+    }
+
 
     public int LevelUnlock
     {
