@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class MainSceneController : SceneBase
 {
     public Button btnHome;
-
+    public RandomWatchVideo btnReward;
     public override void Init()
     {
         btnHome.onClick.AddListener(delegate { OnClickPlay(); });
+        btnReward.Init();
     }
 
 

@@ -45,6 +45,10 @@ public static class StringHelper
     public const string REDO_BOOSTER = "redo_booster";
     public const string SUPORT_BOOSTER = "suport_booster";
     public const string SHUFFLE_BOOSTER = "shuffle_booster";
+
+    public const string COUNT_NUMBER_WATCH_VIDEO_IN_SHOP = "count_number_watch_video_in_shop";
+
+    public const string RANDOM_WATCH_VIDEO = "random_watch_video";
 }
 
 public class PathPrefabs
