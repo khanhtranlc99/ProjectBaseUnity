@@ -675,7 +675,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  mixer: {fileID: 0}
+  mixer: {fileID: 24100000, guid: 056d1d62a43435844b586f7a6dd15cd2, type: 2}
   effectSource: {fileID: 1678449367}
   musicSource: {fileID: 566579121}
   soundUISource: {fileID: 1419790205964489597}
@@ -683,8 +683,8 @@ MonoBehaviour:
   highPitchRange: 1.05
   delayTime: 0.5
   winMusic: {fileID: 8300000, guid: 42b21a93e159bad4fa506176b0146d7b, type: 3}
-  BGMusic: {fileID: 8300000, guid: b966f78278b42b14f907d74ed3abb7e2, type: 3}
-  clickSound: {fileID: 8300000, guid: 6561f410ac315854c9bc65322dcd50fb, type: 3}
+  BGMusic: {fileID: 8300000, guid: b36aaf1eb6f07cb47b5ba44092987446, type: 3}
+  clickSound: {fileID: 8300000, guid: b776a425b4de1ed44801f91f6bc83ca1, type: 3}
 --- !u!1 &919154516
 GameObject:
   m_ObjectHideFlags: 0

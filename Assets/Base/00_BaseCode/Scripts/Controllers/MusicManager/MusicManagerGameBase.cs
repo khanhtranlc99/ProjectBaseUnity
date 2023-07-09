@@ -81,6 +81,7 @@ public class MusicManagerGameBase : SerializedMonoBehaviour
     {
         musicSource.volume = GameController.Instance.useProfile.OnMusic ? 0.7f : 0;
         effectSource.volume = GameController.Instance.useProfile.OnSound ? 1 : 0;
+        PlayBGMusic();
     }
 
 

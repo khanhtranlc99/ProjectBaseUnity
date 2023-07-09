@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using MoreMountains.NiceVibrations;
 public enum ButtonType
 { 
     HomeButton,
@@ -36,6 +37,7 @@ public class MenuTabButton : MonoBehaviour
             animator.SetTrigger("Selected");
             //homeScene.HandleClickButton(buttonType);
             isSelected = true;
+            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
         }
       
     }

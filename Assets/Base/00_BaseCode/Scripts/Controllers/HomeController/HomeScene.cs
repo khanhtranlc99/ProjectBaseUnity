@@ -86,8 +86,8 @@ public class HomeScene : BaseScene
                 break;
             }
         }
-      
 
+        MMVibrationManager.Haptic(HapticTypes.MediumImpact);
 
     }
     private void ChangeTab(ButtonType buttonType)
@@ -140,6 +140,7 @@ public class HomeScene : BaseScene
     private void OnSettingClick()
     {
         SettingBox.Setup().Show();
+        MMVibrationManager.Haptic(HapticTypes.MediumImpact);
     }
 
     private void OnCoinChange(object param)
