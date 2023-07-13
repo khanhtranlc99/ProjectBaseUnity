@@ -92,7 +92,7 @@ public class RandomWatchVideo : MonoBehaviour
 
     private void CheckOnOffButtonBuy()
     {
-        timeCoolDown = TimeManager.CaculateTime(UnbiasedTime.Instance.Now(), LastTimeCountAds);
+        timeCoolDown = TimeManager.CaculateTime(LastTimeCountAds,  UnbiasedTime.Instance.Now());
         Debug.Log("timeCoolDown " + timeCoolDown);
         if(timeCoolDown > 0)
         {

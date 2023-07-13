@@ -19,7 +19,11 @@ public class HomeScene : BaseScene
     public HorizontalScrollSnap horizontalScrollSnap;
     public List<MenuTabButton> lsMenuTabButtons;
     public List<SceneBase> lsSceneBases;
+    public void ShowGift()
+    {
 
+
+    }
     public int NumberPage(ButtonType buttonType)
     {
         switch (buttonType)
