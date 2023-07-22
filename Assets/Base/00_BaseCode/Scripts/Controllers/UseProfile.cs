@@ -38,8 +38,10 @@ public class UseProfile : MonoBehaviour
         }
         set
         {
+
             PlayerPrefs.SetInt(StringHelper.COIN, value);
             PlayerPrefs.Save();
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_COIN);
         }
     }
     public static int Heart

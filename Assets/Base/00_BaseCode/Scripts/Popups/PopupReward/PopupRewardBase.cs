@@ -280,7 +280,7 @@ public class PopupRewardBase : BaseBox
 
       
         
-        Debug.LogError("ClaimSuccess " + _poolReward.Count);
+      
     }
 
     private IEnumerator Closeee()

@@ -78,10 +78,10 @@ public class TimeManager
     {
         System.TimeSpan diff2 = newTime - oldTime;
         long result = diff2.Days * 24 * 60 * 60 + diff2.Hours * 60 * 60 + diff2.Minutes * 60 + diff2.Seconds;
-        if (result >= 0)
+        if (result > 0)
             return result;
         else
-            return -result;
+            return 0;
     }
 
     public static long CaculatePing(System.DateTime oldTime, System.DateTime newTime)

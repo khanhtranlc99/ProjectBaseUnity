@@ -21,7 +21,7 @@ public class HomeScene : BaseScene
     public List<SceneBase> lsSceneBases;
     public void ShowGift()
     {
-
+        
 
     }
     public int NumberPage(ButtonType buttonType)
