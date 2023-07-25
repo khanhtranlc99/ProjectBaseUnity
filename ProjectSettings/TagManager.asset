@@ -17,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - BG
-  - Floor1
+  - Player
+  - Powerup
   - Floor2
   - Floor3
   - Floor4
