@@ -49,8 +49,8 @@ public class PlayerControl : MonoBehaviour
 
 	private GameObject shipModel;			// our vehicle model
 
-	private int powerupLayer;				// layer that powerup collectables are on
-
+	private int powerupLayer;               // layer that powerup collectables are on
+	
 	/// <summary>
 	/// Get the current steering value of the vehicle (between -1 and 1)
 	/// </summary>
@@ -62,7 +62,7 @@ public class PlayerControl : MonoBehaviour
 	/// </summary>
 	/// <value>The current speed</value>
 	public float Speed		{ get { return crashed ? 0.0f : speed * speedMultiplier; } }
-
+	public float timeAddSpeed;
 	/// <summary>
 	/// Get or set the current speed multiplier.
 	/// </summary>
@@ -181,6 +181,23 @@ public class PlayerControl : MonoBehaviour
 				GameManager.OnGameOver();
 			}
 		}
+		timeAddSpeed += Time.deltaTime;
+		if(timeAddSpeed >= 5)
+        {
+			speed += 0.01f;
+        }
+		//if (timeAddSpeed == 10)
+		//{
+		//	speed += 15;
+		//}
+		//if (timeAddSpeed == 2500)
+		//{
+		//	speed += 20;
+		//}
+		//if (timeAddSpeed == 2000)
+		//{
+		//	speed += 20;
+		//}
 	}
 
 	void OnDrawGizmosSelected()

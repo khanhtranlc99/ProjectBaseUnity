@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRacer/Scenes/MainMenu.unity
     guid: ccee566b085ebac44bac31983c55c790
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRacer/Scenes/Select.unity
     guid: 168fd88cb68b0fa4f8a27a615393ae7a
-  - enabled: 1
+  - enabled: 0
     path: Assets/XRacer/Scenes/LevelSelection.unity
     guid: 2051638106a6cee4188afd292a0095c9
   - enabled: 1

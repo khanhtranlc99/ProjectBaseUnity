@@ -295,33 +295,34 @@ public class Levels : MonoBehaviour {
 		if (LevelManager.instance.currentSection == LevelManager.instance.levelSections.Length-1) 
 		{
 
-			Debug.Log ("LevelCompleted");
-			completeText.text = "Level Completed";
-			//Time.timeScale = 0;
+			//Debug.Log ("LevelCompleted");
+			//completeText.text = "Level Completed";
+			////Time.timeScale = 0;
 
-			PlayerControl.instance.isInvincible = true;
-			levelUnlock ();
-			levelComplete = true;
-			LevelButton.SetActive (true);
+			//PlayerControl.instance.isInvincible = true;
+			//levelUnlock ();
+			//levelComplete = true;
+			//LevelButton.SetActive (true);
 
-			obstacles [13].GetComponent<ConstantSection> ().isInfinite = true;
-			GameManager.instance.GameOver ();
-			levelComplete = true;
-			//Admob.Instance ().removeBanner ("gameplay");
-			//Admob.Instance ().showBannerRelative (AdSize.MediumRectangle, AdPosition.TOP_RIGHT,0,"cmpl1" );
+			//obstacles [13].GetComponent<ConstantSection> ().isInfinite = true;
+			//GameManager.instance.GameOver ();
+			//levelComplete = true;
+			////Admob.Instance ().removeBanner ("gameplay");
+			////Admob.Instance ().showBannerRelative (AdSize.MediumRectangle, AdPosition.TOP_RIGHT,0,"cmpl1" );
 
-			//if (Advertisement.IsReady ()) {
-			//	Advertisement.Show ();
-			//	adbool = false;
-			//} else if (HZInterstitialAd.IsAvailable ()) {
-			//	HZInterstitialAd.Show ();
-			//	HZInterstitialAd.Fetch ();
-			//	adbool = false;
-			//} else {
-			//	StartAppWrapper.showAd ();
-			//	StartAppWrapper.loadAd ();
-			//	adbool = false;
-			//}
+			////if (Advertisement.IsReady ()) {
+			////	Advertisement.Show ();
+			////	adbool = false;
+			////} else if (HZInterstitialAd.IsAvailable ()) {
+			////	HZInterstitialAd.Show ();
+			////	HZInterstitialAd.Fetch ();
+			////	adbool = false;
+			////} else {
+			////	StartAppWrapper.showAd ();
+			////	StartAppWrapper.loadAd ();
+			////	adbool = false;
+			////}
+			//Debug.LogError("Win");
 		}			
 
 	}
