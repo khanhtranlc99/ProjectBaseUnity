@@ -47,7 +47,7 @@ public class PlayerControl : MonoBehaviour
 	private bool crashed = false;			// have we crashed?
 	private float startingSpeed;			// initial speed at the start of the game
 
-	private GameObject shipModel;			// our vehicle model
+	public GameObject shipModel;			// our vehicle model
 
 	private int powerupLayer;               // layer that powerup collectables are on
 	
@@ -132,25 +132,30 @@ public class PlayerControl : MonoBehaviour
 
 	void Update () 
 	{
-		// get the steering input
-		float steerValue = GetSteerInput();
-		// vary the steering speed with the speed multiplier (but only a little, otherwise there's no benefit to slow motion)
-		float steerSpd = steerSpeed * (Mathf.Lerp(speedMultiplier, 1.0f, 0.5f));
-		// smoothly lerp our current steer value towards the target input value
-		steer = Mathf.Lerp (steer, steerSpd * steerValue, tiltSpeed * Time.deltaTime);
 
-		// tilt the vehicle as we steer
-		float targetTilt = -steerValue * tiltAngle;
-		tilt = Mathf.Lerp (tilt, targetTilt, tiltSpeed * Time.deltaTime);
-		Vector3 rot = transform.eulerAngles;
-		rot.z = tilt;
-		transform.eulerAngles = rot;
 
-		// check for collisions (use a slightly longer distance than we actually travelled to make sure we don't miss
-		// any collisions - if we test the exact distance we've moved then we occasionaly fly straight through obstacles).
-		// Note that because it is the scenery that moves, not the player, we can't use concave mesh colliders because they
-		// must always be static. Simple Box colliders are usually just fine, we don't need very accurate collision volumes.
-		float distMoved = 1.25f * Speed * Time.deltaTime;
+
+
+
+        // get the steering input
+        float steerValue = GetSteerInput();
+        // vary the steering speed with the speed multiplier (but only a little, otherwise there's no benefit to slow motion)
+        float steerSpd = steerSpeed * (Mathf.Lerp(speedMultiplier, 1.0f, 0.5f));
+        // smoothly lerp our current steer value towards the target input value
+        steer = Mathf.Lerp(steer, steerSpd * steerValue, tiltSpeed * Time.deltaTime);
+
+        // tilt the vehicle as we steer
+        float targetTilt = -steerValue * tiltAngle;
+        tilt = Mathf.Lerp(tilt, targetTilt, tiltSpeed * Time.deltaTime);
+        Vector3 rot = transform.eulerAngles;
+        rot.z = tilt;
+        transform.eulerAngles = rot;
+
+        // check for collisions (use a slightly longer distance than we actually travelled to make sure we don't miss
+        // any collisions - if we test the exact distance we've moved then we occasionaly fly straight through obstacles).
+        // Note that because it is the scenery that moves, not the player, we can't use concave mesh colliders because they
+        // must always be static. Simple Box colliders are usually just fine, we don't need very accurate collision volumes.
+        float distMoved = 1.25f * Speed * Time.deltaTime;
 		float extraOffset = collisionRadius;
 		RaycastHit hit;
 		if(Physics.SphereCast(transform.position - extraOffset * Vector3.forward, collisionRadius, Vector3.forward, out hit, distMoved + 2.0f * extraOffset))
@@ -184,7 +189,7 @@ public class PlayerControl : MonoBehaviour
 		timeAddSpeed += Time.deltaTime;
 		if(timeAddSpeed >= 5)
         {
-			speed += 0.01f;
+			//speed += 0.01f;
         }
 		//if (timeAddSpeed == 10)
 		//{
