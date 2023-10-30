@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2020_3_38;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;MOREMOUNTAINS_NICEVIBRATIONS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2020_3_38;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;MOREMOUNTAINS_NICEVIBRATIONS;DREAMTECK_SPLINES;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -64,7 +64,6 @@
     <Compile Include="Assets\Base\3Party\Joker2X\Editor\CustomPostprocessScript.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\AccordionElementEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\CUIBezierCurveEditor.cs" />
-    <Compile Include="Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenPreviewManager.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustSettings.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\FancyScrollView\ScrollerEditor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustCustomEditor.cs" />
@@ -83,7 +82,7 @@
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeParse.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicIconEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\BezierLineRendererEditor.cs" />
-    <Compile Include="Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+    <Compile Include="Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\NonDrawingGraphicEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicRenameEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicEditor.cs" />
@@ -91,19 +90,101 @@
     <Compile Include="Assets\com.unity.uiextensions\Editor\CUIImageEditor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustEditorPreprocessor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\SplineTool.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\OffsetModifierEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditorGUI.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineTracerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineFollowerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\BakeTool.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\ParticleControllerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\ObjectSpawnTool.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\PrimitiveEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\SplineTriggersEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\EditorModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplinePositionerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplinePreset.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\LevelTerrainTool.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\ImportTool.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointRotateModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\ComputerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\MeshGenEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\EditorGUIEvents.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\ComputerEditorModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\FindDerivedClasses.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\WaveformGeneratorEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\ObjectControllerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\LengthCalculatorEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\NodeEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\PolygonColliderGenEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointMirrorModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\CapsuleEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\Toolbar.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointMoveModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\ComputerMergeModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\SplineToolsWindow.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\ComputerSplitModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\ObjectBenderEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\NgonEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\UpdateTool.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\PathGeneratorEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\PrimitivesModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineComputerEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditorWindow.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\SizeModifierEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\ColorModifierEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\SplineSampleModifierEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\SplineDebugEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\Explorer.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\MainPointModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\SplineEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\WelcomeWindow.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditorToolbar.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SurfaceGeneratorEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineProjectorEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointNormalModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\DeletePointModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditorHandles.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineMorphEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointTransformModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineUserSubEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\RectangleEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\WelcomeScreen.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\TubeGeneratorEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\TransformModuleEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\AudioUtility.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineMeshEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineDrawer.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointScaleModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\RotationModifierEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineRendererEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\CreatePointModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\SplineEditorBase.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\RoundedRectangleEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\SpiralEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\DreamteckSplinesEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\DreamteckEditorGUI.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SetDistanceWindow.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\DSCreatePointModule.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\BakeMeshWindow.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\EllipseEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\LineEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\StarEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineUserEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Base\3Party\Demigiant\DemiLib\Core\Editor\DemiEditor.dll" />
     <None Include="Assets\Base\FacebookSDK\Plugins\Editor\Facebook.Unity.Editor.dll" />
     <None Include="Assets\MaxSdk\AppLovin\Editor\Dependencies.xml" />
-    <None Include="Assets\Base\3Party\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Base\FacebookSDK\Plugins\Editor\Dependencies.xml" />
-    <None Include="Assets\Base\3Party\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
-    <None Include="Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
-    <None Include="Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll" />
+    <None Include="Assets\Game\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
+    <None Include="Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
+    <None Include="Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.137.0.txt" />
-    <None Include="Assets\Base\3Party\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
+    <None Include="Assets\Game\Dreamteck\Splines\Editor\changelog.txt" />
+    <None Include="Assets\Game\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
+    <None Include="Assets\Game\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Base\Plugins\Sirenix\Odin Inspector\Assets\Editor\Bootstrap License.txt" />
+    <None Include="Assets\Game\Demigiant\DemiLib\Core\Editor\DemiEditor.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -376,9 +457,6 @@
     <Reference Include="Google.PackageManagerResolver">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
-    <Reference Include="DemiEditor">
-      <HintPath>Assets\Base\3Party\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -421,9 +499,6 @@
     <Reference Include="Firebase.Messaging.Editor">
       <HintPath>Library\PackageCache\com.google.firebase.messaging@e7d076dac6d1\Firebase\Editor\Firebase.Messaging.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Base\3Party\Demigiant\DOTween\DOTween.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.App">
       <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Firebase.App.dll</HintPath>
     </Reference>
@@ -463,23 +538,11 @@
     <Reference Include="Facebook.Unity.Canvas">
       <HintPath>Assets\Base\FacebookSDK\Plugins\Canvas\Facebook.Unity.Canvas.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>Assets\Base\3Party\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Editor">
       <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Editor\Firebase.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="DemiLib">
-      <HintPath>Assets\Base\3Party\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenProEditor">
-      <HintPath>Assets\Base\3Party\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Base\3Party\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
       <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
@@ -492,6 +555,33 @@
     </Reference>
     <Reference Include="Facebook.Unity">
       <HintPath>Assets\Base\FacebookSDK\Plugins\Facebook.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiEditor">
+      <HintPath>Assets\Game\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Game\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Game\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets\Game\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenProEditor">
+      <HintPath>Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -1015,6 +1105,14 @@
     <ProjectReference Include="Unity.Recorder.csproj">
       <Project>{1E8F33E3-5708-FA07-816F-52132461BCAF}</Project>
       <Name>Unity.Recorder</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppsFlyer.csproj">
+      <Project>{F89467CB-4238-7E5D-E564-17B6ACF3E542}</Project>
+      <Name>AppsFlyer</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppsFlyer.Editor.csproj">
+      <Project>{20EA2A42-D90E-4B37-3EE2-162031498AF1}</Project>
+      <Name>AppsFlyer.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -32,8 +32,10 @@ public class StartLoading : MonoBehaviour
         //{
         //    sceneName = "HomeScene";
         //}
-        sceneName = "HomeScene";
-        var _asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+       // sceneName = "HomeScene";
+        var _asyncOperation = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("levelnumber", 1) > SceneManager.sceneCountInBuildSettings - 1
+         ? Random.Range(1, SceneManager.sceneCountInBuildSettings - 1)
+         : PlayerPrefs.GetInt("levelnumber", 1), LoadSceneMode.Single);
         //_asyncOperation.allowSceneActivation = false;
         //Debug.Log("_asyncOperation " + _asyncOperation.progress);
         //// while the scene loads, we assign its progress to a target that we'll use to fill the progress bar smoothly
@@ -41,10 +43,10 @@ public class StartLoading : MonoBehaviour
         {
             progressBar.fillAmount = Mathf.Clamp01(_asyncOperation.progress / 0.9f);
             yield return null;
-        }
-
+     
         //// we switch to the new scene
         //_asyncOperation.allowSceneActivation = true;
+    }
     }
 
     IEnumerator LoadingText()

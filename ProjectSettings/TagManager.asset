@@ -8,6 +8,10 @@ TagManager:
   - Tile
   - FxTemporaire
   - Effects
+  - CUBE
+  - BOLT
+  - MASk
+  - Fill
   layers:
   - Default
   - TransparentFX
@@ -17,15 +21,15 @@ TagManager:
   - UI
   - 
   - 
-  - BG
-  - Floor1
-  - Floor2
-  - Floor3
-  - Floor4
-  - Floor5
-  - TileCollision
-  - Tile
-  - UI2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
