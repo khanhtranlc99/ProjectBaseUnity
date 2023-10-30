@@ -22,20 +22,19 @@ public class GameScene : BaseScene
     }
     public void OnClickShowInter()
     {
-        GameController.Instance.admobAds.ShowInterstitial();
+    
     }
 
     public void OnClickShowReward()
     {
-        GameController.Instance.admobAds.ShowVideoReward(delegate { });
+   
     }
     public void OnClickBack()
     {
         GameController.Instance.LoadScene("HomeScene");
     }
     public void ShowBanner()
-    {
-        GameController.Instance.admobAds.googleAdmobe.RequestBannerAd();
+    { 
       //  Debug.LogError("ShowBanner");
     }
 

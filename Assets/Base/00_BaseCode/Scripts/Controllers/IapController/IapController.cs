@@ -582,14 +582,14 @@ public class IapController : MonoBehaviour, IStoreListener
         }
         else if (item.typeBuy == TypeBuy.Video)
         {
-            GameController.Instance.admobAds.ShowVideoReward(() =>
-            {
-                item.Claim();
-                this.PostEvent(EventID.BUY_PRODUCT_SUCCESS, typePack.ToString());
-                //RewardIAPBox rwBox = RewardIAPBox.Setup();
-                //rwBox.Show(item);
-            }
-            );
+            //GameController.Instance.admobAds.ShowVideoReward(() =>
+            //{
+            //    item.Claim();
+            //    this.PostEvent(EventID.BUY_PRODUCT_SUCCESS, typePack.ToString());
+            //    //RewardIAPBox rwBox = RewardIAPBox.Setup();
+            //    //rwBox.Show(item);
+            //}
+            //);
         }
         else
         {

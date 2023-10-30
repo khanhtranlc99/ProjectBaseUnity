@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
      public UseProfile useProfile;
     public DataContain dataContain;
     public MusicManagerGameBase musicManager;
-    public AdmobAds admobAds;
+  
     [HideInInspector] public AnalyticsController AnalyticsController;
     public IapController iapController;
     [HideInInspector] public SceneType currentScene;
@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour
        
         //Application.targetFrameRate = 60;
         //useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
-        admobAds.Init();
+   
         musicManager.Init();
         iapController.Init();
 

@@ -135,7 +135,7 @@ public class IAPPack
                     break;
                 case TypePackIAP.NoAdsPack:
                     GameController.Instance.useProfile.IsRemoveAds = true;
-                    GameController.Instance.admobAds.DestroyBanner();
+                    //GameController.Instance.admobAds.DestroyBanner();
                     EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.REMOVE_ADS);
               
                     break;
