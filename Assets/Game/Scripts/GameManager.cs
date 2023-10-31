@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+
     public enum Modes
     {
         Null,
@@ -77,6 +78,8 @@ public class GameManager : MonoBehaviour
     public GameObject sleepeffect;
 
     public bool Fail;
+ 
+
     private void Awake()
     {
         instance = this;
@@ -467,4 +470,6 @@ public class GameManager : MonoBehaviour
         Vibration.Vibrate(40);
         print("vibrate");
     }
+
+   
 }

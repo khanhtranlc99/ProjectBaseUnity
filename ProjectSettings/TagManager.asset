@@ -12,6 +12,7 @@ TagManager:
   - BOLT
   - MASk
   - Fill
+  - Broad
   layers:
   - Default
   - TransparentFX

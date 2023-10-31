@@ -27,6 +27,8 @@ public class TouchDrop : MonoBehaviour
     public GameObject Block2;
     
     public AudioManager audioManager;
+    public GameObject hold;
+    public bool useBoosterDrill;
     private void Awake()
     {
         instance = this;
@@ -62,6 +64,7 @@ public class TouchDrop : MonoBehaviour
         }#1#*/
         if (Input.GetMouseButtonDown(0))
         {
+       
             if (!UIManager.INSTANCE.win && start)
             {
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -88,7 +91,22 @@ public class TouchDrop : MonoBehaviour
                     }
                 }
             }
-            
+            if (useBoosterDrill)
+            {
+
+                var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out _hit))
+                {
+                    Debug.LogError("Raycast");
+
+                    if (_hit.collider.gameObject.CompareTag("Broad"))
+                    {
+                        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        HandleLogicDrill(mousePosition);
+                    }
+                }
+
+            }
         }
     }
 
@@ -194,89 +212,11 @@ public class TouchDrop : MonoBehaviour
             gameManager.dupPlug = boltreferance;
         }
     }
-    // ReSharper disable Unity.PerformanceAnalysis
-    /*public void Boltshifting(GameObject boltreferance)
+    public void HandleLogicDrill(Vector3 param)
     {
-        if (gameManager.selectedBolt.Count == 1)
-        {
-            gameManager.vibration();
-            audioManager.Play("Bolt");
-            if (UIManager.INSTANCE.pin)
-            {
-                UIManager.INSTANCE.pin = false;
-                UIManager.INSTANCE.fill = true;
-            }
-            if (gameManager.selectedBolt.Contains(boltreferance))
-            {
-            
-                if (boltreferance.GetComponent<NewBolt>().connectedBodylist != null)
-                {
-                    for (int i = 0; i < boltreferance.GetComponent<NewBolt>().connectedBodylist.Count; i++)
-                    {
-                        boltreferance.GetComponent<NewBolt>().connectedBodylist[i].GetComponentInParent<Rigidbody2D>().simulated = true;
-                    }
-                }
-                gameManager.selectedBolt.RemoveAt(0);
-                var parent = boltreferance.transform.parent;
-                boltreferance.transform.GetComponent<Collider>().enabled = false;
-                parent.DOLocalMoveZ(parent.localPosition.z + boltremoveheight, 0.3f).OnComplete(() =>
-                {
-                    boltreferance.transform.GetComponent<Collider>().enabled = true;
-                });
-                //gameManager.gamestate = GameManager.State.Select;
-                
-            }
-            else if (!gameManager.selectedBolt.Contains(boltreferance))
-            {
-               
-                gameManager.selectedBolt[0].transform.parent.DOLocalMoveZ(gameManager.selectedBolt[0].transform.parent.localPosition.z + boltremoveheight, 0.3f).SetEase(Ease.Linear);
-                gameManager.selectedBolt.RemoveAt(0);
-                /*if (boltreferance.GetComponent<NewBolt>().connectedBodylist != null)
-                {
-                    for (int i = 0; i < boltreferance.GetComponent<NewBolt>().connectedBodylist.Count; i++)
-                    {
-                        boltreferance.GetComponent<NewBolt>().connectedBodylist[i].GetComponentInParent<Rigidbody2D>().simulated = true;
-                    }
-                }#1#
-                gameManager.selectedBolt.Add(boltreferance);
-                var parent1 = boltreferance.transform.parent;
-                boltreferance.transform.GetComponent<Collider>().enabled = false;
-                parent1.DOLocalMoveZ(parent1.localPosition.z - boltremoveheight, 0.3f).SetEase(Ease.Linear).OnComplete(
-                    () =>
-                    {
-                        boltreferance.transform.GetComponent<Collider>().enabled = true;
-                    });
-            }
-        }
-        
-        else if (gameManager.selectedBolt.Count==0)
-        {
-            /*if (boltreferance.GetComponent<NewBolt>().connectedBodylist != null)
-            {
-                for (int i = 0; i < boltreferance.GetComponent<NewBolt>().connectedBodylist.Count; i++)
-                {
-                    boltreferance.GetComponent<NewBolt>().connectedBodylist[i].GetComponentInParent<Rigidbody2D>()
-                        .simulated = false;
-                }
-            }#1#
-            if (UIManager.INSTANCE.pin)
-            {
-                UIManager.INSTANCE.pin = false;
-                UIManager.INSTANCE.fill = true;
-            }
-            gameManager.vibration();
-            audioManager.Play("Bolt");
-            boltreferance.transform.GetComponent<Collider>().enabled = false;
-            var parent = boltreferance.transform.parent;
-            audioManager.Play("Bolt");
-            parent.DOLocalMoveZ(parent.localPosition.z - boltremoveheight, 0.3f).OnComplete(() =>
-            {
-                boltreferance.transform.GetComponent<Collider>().enabled = true;
-                gameManager.gamestate = GameManager.State.Select;
-            });
-            gameManager.selectedBolt.Add((boltreferance));
-            //gameManager.dupPlug = boltreferance;
-        }
-    }*/ 
-   
+        //Instantiate(hold, param, Quaternion.identity);.
+        var temp = Instantiate(hold);
+        temp.transform.position = new Vector3(param.x, param.y, -2);
+        Debug.LogError("HandleLogicDrill");
+    }
 }

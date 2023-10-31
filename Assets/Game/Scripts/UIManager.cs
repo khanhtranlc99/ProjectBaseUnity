@@ -283,8 +283,8 @@ public class UIManager : MonoBehaviour
         winpanel.SetActive(true);
         //StartCoroutine(nextWait());
     }
-    /*public void restrtbuttonsymbol()
+    public void HandleBoosterDrill()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }*/
+       
+    }
 }
