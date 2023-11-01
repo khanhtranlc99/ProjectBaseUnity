@@ -1138,6 +1138,8 @@ MonoBehaviour:
   help: 0
   pin: 0
   fill: 0
+  btnBoosterDrill: {fileID: 3534177545770267433}
+  btnDestroyScew: {fileID: 585596611903435854}
 --- !u!1 &2732227273341834004
 GameObject:
   m_ObjectHideFlags: 0

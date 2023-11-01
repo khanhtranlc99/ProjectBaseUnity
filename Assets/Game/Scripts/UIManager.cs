@@ -25,7 +25,8 @@ public class UIManager : MonoBehaviour
     public static int levelAttempts;
     public bool win;
 
-    [Header("Help Text")] [Header("unpin help")]
+    [Header("Help Text")]
+    [Header("unpin help")]
     public GameObject PinObject;
 
     public GameObject FillObject;
@@ -37,7 +38,8 @@ public class UIManager : MonoBehaviour
     public bool fill;
 
     public static int currentLvl = 0;
-
+    public Button btnBoosterDrill;
+    public Button btnDestroyScew;
     private void Awake()
     {
         INSTANCE = this;
@@ -70,8 +72,9 @@ public class UIManager : MonoBehaviour
         {
             KeyText.SetActive(true);
         }
-
-       // GAScript.LevelStart(PlayerPrefs.GetInt("levelnumber", 1), levelAttempts);
+        btnBoosterDrill.onClick.AddListener(HandleBoosterDrill);
+        btnDestroyScew.onClick.AddListener(HandleBoosterDestroyScew);
+        // GAScript.LevelStart(PlayerPrefs.GetInt("levelnumber", 1), levelAttempts);
         // level.text = "Level " + LvlNum.ToString();
         //levelnum = currentLevel;
         //AudioManager.instance.Play("BACKGROUND");
@@ -170,7 +173,7 @@ public class UIManager : MonoBehaviour
             currentLvl = LvlNum;
         }
 
-      //  lvlNumImgs[^1].GetComponent<Image>().sprite = specialImages[lvlNo];
+        //  lvlNumImgs[^1].GetComponent<Image>().sprite = specialImages[lvlNo];
         PlayerPrefs.SetInt("SpecialImg", lvlNo);
         print(lvlNo + "::");
     }
@@ -234,7 +237,7 @@ public class UIManager : MonoBehaviour
 
     public void NextlevelButton()
     {
-      
+
 
         if (AudioManager.instance)
         {
@@ -285,6 +288,10 @@ public class UIManager : MonoBehaviour
     }
     public void HandleBoosterDrill()
     {
-       
+        TouchDrop.instance.useBoosterDrill = true;
+    }
+    public void HandleBoosterDestroyScew()
+    {
+        TouchDrop.instance.useBoosterDestroyScew = true;
     }
 }

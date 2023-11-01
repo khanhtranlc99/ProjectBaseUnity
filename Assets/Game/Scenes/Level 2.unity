@@ -1262,13 +1262,27 @@ GameObject:
   - component: {fileID: 33703242554363471}
   - component: {fileID: 23932920161472573}
   - component: {fileID: 114182241981531519}
+  - component: {fileID: 1160446031423602}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Broad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1160446031423602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160446031423601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1163476004181813
 GameObject:
   m_ObjectHideFlags: 0
