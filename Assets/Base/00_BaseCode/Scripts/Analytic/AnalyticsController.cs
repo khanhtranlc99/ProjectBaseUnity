@@ -544,7 +544,10 @@ public enum ActionWatchVideo
     ClaimSkin = 5,
     Hint = 6,
     Daily = 7,
-    UnlockPic = 9
+    UnlockPic = 9,
+    RewardEndGame = 10,
+    DrillBooster,
+    DestroyScewBooster,
 }
 
 public enum ActionShowInter

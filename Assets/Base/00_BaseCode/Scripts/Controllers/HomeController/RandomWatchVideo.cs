@@ -84,7 +84,7 @@ public class RandomWatchVideo : MonoBehaviour
         CountNumberWatchVideoInShop -= 1;
       //  tvCount.text = "" + CountNumberWatchVideoInShop;
 
-        LastTimeCountAds = UnbiasedTime.Instance.Now().AddMinutes(RemoteConfigController.GetFloatConfig(StringHelper.RANDOM_WATCH_VIDEO, 2));
+   
 
         CheckOnOffButtonBuy();
         HandleTackGift();

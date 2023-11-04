@@ -13,7 +13,8 @@ public static class StringHelper
     public const string CURRENT_LEVEL = "CURRENT_LEVEL";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
     public const string PATH_CONFIG_LEVEL = "Levels/Level_";
-    public const string PATH_CONFIG_LEVEL_TEST = "Level/Level_{0}";
+    public const string PATH_CONFIG_LEVEL_TEST = "LevelTest/Level_{0}";
+    public const string PATH_CONFIG_LEVEL_SPECIAL = "SpecialLevel/Level_{0}";
     public const string LEVEL_DEMO_IMAGE_WIN = "Demo/lv";
     public const string LEVEL_DEMO_IMAGE_NOT_WIN = "Demo/bw_lv";
     public const string ANIM_LEVEL = "AnimLevel/AnimLv";
@@ -38,17 +39,27 @@ public static class StringHelper
     public const string ITEM_HINT = "item_hint";
     public const string DATE_RECIVE_GIFT_DAILY = "date_recive_gift_daily";
 
+    public const string EGG_CHEST = "egg_chest";
+    public const string CURRENT_LEVEL_OF_LEVEL_CHEST = "current_level_of_level_chest";
+    public const string CURRENT_LEVEL_OF_BIRD_CHEST = "current_level_of_bird_chest";
+    public const string LEVEL_EGG_CHEST = "level_egg_chest";
+    public const string LEVEL_OF_LEVEL_CHEST = "level_of_level_chest";
+    public const string LEVEL_OF_BIRD_CHEST = "level_of_bird_chest";
     public const string SCORE_RANKING = "score_ranking";
     public const string COIN = "coin";
     public const string HEART = "heart";
     public const string SPECIAL_FEATHER = "special_feather";
     public const string REDO_BOOSTER = "redo_booster";
     public const string SUPORT_BOOSTER = "suport_booster";
-    public const string SHUFFLE_BOOSTER = "shuffle_booster";
-
     public const string COUNT_NUMBER_WATCH_VIDEO_IN_SHOP = "count_number_watch_video_in_shop";
+    public const string IS_DONE_TUT = "is_done_tut";
 
-    public const string RANDOM_WATCH_VIDEO = "random_watch_video";
+    public const string NUMBER_OF_DISPLAYED_INTERST_ITIAL_D0_D1_KEY = "number_of_displayed_interst_itial_d0_d1_key";
+    public const string NUMBER_OF_DISPLAYED_INTERST_ITIAL_D1_KEY = "number_of_displayed_interst_itial_d1_key";
+
+    public const string NUMBER_REWARD_SHOWED = "number_reward_showed";
+    public const string NUMBER_INTER_SHOWED = "number_inter_showed";
+
 }
 
 public class PathPrefabs
@@ -62,6 +73,9 @@ public class PathPrefabs
     public const string RATE_GAME_BOX = "UI/Popups/RateGameBox";
     public const string SETTING_BOX = "UI/Popups/SettingBox";
     public const string LOSE_BOX = "UI/Popups/LoseBox";
+    public const string LEVEL_FAILED_BOX = "UI/Popups/LevelFailedBox";
+    public const string EXIT_LEVEL_BOX = "UI/Popups/ExitLevelBox";
+
     public const string SETTINGS_BOX = "UI/Popups/SettingsBox";
     public const string FAIL_CONNECTION_BOX = "UI/Popups/FailConnectionBox";
     public const string SELECT_LEVEL_BOX = "UI/Popups/SelectLevelPopups";
@@ -82,6 +96,13 @@ public class PathPrefabs
     public const string REWARD_CONNECT_BIRD_MN_BOX = "UI/Popups/RewardConnectBirdMNBox";
     public const string POPUP_DAILY_REWARD = "UI/Popups/PopupDailyReward";
     public const string POPUP_PAUSE_BOX = "UI/Popups/PauseBox";
+
+    public const string SUGGET_BOX = "UI/Popups/SuggetBox";
+    public const string OPEN_GIFT_BOX = "UI/Popups/OpenGiftBox";
+    public const string SHOP_PACK_BOX = "UI/Popups/ShopPackBox";
+    public const string LEVEL_GIFT_BOX = "UI/Popups/LevelGiftBox";
+    public const string EGG_GIFT_BOX = "UI/Popups/EggGiftBox";
+    public const string AD_BREAK_BOX = "UI/Popups/AdBreakBox";
 }
 
 public class SceneName
@@ -133,7 +154,7 @@ public class AudioName
 
 public class KeyPref
 {
-    public const int MAX_LEVEL = 26;
+    public const int MAX_LEVEL = 100;
     public const string SERVER_INDEX = "SERVER_INDEX";
 }
 
@@ -163,7 +184,7 @@ public class FirebaseConfig
     public const string MAX_LEVEL_SHOW_RATE = "max_level_show_rate";//30
 
     public const string TEST_LEVEL_CAGE_BOOM = "test_level_cage_boom";//30
-    public const string SHOW_INTER_PER_TIME ="show_inter_per_time";
+    public const string SHOW_INTER_PER_TIME = "show_inter_per_time";
     public const string ON_OFF_ACCUMULATION_REWARD_LEVEL_START = "on_off_accumulation_reward_level_start";//true
     public const string ACCUMULATION_REWARD_LEVEL_START = "accumulation_reward_level_start";//6
     public const string ACCUMULATION_REWARD_END_LEVEL = "accumulation_reward_end_level_{0}";//
@@ -195,10 +216,10 @@ public class GameData
 public static class NameOfAnimBird
 {
     public const string IDLE = "idle";
- 
-    public const string FlY = "fly";
+
+    public const string FLY = "fly";
     public const string JUMP = "jump";
     public const string GROUND = "grounding";
     public const string HAPPY = "happy";
-
+    public const string UN_HAPPY = "angry";
 }

@@ -18,7 +18,7 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    public static int ScoreRanking
+    public static int EggRanking
     {
         get
         {
@@ -30,15 +30,91 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
+    #region ChestDataKey
+    public static int EggChest
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.EGG_CHEST, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.EGG_CHEST, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int LevelEggChest
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.LEVEL_EGG_CHEST, 1);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.LEVEL_EGG_CHEST, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int LevelOfLevelChest
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.LEVEL_OF_LEVEL_CHEST, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.LEVEL_OF_LEVEL_CHEST, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int LevelOfBirdChest
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.LEVEL_OF_BIRD_CHEST, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.LEVEL_OF_BIRD_CHEST, value);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static int CurrentLevelOfLevelChest
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_LEVEL_OF_LEVEL_CHEST, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_LEVEL_OF_LEVEL_CHEST, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public static int CurrentLevelOfBirdChest
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.CURRENT_LEVEL_OF_BIRD_CHEST, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.CURRENT_LEVEL_OF_BIRD_CHEST, value);
+            PlayerPrefs.Save();
+        }
+    }
+    #endregion
+
     public static int Coin
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.COIN, 1000);
+            return PlayerPrefs.GetInt(StringHelper.COIN, 0);
         }
         set
         {
-
             PlayerPrefs.SetInt(StringHelper.COIN, value);
             PlayerPrefs.Save();
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_COIN);
@@ -57,20 +133,7 @@ public class UseProfile : MonoBehaviour
         }
     }
 
-    public static int SpecialFeather
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.SPECIAL_FEATHER, 0);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.SPECIAL_FEATHER, value);
-            PlayerPrefs.Save();
-        }
-    }
-
-    public static int RedoBooster
+    public static int DestroyScewBooster
     {
         get
         {
@@ -80,9 +143,10 @@ public class UseProfile : MonoBehaviour
         {
             PlayerPrefs.SetInt(StringHelper.REDO_BOOSTER, value);
             PlayerPrefs.Save();
+         
         }
     }
-    public static int SuportBooster
+    public static int DrillBooster
     {
         get
         {
@@ -92,22 +156,65 @@ public class UseProfile : MonoBehaviour
         {
             PlayerPrefs.SetInt(StringHelper.SUPORT_BOOSTER, value);
             PlayerPrefs.Save();
+
         }
     }
 
-    public static int ShuffleBooster
+
+    public static int NumberOfDisplayedInterstitialD0_D1
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.SHUFFLE_BOOSTER, 0);
+            return PlayerPrefs.GetInt(StringHelper.NUMBER_OF_DISPLAYED_INTERST_ITIAL_D0_D1_KEY, 0);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.SHUFFLE_BOOSTER, value);
+            PlayerPrefs.SetInt(StringHelper.NUMBER_OF_DISPLAYED_INTERST_ITIAL_D0_D1_KEY, value);
             PlayerPrefs.Save();
+
         }
     }
 
+    public static int NumberOfDisplayedInterstitialD1
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.NUMBER_OF_DISPLAYED_INTERST_ITIAL_D1_KEY, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.NUMBER_OF_DISPLAYED_INTERST_ITIAL_D1_KEY, value);
+            PlayerPrefs.Save();
+
+        }
+    }
+
+    public static int NumberRewardShowed
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.NUMBER_REWARD_SHOWED, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.NUMBER_REWARD_SHOWED, value);
+            PlayerPrefs.Save();
+
+        }
+    }
+    public static int NumberInterShowed
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.NUMBER_INTER_SHOWED, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.NUMBER_INTER_SHOWED, value);
+            PlayerPrefs.Save();
+
+        }
+    }
 
     public int LevelUnlock
     {
@@ -340,6 +447,7 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
     public string ListSave
     {
         get
@@ -371,7 +479,8 @@ public class UseProfile : MonoBehaviour
         }
         return result;
     }
-   
+
+
 }
 
 

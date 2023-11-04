@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 public class TouchDrop : MonoBehaviour
 {
@@ -108,6 +109,7 @@ public class TouchDrop : MonoBehaviour
                         Vector3 surfaceNormal = _hit.normal;
                         spawnedObject.transform.up = surfaceNormal;
                         useBoosterDrill = false;
+                        UIManager.INSTANCE.BlockBooster(true);
                     }
                 }
 
@@ -270,6 +272,7 @@ public class TouchDrop : MonoBehaviour
             gameManager.dupPlug = null;
 
             useBoosterDestroyScew = false;
+            UIManager.INSTANCE.BlockBooster(true);
         }
     }
     public void HandleLogicDrill(Vector3 param)
@@ -278,5 +281,15 @@ public class TouchDrop : MonoBehaviour
         var temp = Instantiate(hold);
         temp.transform.position = new Vector3(param.x, param.y, -0.5f);
         useBoosterDrill = false;
+    }
+    public GameObject param;
+    [Button]
+    private void Test()
+    {
+        param = GameObject.Find("Board");
+
+        param.AddComponent<BoxCollider>().size = new Vector3(0.85f,0.85f,0.85f);
+        param.gameObject.tag = "Broad";
+
     }
 }

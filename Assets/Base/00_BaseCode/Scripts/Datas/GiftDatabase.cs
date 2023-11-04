@@ -48,17 +48,18 @@ public class GiftDatabase : SerializedScriptableObject
                 break;
             case GiftType.RemoveAds:
                 GameController.Instance.useProfile.IsRemoveAds = true;
-                //GameController.Instance.admobAds.DestroyBanner();
+           
                 break;
-            case GiftType.RedoBooster:
-                UseProfile.RedoBooster += 1;
+            case GiftType.DestroyScewBooster:
+                UseProfile.DestroyScewBooster += amount;
+                UIManager.INSTANCE.HandleShowStateBooster();
+            
                 break;
-            case GiftType.SuportBooster:
-                UseProfile.SuportBooster += 1;
+            case GiftType.DrillBooster:
+                UseProfile.DrillBooster += amount;
+                UIManager.INSTANCE.HandleShowStateBooster();
                 break;
-            case GiftType.ShuffleBooster:
-                UseProfile.ShuffleBooster += 1;
-                break;
+         
 
 
         }
@@ -90,8 +91,8 @@ public enum GiftType
     RemoveAds = 1,
     Coin = 2,
     Heart = 3,
-    RedoBooster = 4,
-    SuportBooster = 5,
+    DestroyScewBooster = 4,
+    DrillBooster = 5,
     ShuffleBooster = 6
 
 

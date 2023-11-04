@@ -58,27 +58,7 @@ public class RankSceneController : SceneBase
 
     private void SetDataUser()
     {
-        UseProfile.ScoreRanking = 2000;
-       var randomRank = Random.Range(20, 100);
-        lableUser.tvRank.text = "" + randomRank;
-        lableUser.tvName.text = "You";
-        lableUser.tvScore.text = "" + UseProfile.ScoreRanking; 
-
-        foreach(var item in lsLableRank)
-        {
-            if(UseProfile.ScoreRanking >= item.score)
-            {
-                item.tvScore.text = lableUser.tvScore.text;
-                item.avatar.sprite = lableUser.avatar.sprite;
-                item.tvName.text = lableUser.tvName.text;
-                lableUser.tvRank.text = item.tvRank.text;
-               
-                break;
-              
-            }
-        }
-
-
+      
 
     }
 

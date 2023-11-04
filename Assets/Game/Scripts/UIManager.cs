@@ -40,6 +40,18 @@ public class UIManager : MonoBehaviour
     public static int currentLvl = 0;
     public Button btnBoosterDrill;
     public Button btnDestroyScew;
+    public Text tvCoin;
+    public Text tvLevel;
+
+
+    public Button btnNumDrill;
+    public Button btnNumDestroyScew;
+    public Text tvNumDrill;
+    public Text tvNumDestroyScew;
+    public Sprite spritePlus;
+    public Sprite spriteNum;
+
+
     private void Awake()
     {
         INSTANCE = this;
@@ -72,12 +84,79 @@ public class UIManager : MonoBehaviour
         {
             KeyText.SetActive(true);
         }
-        btnBoosterDrill.onClick.AddListener(HandleBoosterDrill);
-        btnDestroyScew.onClick.AddListener(HandleBoosterDestroyScew);
+     
+        tvCoin.text = "" + UseProfile.Coin;
+        tvLevel.text = "LEVEL " + UseProfile.CurrentLevel;
+        HandleShowStateBooster();
+        HandleUnlock();
         // GAScript.LevelStart(PlayerPrefs.GetInt("levelnumber", 1), levelAttempts);
         // level.text = "Level " + LvlNum.ToString();
         //levelnum = currentLevel;
         //AudioManager.instance.Play("BACKGROUND");
+    }
+    public void HandleUnlock()
+    {
+        if(UseProfile.CurrentLevel < 4)
+        {
+            btnBoosterDrill.gameObject.SetActive(false);
+        }
+        else
+        {
+            btnBoosterDrill.gameObject.SetActive(true);
+        }
+        if (UseProfile.CurrentLevel < 6)
+        {
+            btnDestroyScew.gameObject.SetActive(false);
+        }
+        else
+        {
+            btnDestroyScew.gameObject.SetActive(true);
+        }
+
+    }
+
+    public void HandleShowStateBooster()
+    {
+        //btnBoosterDrill.onClick.AddListener(HandleBoosterDrill);
+        //btnDestroyScew.onClick.AddListener(HandleBoosterDestroyScew);
+        btnBoosterDrill.onClick.RemoveAllListeners();
+        btnDestroyScew.onClick.RemoveAllListeners();
+        btnNumDrill.onClick.RemoveAllListeners();
+        btnNumDestroyScew.onClick.RemoveAllListeners();
+        if (UseProfile.DrillBooster <= 0)
+        {
+            btnNumDrill.image.sprite = spritePlus;
+            btnNumDrill.onClick.AddListener(delegate { SuggetBox.Setup(GiftType.DrillBooster).Show(); });
+            tvNumDrill.gameObject.SetActive(false);
+            btnBoosterDrill.onClick.AddListener(delegate { SuggetBox.Setup(GiftType.DrillBooster).Show(); });
+        }
+        else
+        {
+            btnNumDrill.image.sprite = spriteNum;
+            tvNumDrill.gameObject.SetActive(true);
+            tvNumDrill.text = "" + UseProfile.DrillBooster;
+            btnBoosterDrill.onClick.AddListener(HandleBoosterDrill);
+
+        }
+
+
+        if (UseProfile.DestroyScewBooster <= 0)
+        {
+            btnNumDestroyScew.image.sprite = spritePlus;
+            btnNumDestroyScew.onClick.AddListener(delegate { SuggetBox.Setup(GiftType.DestroyScewBooster).Show(); });
+            tvNumDestroyScew.gameObject.SetActive(false);
+            btnDestroyScew.onClick.AddListener(delegate { SuggetBox.Setup(GiftType.DestroyScewBooster).Show(); });
+        }
+        else
+        {
+            btnNumDestroyScew.image.sprite = spriteNum;
+            tvNumDestroyScew.gameObject.SetActive(true);
+            tvNumDestroyScew.text = "" + UseProfile.DestroyScewBooster;
+            btnDestroyScew.onClick.AddListener(HandleBoosterDestroyScew);
+        }
+
+
+
     }
 
 
@@ -264,15 +343,25 @@ public class UIManager : MonoBehaviour
 
     public void retryButton()
     {
-        if (AudioManager.instance)
+        GameController.Instance.admobAds.ShowInterstitial(true, actionIniterClose: () =>
+        {    
+            Reset();
+        }, actionWatchLog: "ResetLevel");
+
+        void Reset()
         {
-            AudioManager.instance.Play("Fill");
-            GameManager.instance.vibration();
+            if (AudioManager.instance)
+            {
+                AudioManager.instance.Play("Fill");
+                GameManager.instance.vibration();
+            }
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            levelAttempts++;
+            Debug.Log($"Level Attempts::{levelAttempts}");
         }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        levelAttempts++;
-        Debug.Log($"Level Attempts::{levelAttempts}");
+   
     }
 
     public void Winpanel()
@@ -283,15 +372,39 @@ public class UIManager : MonoBehaviour
     IEnumerator winactive()
     {
         yield return new WaitForSeconds(0.5f);
-        winpanel.SetActive(true);
+        //winpanel.SetActive(true);
         //StartCoroutine(nextWait());
+        WinBox.Setup(100,false).Show();
     }
     public void HandleBoosterDrill()
     {
         TouchDrop.instance.useBoosterDrill = true;
+        UseProfile.DrillBooster -= 1;
+        HandleShowStateBooster();
+        BlockBooster(false);
     }
     public void HandleBoosterDestroyScew()
     {
         TouchDrop.instance.useBoosterDestroyScew = true;
+        UseProfile.DestroyScewBooster -= 1;
+        HandleShowStateBooster();
+        BlockBooster(false);
+    }
+    public void ShowSetting()
+    {
+        SettingBox.Setup().Show();
+    }
+
+    public void BlockBooster(bool param)
+    {
+        btnNumDrill.interactable = param;
+        btnBoosterDrill.interactable = param;
+        btnNumDestroyScew.interactable = param;
+        btnDestroyScew.interactable = param;
+    }
+
+    public void CheatWin()
+    {
+        WinBox.Setup(100, false).Show();
     }
 }

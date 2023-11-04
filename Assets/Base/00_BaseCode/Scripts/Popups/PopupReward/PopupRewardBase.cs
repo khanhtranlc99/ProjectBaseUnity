@@ -42,8 +42,7 @@ public class PopupRewardBase : BaseBox
         return instance;
 
     }
-    public GameObject titler;
-    public Text tvCoin;
+
     public void Init()
     {
 
@@ -55,7 +54,7 @@ public class PopupRewardBase : BaseBox
     IEnumerator showBtnClaimIE;
     public PopupRewardBase Show(List<GiftRewardShow> reward, Action actionClaim = null, float timeShowClaimNow = 0)
     {
-        Debug.Log("============= AAA ============== ");
+        Debug.LogError("============= AAA ============== ");
         claimBtn.onClick.RemoveAllListeners();
         claimBtn.onClick.AddListener(Claim);
         claimBtn.interactable = true;
@@ -149,8 +148,7 @@ public class PopupRewardBase : BaseBox
 
         GameController.Instance.musicManager.PlayOneShot(rewardClip);
 
-        titler.SetActive(true);
-        tvCoin.text = "" + HomeController.Instance.homeScene.tvCoin.text.ToString();
+      
         return this;
     }
 
@@ -208,79 +206,29 @@ public class PopupRewardBase : BaseBox
 
         ClaimSuccess();
     }
-    public List<RewardElement> rewardElements;
-    public Transform temp;
+
     public void ClaimSuccess()
     {
 
         ClearPool();
-        rewardElements = new List<RewardElement>();
-        for (int i = 0; i < _tempReward.Count; i++)
-        {
-            var ramdomCOunt = UnityEngine.Random.RandomRange(8, 10);
-            for (int j = 0; j < ramdomCOunt; j++)
-            {
-                if (smallReward)
-                {
-
-                    var elemen1t = Instantiate(smallRewardPrefab, _poolReward[i].transform.position, Quaternion.identity);
-                    elemen1t.transform.parent = this.transform;
-                    elemen1t.transform.localScale = new Vector3(1, 1, 1);
-                    elemen1t.aura.gameObject.SetActive(false);
-                    elemen1t.Init(_poolReward[i].iconImg.sprite, 0, _tempReward[i].rewardAnim,false);
-                    rewardElements.Add(elemen1t);
-
-                }
-                else
-                {
-                    var elemen2t = Instantiate(rewardPrefab, _poolReward[i].transform.position, Quaternion.identity);
-                    elemen2t.transform.parent = this.transform;
-                    elemen2t.transform.localScale = new Vector3(1, 1, 1);
-                    elemen2t.aura.gameObject.SetActive(false);
-                    elemen2t.Init(_poolReward[i].iconImg.sprite, 0, _tempReward[i].rewardAnim, false);
-                    rewardElements.Add(elemen2t);
-                }
-            }
-        }
-        for(int i = 0;  i < rewardElements.Count; i ++)
-        {
-            var index = i;
-        
-
-            var random = UnityEngine.Random.RandomRange(0.25f, 1);
-            var randomJump = UnityEngine.Random.RandomRange(0, 0.3f);
-            var randomNum = UnityEngine.Random.RandomRange(1, 3);
-            var randomDelay = UnityEngine.Random.RandomRange(0.25f, 1);
-            rewardElements[index].transform.DOScale(new Vector3(0.2f,0.2f,0.2f), random+0.5f);
-            rewardElements[index].transform.DOJump(temp.transform.position, randomJump, randomNum, random).SetDelay(randomDelay).OnComplete(delegate {
-            
-            
-               if(index >= rewardElements.Count -1)
-                {
-                    StartCoroutine(Closeee());
-                }
-                rewardElements[index].gameObject.SetActive(false);
-
-
-            });
-        }
 
 
 
-        titler.SetActive(false);
 
-        isClickedClaim = true;
+        Close();
+
+
 
         //  BoxController.Instance.isLockEscape = false;
-      
+
 
         if (_actionClaim != null)
             _actionClaim();
         claimBtn.interactable = false;
 
-      
-        
-      
+
+
+
     }
 
     private IEnumerator Closeee()

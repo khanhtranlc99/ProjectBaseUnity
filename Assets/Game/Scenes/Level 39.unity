@@ -764,14 +764,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.334
@@ -3637,14 +3637,27 @@ GameObject:
   - component: {fileID: 2023884761474704938}
   - component: {fileID: 2045177673403602530}
   - component: {fileID: 2038727369998336217}
-  - component: {fileID: 2130197040787752195}
+  - component: {fileID: 2026395300887848143}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: Broad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &2026395300887848143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026395300887848142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2026419716011238232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5687,18 +5700,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5df00f1e2965e142bf60d3c0a0bd6d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2130197040787752195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026395300887848142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d90bfa40fc301c9439584375a0de203f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &2160692770397601233
@@ -26370,6 +26371,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3711821689369571975, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: param
+      value: 
+      objectReference: {fileID: 2025192505250538742}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
 --- !u!1001 &8022876660839532710

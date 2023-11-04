@@ -315,6 +315,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3191572693400800329, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7297416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191572693400800329, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71689975
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191572693400800329, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191572693400800329, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3711821689369571972, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
       propertyPath: m_Name
       value: Touch Drop
@@ -935,6 +951,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3306559255227465637, guid: 00d90c2676876274faade1192be002fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.034671783
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035541178256889039, guid: 00d90c2676876274faade1192be002fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 105.63306
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035541178256889039, guid: 00d90c2676876274faade1192be002fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -96.95801
+      objectReference: {fileID: 0}
     - target: {fileID: 4329634597084718411, guid: 00d90c2676876274faade1192be002fe, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -982,6 +1010,18 @@ PrefabInstance:
     - target: {fileID: 6929567713663453500, guid: 00d90c2676876274faade1192be002fe, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201203656545452231, guid: 00d90c2676876274faade1192be002fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 105.62988
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201203656545452231, guid: 00d90c2676876274faade1192be002fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -231.94995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995243044248200716, guid: 00d90c2676876274faade1192be002fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000030517578
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00d90c2676876274faade1192be002fe, type: 3}
@@ -1984,7 +2024,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 60ced9ed9a81f60479e1fd0504560c94, type: 2}
+  - {fileID: 2100000, guid: 8fd8118b504da434da915fb2ec72c5da, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1771,14 +1771,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.334
@@ -2600,6 +2600,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: BOLT
       objectReference: {fileID: 0}
+    - target: {fileID: 1562932351582036, guid: f28ca7cffd65f6348abe7519bfe054b5, type: 3}
+      propertyPath: m_TagString
+      value: Broad
+      objectReference: {fileID: 0}
     - target: {fileID: 1564338965129210, guid: f28ca7cffd65f6348abe7519bfe054b5, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -3062,7 +3066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4810345957958738, guid: f28ca7cffd65f6348abe7519bfe054b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 4810345957958738, guid: f28ca7cffd65f6348abe7519bfe054b5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3436,6 +3440,24 @@ CapsuleCollider:
   m_Height: 2.0000005
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: -55.56, z: 0.00000086426735}
+--- !u!1 &963664407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1562932351582036, guid: f28ca7cffd65f6348abe7519bfe054b5, type: 3}
+  m_PrefabInstance: {fileID: 963664390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &963664408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963664407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &971683440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8140,6 +8162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3711821689369571975, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: param
+      value: 
+      objectReference: {fileID: 963664407}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
 --- !u!1001 &8022876660839532710

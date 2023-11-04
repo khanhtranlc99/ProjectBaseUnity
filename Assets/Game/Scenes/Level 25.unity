@@ -271,14 +271,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.334
@@ -1194,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1393295278957832, guid: 2e227a90158e0f340a6b7d490c1ed265, type: 3}
+      propertyPath: m_TagString
+      value: Broad
+      objectReference: {fileID: 0}
     - target: {fileID: 1394146876440185, guid: 2e227a90158e0f340a6b7d490c1ed265, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1540,7 +1544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4550317256240957, guid: 2e227a90158e0f340a6b7d490c1ed265, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.61
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4550317256240957, guid: 2e227a90158e0f340a6b7d490c1ed265, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1742,6 +1746,24 @@ CapsuleCollider:
   m_Height: 2.0000005
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0.000061035156, z: -0.00000014901164}
+--- !u!1 &1268495370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1393295278957832, guid: 2e227a90158e0f340a6b7d490c1ed265, type: 3}
+  m_PrefabInstance: {fileID: 1268495361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1268495371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268495370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1319315385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +2455,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3711821689369571975, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: param
+      value: 
+      objectReference: {fileID: 1268495370}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
 --- !u!1001 &8022876660839532710

@@ -546,6 +546,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1549263948854113, guid: fca83cf442ab17c40844221f0e535790, type: 3}
+      propertyPath: m_TagString
+      value: Broad
+      objectReference: {fileID: 0}
     - target: {fileID: 1553920033439567, guid: fca83cf442ab17c40844221f0e535790, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1149,6 +1153,24 @@ CapsuleCollider:
   m_Height: 2.0000005
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940699}
+--- !u!1 &81821511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1549263948854113, guid: fca83cf442ab17c40844221f0e535790, type: 3}
+  m_PrefabInstance: {fileID: 81821496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &81821512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81821511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 0.85, z: 0.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &162129911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,14 +1574,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.334
@@ -3283,6 +3305,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3711821689369571975, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: param
+      value: 
+      objectReference: {fileID: 81821511}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
 --- !u!1001 &8022876660839532710

@@ -16,12 +16,14 @@ public class AdmobAds : MonoBehaviour
     private bool _isInited;
 
 #if UNITY_ANDROID
-    private const string MaxSdkKey = "M4GLwqezVT2WDo75OWFGOV873pVg6-3S3Kpz8Rxe_-9CnHI9oXPB2TI5LpnRnqvr8hpH8kw7i4KTMcc891KCad";
-    private const string InterstitialAdUnitId = "b54ac498d13ef37f";
-    private const string RewardedAdUnitId = "6b227ce71cafca73";
-    private const string BanerAdUnitId = "a7c39fcfb47b2e38";
+    private const string MaxSdkKey = "k4zcutB4Zm3UzNpe_LApO1CCQU38cBxs1KLXxDwI4B5hApPwBK9Hh39JyuXQBq8V_cFqAxK6uUsMBdpMSz8Nev";
+    private const string InterstitialAdUnitId = "b73e22412e94e4bc";
+    private const string RewardedAdUnitId = "16c67a3bfbca5c9c";
+    private const string BanerAdUnitId = "c83eb397373ced0a";
+    public  string AppOpenId = "a12343b1d3422351";
+    private const string MREC_Id = "3cb3f478429821c2";
 #elif UNITY_IOS
-    private const string MaxSdkKey = "M4GLwqezVT2WDo75OWFGOV873pVg6-3S3Kpz8Rxe_-9CnHI9oXPB2TI5LpnRnqvr8hpH8kw7i4KTMcc891KCad";
+    private const string MaxSdkKey = "k4zcutB4Zm3UzNpe_LApO1CCQU38cBxs1KLXxDwI4B5hApPwBK9Hh39JyuXQBq8V_cFqAxK6uUsMBdpMSz8Nev";
     private const string InterstitialAdUnitId = "c8d31e48f08ed31e";
     private const string RewardedAdUnitId = "02932bb866cbb369";
     private const string BanerAdUnitId = "ff665c0a75cadcc4";
@@ -37,6 +39,7 @@ public class AdmobAds : MonoBehaviour
             InitInterstitial();
             InitRewardVideo();
             InitializeBannerAds();
+            InitializeMRecAds();
 
             // MaxSdk.ShowMediationDebugger();
         };
@@ -503,7 +506,7 @@ public class AdmobAds : MonoBehaviour
         else
             MaxSdk.SetBannerWidth(BanerAdUnitId, 320);
 
-      
+        GameController.Instance.admobAds.ShowBanner();
     }
 
 
@@ -621,6 +624,58 @@ public class AdmobAds : MonoBehaviour
     {
         countdownAds += Time.unscaledDeltaTime;
     }
+    public void ShowAdIfReady()
+    {
+        Debug.LogError("ShowAdIfReady");
+        if (MaxSdk.IsAppOpenAdReady(AppOpenId))
+        {
+            MaxSdk.ShowAppOpenAd(AppOpenId);
+        }
+        else
+        {
+            MaxSdk.LoadAppOpenAd(AppOpenId);
+        }
+    }
+    public void InitializeMRecAds()
+    {
+        // MRECs are sized to 300x250 on phones and tablets
+        MaxSdk.CreateMRec(MREC_Id, MaxSdkBase.AdViewPosition.BottomCenter);
 
+        MaxSdkCallbacks.MRec.OnAdLoadedEvent += OnMRecAdLoadedEvent;
+        MaxSdkCallbacks.MRec.OnAdLoadFailedEvent += OnMRecAdLoadFailedEvent;
+        MaxSdkCallbacks.MRec.OnAdClickedEvent += OnMRecAdClickedEvent;
+        MaxSdkCallbacks.MRec.OnAdRevenuePaidEvent += OnMRecAdRevenuePaidEvent;
+        MaxSdkCallbacks.MRec.OnAdExpandedEvent += OnMRecAdExpandedEvent;
+        MaxSdkCallbacks.MRec.OnAdCollapsedEvent += OnMRecAdCollapsedEvent;
+    }
+
+    public void OnMRecAdLoadedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo) { }
+
+    public void OnMRecAdLoadFailedEvent(string adUnitId, MaxSdkBase.ErrorInfo error) { }
+
+    public void OnMRecAdClickedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo) { }
+
+    public void OnMRecAdRevenuePaidEvent(string adUnitId, MaxSdkBase.AdInfo adInfo) { }
+
+    public void OnMRecAdExpandedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo) { }
+
+    public void OnMRecAdCollapsedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo) { }
+
+
+    public void HandleShowMerec()
+    {
+        DestroyBanner();
+
+
+        MaxSdk.ShowMRec(MREC_Id);
+
+        Debug.LogError("HandleShowMerec");
+    }
+    public void HandleHideMerec()
+    {
+     
+        MaxSdk.HideMRec(MREC_Id);
+        ShowBanner();
+    }
 
 }

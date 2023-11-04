@@ -111,7 +111,14 @@ public class MusicManagerGameBase : SerializedMonoBehaviour
         }
 
     }
-
+    public void PlaySound(AudioClip paramWin)
+    {
+        if (!GameController.Instance.useProfile.OnMusic)
+            return;
+        // musicSource.clip = winMusic;
+        //musicSource.Play();
+        PlaySingle(paramWin, SourceAudio.Effect);
+    }
     public void PauseBGMusic()
     {
         musicSource.Pause();
