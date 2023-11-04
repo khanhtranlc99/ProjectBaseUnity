@@ -60,15 +60,18 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UILineTextureRenderer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\cryptopro\CryptoProObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283FieldElement.cs" />
+    <Compile Include="Assets\Game\Scripts\NewBolt.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\GamePlayController\GameScene.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1ParsingException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X9ObjectIdentifiers.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\DMath.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\RescalingPanels\RescaleDragPanel.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\CbcBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RSACoreEngine.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorSliderImage.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\StaticTree.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\MacUtilities.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineUser.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\ElGamalKeyPairGenerator.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UILineRendererList.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\ZStream.cs" />
@@ -88,11 +91,13 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Event\IMultiSceneSingleton.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ComboBox\DropDownList.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DsaKeyGenerationParameters.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Capsule.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\SceneBase.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Mobile\Scripts\LogView.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\GamePlayController\GamePlayController1.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\HomeScene\ShopTabButton.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\GameEvent.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\LengthCalculator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\WNafPreCompInfo.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\BufferedStreamCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\KeyUsage.cs" />
@@ -100,6 +105,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\DigestUtilities.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\SerpentEngineBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\encoders\IEncoder.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineTracer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsRsaSigner.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT571Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\IMemoable.cs" />
@@ -122,6 +128,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\GridView\FancyGridViewContext.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Transports\ServerSentEventsTransport.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BerSequence.cs" />
+    <Compile Include="Assets\Game\Scripts\Sound.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Unity\AdjustSessionFailure.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\CloudAndroid\Prefabs\PurchaseRowPrefab.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\MonoSpacing.cs" />
@@ -134,7 +141,10 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Interfaces.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\raw\Nat576.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ReorderableList\ReorderableListElement.cs" />
+    <Compile Include="Assets\Game\Scripts\Cameramove.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Star.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\DHKeyGeneratorHelper.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Ngon.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Curve.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\Floor.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RC4Engine.cs" />
@@ -157,6 +167,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsCredentials.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509NameEntryConverter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CompressionMethod.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Node.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerInteger.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalR\AuthenticationSample.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ElGamalParameters.cs" />
@@ -179,11 +190,13 @@
     <Compile Include="Assets\Base\3Party\Adjust\Unity\AdjustUtils.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\IDsaKCalculator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ProtocolVersion.cs" />
+    <Compile Include="Assets\Game\Scripts\Finish.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CombinedHash.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Mobile\Scripts\UIInputHelper.cs" />
     <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\Reporter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Events\EventNames.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\FixedPointCombMultiplier.cs" />
+    <Compile Include="Assets\Game\Scripts\Vibration.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Logger\DefaultLogger.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\SoftMaskScript.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\cert\CertificateParsingException.cs" />
@@ -197,7 +210,9 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\paddings\PaddedBufferedBlockCipher.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\MusicManager\MusicManagerGameBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPRange.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineMesh.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\IFiniteField.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\SizeModifier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerOctetString.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1Sequence.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\CardUI\2D Cards\CardStack2D.cs" />
@@ -209,6 +224,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\RsaKeyParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\IAsn1ApplicationSpecificParser.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\SelectionBox\SelectionBox.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\OffsetModifier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithIV.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\ToolTips\BoundTooltip\BoundTooltipTrigger.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerGeneralizedTime.cs" />
@@ -221,11 +237,11 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\oiw\ElGamalParameter.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Internal\BetterList.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DERSequenceParser.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509CertificateStructure.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\ECNamedCurveTable.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\OidTokenizer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsClientContextImpl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\SocketManager.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509CertificateStructure.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\NullDigest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2Point.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UICircle.cs" />
@@ -234,6 +250,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\MenuSystem\Menu.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\UIScrollToSelection.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Point.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplineThreading.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\RSAPublicKeyStructure.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\raw\Nat128.cs" />
@@ -267,6 +284,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\ECDsaSigner.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsPeer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsNullCompression.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\ObjectBender.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\IAsn1Choice.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509SignatureUtil.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsRsaUtilities.cs" />
@@ -276,6 +294,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\RsaKeyGenerationParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\WWWAuthenticateHeaderParser.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsECDsaSigner.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\TubeGenerator.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Helper.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\UserData\UserDataServices.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163FieldElement.cs" />
@@ -294,8 +313,9 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Messages\MessageRequest.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\UIVerticalScroller.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsECDheKeyExchange.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsAeadCipher.cs" />
+    <Compile Include="Assets\Game\Scripts\menu.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Messages\GMessages.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsAeadCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsCipherFactory.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\UserData\DebugManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\encoders\HexEncoder.cs" />
@@ -307,8 +327,8 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Transports\PostSendTransportBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\JSON\JSON.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Messages\MessageData.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalR\Authentication Providers\SampleCookieAuthentication.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\ScaleTransision.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalR\Authentication Providers\SampleCookieAuthentication.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283R1Point.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\UIFlippable.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\WebSocket\WebSocket.cs" />
@@ -317,6 +337,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerUniversalString.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Transports\PollingTransport.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1Field.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\PathGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Unity\Adjust.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorSampler.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\EmptyEnumerable.cs" />
@@ -324,6 +345,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R2FieldElement.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\TiltWindow.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\HashSet.cs" />
+    <Compile Include="Assets\Game\Scripts\Popup\WinBox.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsPurchaseManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\prng\DigestRandomGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R1Point.cs" />
@@ -357,6 +379,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\DefaultTlsCipherFactory.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponse.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283Field.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineComputer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\IAeadBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\PushbackStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\abc\ZTauElement.cs" />
@@ -364,11 +387,14 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\cert\CertificateEncodingException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\pem\PemWriter.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\ConfirmBox\ConfirmBox.cs" />
+    <Compile Include="Assets\Game\Scripts\Board.cs" />
     <Compile Include="Assets\Game\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IDSA.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ElGamalKeyGenerationParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DHKeyGenerationParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\ASN1Generator.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineRenderer.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\ObjectSequence.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Forms\Implementations\HTTPMultiPartForm.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Authentication\Digest.cs" />
@@ -393,6 +419,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShaderEffects\UILinearDodgeEffect.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\LegacyTlsClient.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\GOST3410ValidationParameters.cs" />
+    <Compile Include="Assets\Game\Scripts\Popup\ProgessIconText.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\LimitedInputStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\MqvPublicParameters.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\BestFitOutline.cs" />
@@ -403,12 +430,14 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsSessionImpl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\SignerInputBuffer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1Tags.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineProjector.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ComboBox\DropDownListItem.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\IapController\ShopBox\InappBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheService.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\NegotiationData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\AesWrapEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\NamedCurve.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\ResourceUtility.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Curve.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\CurlyUI\CUIImage.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R1Point.cs" />
@@ -419,6 +448,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\CcmBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ParametersWithSBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Cookies\Cookie.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\RotationModifier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalRCore\Messages\Invocation.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ISO18033KDFParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\Sha384Digest.cs" />
@@ -436,10 +466,12 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\SupplementalDataEntry.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\BufferedAeadBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\PEMParser.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplineTrigger.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsSession.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509Certificate.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\XTEAEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalRCore\Encoders\JsonDotNetEncoder.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\EdgeColliderGenerator.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\GridView\FancyGridViewCell.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\IesParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\anssi\ANSSINamedCurves.cs" />
@@ -455,6 +487,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\DHBasicKeyPairGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Authentication\DigestStore.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224R1Curve.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplineSample.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\CongratulationBox\CongratulationBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\CfbBlockCipher.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShineEffector.cs" />
@@ -463,8 +496,10 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables1kGcmExponentiator.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\StringHelper.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\FileHelper.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\ObjectController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\CRC32.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsLoginManager.cs" />
+    <Compile Include="Assets\Game\Scripts\Popup\GachaBar.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\SerpentEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\JZlib.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorPickerTester.cs" />
@@ -481,6 +516,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\raw\Mod.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\nist\NISTObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Field.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\WaveformGenerator.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Mobile\Scripts\ConsoleBase.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Datas\BirdChestData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\IndefiniteLengthInputStream.cs" />
@@ -490,6 +526,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509ExtensionBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\GOST3410PublicKeyParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DHValidationParameters.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\ImageDB.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IVerifierFactoryProvider.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ScrollPositionController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ECPublicKeyParameters.cs" />
@@ -513,13 +550,13 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FlowLayoutGroup.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\PrfAlgorithm.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\CamelliaWrapEngine.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\HomeScene\HomeTabButton.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\Sha512tDigest.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Messages\MessageAttribute.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ECKeyGenerationParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\TeeOutputStream.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\HomeScene.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\OCBBlockCipher.cs" />
-    <Compile Include="Assets\Base\00_BaseCode\Scripts\HomeScene\HomeTabButton.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IStreamCalculator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\CamelliaEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonMockWrapper.cs" />
@@ -529,6 +566,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\JsonEncoders\DefaultJSonEncoder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IAsymmetricBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Curve.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\ScriptableObjectUtility.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256R1Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\DSAParameter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\DHParametersHelper.cs" />
@@ -553,6 +591,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\CardUI\Superellipse Creation\SuperellipsePoints.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RFC3211WrapEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\EAXBlockCipher.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\DuplicateUtility.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DsaKeyParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\pem\PemReader.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\HTTP\UploadStream.cs" />
@@ -577,10 +616,13 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\paddings\ZeroBytePadding.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT193R2Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsProtocol.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SurfaceGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\FilterStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\ZlibCodec.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Unity\AdjustEnvironment.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\TileSizeFitter.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\RoundedRectangle.cs" />
+    <Compile Include="Assets\Game\Scripts\Popup\BroadProgess.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\BoxSlider.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ClientCertificateType.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\CableCurve.cs" />
@@ -592,12 +634,14 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\CrystalFramework\Utility\SafeArea.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\DesEdeEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\IPolynomialExtensionField.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\ParticleController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT239FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CertificateRequest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DHParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\FileStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPProtocolFactory.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\MacAlgorithm.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplinePositioner.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsClientContext.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\AsymmetricCipherKeyPair.cs" />
@@ -613,6 +657,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\GException.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Unity\AdjustAppStoreSubscription.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsBlockCipher.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Spiral.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShaderEffects\UIMultiplyEffect.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\PopupReward\RewardElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPManager.cs" />
@@ -620,8 +665,10 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IMac.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerBMPString.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\HomeScene\RankTabButton.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Ellipse.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheMaintananceParams.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\VMPCKSA3Engine.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\IO\CSV.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\ScrollRect\FancyScrollRect.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\GOST3410Signer.cs" />
@@ -638,8 +685,9 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\LongArray.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\DHPublicKey.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\TableLayoutGroup.cs" />
-    <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\PingPanel.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Spline.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ScrollSnap.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\PingPanel.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\WinPopUp.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ConnectionEnd.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519Field.cs" />
@@ -677,9 +725,10 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Transports\TransportBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509DefaultEntryConverter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPConnection.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1TaggedObject.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\IsoTrailers.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineMorph.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\EventDispatcher\EventID.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Error.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Curve.cs" />
@@ -687,6 +736,8 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\ScrollRect\IFancyScrollRectContext.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UICornerCut.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\InvalidKeyException.cs" />
+    <Compile Include="Assets\Game\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Game\Mesh\King Kong\Chain kingkong\KingKong.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ExporterLabel.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\GeneralNames.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Unity\AdjustLogLevel.cs" />
@@ -740,6 +791,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ECBasisType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509NameTokenizer.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CipherSuite.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Rectangle.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\Events\ColorChangedEvent.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\X931Signer.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ExtensionsToggleGroup.cs" />
@@ -770,6 +822,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\Tables8kGcmMultiplier.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\ToolTips\HoverTooltip.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CertChainType.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SampleCollection.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\InfCodes.cs" />
     <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\LegacyTlsAuthentication.cs" />
@@ -779,17 +832,20 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\GameUtils.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\djb\Curve25519FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\VMPCEngine.cs" />
+    <Compile Include="Assets\Game\Scripts\GameManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\DataLengthException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Hubs\Hub.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1FieldElement.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\RandomWatchVideo.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\CryptoException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163Field.cs" />
+    <Compile Include="Assets\Game\UIManger\DDZ\Scripts\SafeAreaController.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsSoftKeyboardManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509CertificateParser.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\BaseOutputStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1FieldElement.cs" />
+    <Compile Include="Assets\Game\Scripts\Wednesday.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Unity\AdjustAttribution.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\TigerDigest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsUtilities.cs" />
@@ -806,6 +862,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\CSVOnlineReader.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\UILocalizeFirstUpper.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\GServices.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\PolygonColliderGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\GOST28147Mac.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsKeyExchange.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\RefreshableBehaviour.cs" />
@@ -818,6 +875,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\GObservable.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\RSABlindingParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponseStatus.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\MeshGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\CbcBlockCipherMac.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT283K1Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R1Curve.cs" />
@@ -839,17 +897,23 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1Point.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ContentScrollSnapHorizontal.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ScrollSnapBase.cs" />
+    <Compile Include="Assets\Game\Scripts\Bolt.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\UILocalizeToUpper.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DEROctetStringParser.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\ZlibBaseStream.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\ColorModifier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP160R1FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\IX509Extension.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\BasicConstraints.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\sec\SECNamedCurves.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\Poly1305.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\Extensions.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplinePoint.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\Scroller\MovementType.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplinePrefs.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Service\SingletonClass.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\MeshUtility.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\ArrayUtility.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShaderEffects\UISoftAdditiveEffect.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\endo\GlvTypeBEndomorphism.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IAsymmetricCipherKeyPairGenerator.cs" />
@@ -863,6 +927,7 @@
     <Compile Include="Assets\Base\3Party\Adjust\iOS\AdjustiOS.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ReturnKeyTriggersButton.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Yielders.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\TS_Bounds.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\Streams.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\encoders\Base64Encoder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheFileInfo.cs" />
@@ -870,6 +935,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\SipHash.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerStringBase.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\SplineSampleModifier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\SkipjackEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\ZTree.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\CrystalFramework\Utility\Demos\SafeAreaDemo.cs" />
@@ -883,10 +949,11 @@
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsFriendsManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsContext.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsPhysicalGamepadManager.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\LinearAlgebraUtility.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Datas\LevelChestData.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\InfTree.cs" />
     <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Point.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\zlib\InfTree.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\HeartbeatManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ECKeyParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\Certificate.cs" />
@@ -930,6 +997,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\Strings.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT233R1Curve.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\Game\Scripts\ExampleHomeScreen.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\CurlyUI\CUIMisc.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\BoxController\BoxController.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\HorizontalScrollSnap.cs" />
@@ -970,6 +1038,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\gcm\IGcmMultiplier.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP521R1Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\macs\ISO9797Alg3Mac.cs" />
+    <Compile Include="Assets\Game\Scripts\Key.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\ec\CustomNamedCurves.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Analytic\RemoteConfigController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1InputStream.cs" />
@@ -1014,6 +1083,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\pem\PemHeader.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\paddings\Pkcs7Padding.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsStream.cs" />
+    <Compile Include="Assets\Game\Scripts\Popup\SuggetBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerNull.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509ObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERSetParser.cs" />
@@ -1029,6 +1099,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\GridView\IFancyGridViewContext.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Forms\Implementations\HTTPUrlEncodedForm.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\BezierPath.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\SplinePrimitive.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ScrollRectLinker.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Forms\Implementations\RawJSonForm.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalRCore\Encoders\LitJsonEncoder.cs" />
@@ -1040,6 +1111,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsHandshakeHash.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\date\DateTimeUtilities.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\IO\SplineParser.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsKeyExchange.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\JsonEncoders\IJsonEncoder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\ECFieldElement.cs" />
@@ -1057,6 +1129,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\EffectMoney\MoneyEffectController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\encodings\OaepEncoding.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ScrollSnapScrollbarHelper.cs" />
+    <Compile Include="Assets\Game\Scripts\TouchDrop.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\Enums.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\DHDomainParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X9Curve.cs" />
@@ -1073,6 +1146,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT113R2Point.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\HeartbeatMessageType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\RC5Parameters.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\AdsController\AdmobAds.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\CloudAndroid\Scripts\Utility.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP256K1Field.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\ECKeyPairGenerator.cs" />
@@ -1090,6 +1164,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\PublicKeyFactory.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShineEffect.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\BufferedAsymmetricBlockCipher.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\BlankUser.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Event\MessageRouter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\KeyException.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UISquircle.cs" />
@@ -1108,6 +1183,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IVerifierFactory.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1Point.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\JsonDotNetEncoder.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineFollower.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalRCore\Messages\Message.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\HeartbeatMode.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\ECPrivateKeyParameters.cs" />
@@ -1162,6 +1238,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorSlider.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\SubjectPublicKeyInfo.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP384R1FieldElement.cs" />
+    <Compile Include="Assets\Game\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPResponse.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Android\AdjustAndroid.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\abc\Tnaf.cs" />
@@ -1179,12 +1256,14 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\misc\NetscapeRevocationURL.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DefiniteLengthInputStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\operators\Asn1Signature.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\TS_Transform.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\Messages\MessageResponse.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Event\ServiceFactory.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERSequenceParser.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\AudioManager.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\TBSCertificateStructure.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\ExtensionsToggle.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\SceneUtility.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\TBSCertificateStructure.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\CloudAndroid\Scripts\AdsPage.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\modes\CtsBlockCipher.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RC564Engine.cs" />
@@ -1192,6 +1271,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsDssSigner.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\MaxFragmentLength.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\cryptopro\GOST3410ParamSetParameters.cs" />
+    <Compile Include="Assets\Game\Scripts\maskcheck.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\UIWindowBase.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\RsaKeyPairGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\ISigner.cs" />
@@ -1204,6 +1284,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\ScrollRect\FancyScrollRectCell.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Mobile\Scripts\SubMenus\Pay.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsShareManager.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\TransformUtility.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Windows\FBWindowsTournamentsManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CertificateStatusType.cs" />
@@ -1221,8 +1302,11 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\WNafL2RMultiplier.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\CurlyUI\CUIText.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\SignatureException.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\TransformModule.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Windows\AdjustWindows.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalR\SimpleStreamingSample.cs" />
+    <Compile Include="Assets\Game\Scripts\Popup\ProgessLevelChest.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\IO\SVG.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\GamePlayController\PlayerContain1.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\GenericPolynomialExtensionField.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DERGenerator.cs" />
@@ -1232,6 +1316,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\ServerSentEvents\EventSourceResponse.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\Scroller\MovementDirection.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsECDHKeyExchange.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Line.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsEccUtilities.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\LitJson\JsonException.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\KeyExchangeAlgorithm.cs" />
@@ -1256,11 +1341,12 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\RecordStream.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\SEEDWrapEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPConnectionStates.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Utilities\TS_Mesh.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\generators\DHKeyPairGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\AbstractECMultiplier.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Messages\ClientMessage.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\MzU.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\encodings\ISO9796d1Encoding.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Messages\ClientMessage.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\AppOpenAdManager.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\field\PrimeField.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\BufferedBlockCipher.cs" />
@@ -1268,100 +1354,21 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IWrapper.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerBitString.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\sec\SECObjectIdentifiers.cs" />
+    <Compile Include="Assets\Game\Scripts\TouchBolt.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP224K1FieldElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerT61String.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\SocketOptions.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\Fader.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\paddings\ISO10126d2Padding.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\ColorImage.cs" />
-    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsDHKeyExchange.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\RandomDsaKCalculator.cs" />
+    <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsDHKeyExchange.cs" />
     <Compile Include="Assets\Base\FacebookSDK\Examples\Mobile\Scripts\SubMenus\AppEvents.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AlertLevel.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\FiniteFieldDheGroup.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\encodings\Pkcs1Encoding.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\digests\WhirlpoolDigest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192R1FieldElement.cs" />
-    <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\AdsController\AdmobAds.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineFollower.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineComputer.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\RoundedRectangle.cs" />
-    <Compile Include="Assets\Game\Scripts\maskcheck.cs" />
-    <Compile Include="Assets\Game\Scripts\NewBolt.cs" />
-    <Compile Include="Assets\Game\Scripts\Cameramove.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Rectangle.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Star.cs" />
-    <Compile Include="Assets\Game\Scripts\Board.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Ngon.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\OffsetModifier.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\TransformUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\DMath.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\LinearAlgebraUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\IO\SplineParser.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\MeshGenerator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplineTrigger.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineRenderer.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineUser.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\ParticleController.cs" />
-    <Compile Include="Assets\Game\Scripts\menu.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\ObjectSequence.cs" />
-    <Compile Include="Assets\Game\Scripts\Key.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\EdgeColliderGenerator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\TransformModule.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\IO\SVG.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplinePositioner.cs" />
-    <Compile Include="Assets\Game\Scripts\TouchDrop.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\ScriptableObjectUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplineThreading.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Node.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SampleCollection.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Line.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineMorph.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Capsule.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplineSample.cs" />
-    <Compile Include="Assets\Game\Scripts\Bolt.cs" />
-    <Compile Include="Assets\Game\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Game\Mesh\King Kong\Chain kingkong\KingKong.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\ColorModifier.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\PathGenerator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\LengthCalculator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\ObjectController.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Spiral.cs" />
-    <Compile Include="Assets\Game\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Game\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineTracer.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplinePoint.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\SplinePrefs.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\Ellipse.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\DuplicateUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineProjector.cs" />
-    <Compile Include="Assets\Game\Scripts\Finish.cs" />
-    <Compile Include="Assets\Game\UIManger\DDZ\Scripts\SafeAreaController.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\MeshUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\ArrayUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\IO\CSV.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\TS_Mesh.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\ResourceUtility.cs" />
-    <Compile Include="Assets\Game\Scripts\Wednesday.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\BlankUser.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\WaveformGenerator.cs" />
-    <Compile Include="Assets\Game\Scripts\Vibration.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\TS_Bounds.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\ObjectBender.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Primitives\SplinePrimitive.cs" />
-    <Compile Include="Assets\Game\Scripts\TouchBolt.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\RotationModifier.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\ImageDB.cs" />
-    <Compile Include="Assets\Game\Scripts\Sound.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\TS_Transform.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SplineMesh.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\TubeGenerator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\SizeModifier.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\SplineSampleModifier.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Utilities\SceneUtility.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\SurfaceGenerator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Components\PolygonColliderGenerator.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Core\Spline.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\com.unity.uiextensions\Runtime\Resources\Shaders\UIAdditive.shader" />
@@ -1498,190 +1505,190 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.GIModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsNativeModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityCurlModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.WindModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.XRModule.dll</HintPath>
+      <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="ACTk.Editor">
       <HintPath>Library\ScriptAssemblies\ACTk.Editor.dll</HintPath>
@@ -1704,14 +1711,20 @@
     <Reference Include="UnityEngine.Purchasing.SecurityStub">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="AppsFlyer.Editor">
+      <HintPath>Library\ScriptAssemblies\AppsFlyer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="ACTk.Examples.Genuine.Editor">
       <HintPath>Library\ScriptAssemblies\ACTk.Examples.Genuine.Editor.dll</HintPath>
@@ -1731,14 +1744,14 @@
     <Reference Include="MaxSdk.Scripts.IntegrationManager.Editor">
       <HintPath>Library\ScriptAssemblies\MaxSdk.Scripts.IntegrationManager.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="AppsFlyer.Editor">
-      <HintPath>Library\ScriptAssemblies\AppsFlyer.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization.Config">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.TaskExtension">
       <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
@@ -1764,8 +1777,14 @@
     <Reference Include="Firebase.Crashlytics">
       <HintPath>Library\PackageCache\com.google.firebase.crashlytics@36b50a7241bd\Firebase\Plugins\Firebase.Crashlytics.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.App">
       <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Firebase\Plugins\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Game\Demigiant\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
@@ -1779,8 +1798,14 @@
     <Reference Include="FileHelpers">
       <HintPath>Assets\Base\3Party\Joker2X\FileHelpers.dll</HintPath>
     </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Game\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Game\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
       <HintPath>Library\PackageCache\com.google.firebase.app@18c3e06f7f0f\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
@@ -1797,23 +1822,8 @@
     <Reference Include="Facebook.Unity">
       <HintPath>Assets\Base\FacebookSDK\Plugins\Facebook.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween46">
-      <HintPath>Assets\Game\Demigiant\DOTween\DOTween46.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets\Game\Demigiant\DOTween\DOTween50.dll</HintPath>
-    </Reference>
-    <Reference Include="DemiLib">
-      <HintPath>Assets\Game\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween43">
       <HintPath>Assets\Game\Demigiant\DOTween\DOTween43.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>Assets\Game\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Game\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Unity2020.3.15f2\2020.3.38f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -2194,29 +2204,33 @@
       <Project>{09E9EE3F-08F6-2FA2-DD61-124758C4973C}</Project>
       <Name>Unity.Services.Analytics.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="AppsFlyer.Player.csproj">
+      <Project>{F919CCC6-F39C-322D-7B09-8AB1C73674D0}</Project>
+      <Name>AppsFlyer.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.Player.csproj">
       <Project>{6A060609-0133-12DC-8E29-9D5CA3D2A70B}</Project>
       <Name>MoreMountains.NiceVibrations.Haptics.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{5A15CDE6-F440-F534-920E-7C0CDD43AB65}</Project>
-      <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.Security.Player.csproj">
       <Project>{7F024B07-5955-272A-8542-8597ED77A745}</Project>
       <Name>UnityEngine.Purchasing.Security.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.Player.csproj">
+      <Project>{5A15CDE6-F440-F534-920E-7C0CDD43AB65}</Project>
+      <Name>UnityEngine.UI.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="ACTk.Runtime.Player.csproj">
       <Project>{CF4637E4-1826-63AD-35CC-5D84BF43AF9A}</Project>
       <Name>ACTk.Runtime.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{67371B01-4BB6-F6C7-E9E2-215C93D29209}</Project>
-      <Name>Unity.Services.Core.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Demos.Player.csproj">
       <Project>{FA003A0F-3579-A08D-3866-AC33215A9D24}</Project>
       <Name>MoreMountains.NiceVibrations.Demos.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Player.csproj">
+      <Project>{67371B01-4BB6-F6C7-E9E2-215C93D29209}</Project>
+      <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UniRx.Player.csproj">
       <Project>{3AF8ACC2-C96A-87E6-5454-B2497D4BE8C5}</Project>
@@ -2253,10 +2267,6 @@
     <ProjectReference Include="Unity.Recorder.Player.csproj">
       <Project>{5237FB01-C565-F549-3278-72D98CC0EA50}</Project>
       <Name>Unity.Recorder.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="AppsFlyer.Player.csproj">
-      <Project>{F919CCC6-F39C-322D-7B09-8AB1C73674D0}</Project>
-      <Name>AppsFlyer.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

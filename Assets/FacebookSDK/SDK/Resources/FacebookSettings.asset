@@ -16,9 +16,9 @@ MonoBehaviour:
   clientTokens:
   - 
   appIds:
-  - 0
+  - 306562475484380
   appLabels:
-  - App Name
+  - 'Nuts And Bolts: Screw Master'
   cookie: 1
   logging: 1
   status: 1

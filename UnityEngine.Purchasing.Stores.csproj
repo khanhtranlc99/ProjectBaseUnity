@@ -191,8 +191,8 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Android\GooglePlay\Models\GoogleProductMetadata.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\FakeStore\UIFakeStoreWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Android\GooglePlay\AAR\Utils\GooglePurchaseBuilder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Networking\QueryHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Android\GooglePlay\AAR\MetricizedGooglePlayStoreService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Networking\QueryHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Android\GooglePlay\StoreCallbackExtensionMethods.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Android\IUnityCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.4.1\Runtime\Stores\Android\GooglePlay\AAR\Listeners\GoogleConsumeResponseListener.cs" />
