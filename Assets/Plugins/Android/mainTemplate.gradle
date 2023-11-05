@@ -14,9 +14,6 @@
             url "https://artifact.bytedance.com/repository/pangle" // Assets/MaxSdk/Mediation/ByteDance/Editor/Dependencies.xml:8
         }
         maven {
-            url "https://android-sdk.is.com/" // Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml:8
-        }
-        maven {
             url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" // Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml:8
         }
         maven {
@@ -47,13 +44,12 @@ dependencies {
     implementation 'com.applovin.mediation:google-adapter:[22.5.0.0]' // Assets/MaxSdk/Mediation/Google/Editor/Dependencies.xml:5
     implementation 'com.applovin.mediation:google-ad-manager-adapter:[22.5.0.0]' // Assets/MaxSdk/Mediation/GoogleAdManager/Editor/Dependencies.xml:5
     implementation 'com.applovin.mediation:inmobi-adapter:10.6.0.1' // Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml:4
-    implementation 'com.applovin.mediation:ironsource-adapter:7.5.2.0.0' // Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml:8
     implementation 'com.applovin.mediation:mintegral-adapter:16.5.41.0' // Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml:8
     implementation 'com.applovin.mediation:mytarget-adapter:5.19.0.0' // Assets/MaxSdk/Mediation/MyTarget/Editor/Dependencies.xml:4
     implementation 'com.applovin.mediation:unityads-adapter:4.9.1.0' // Assets/MaxSdk/Mediation/UnityAds/Editor/Dependencies.xml:4
     implementation 'com.applovin.mediation:verve-adapter:2.20.0.0' // Assets/MaxSdk/Mediation/Verve/Editor/Dependencies.xml:4
     implementation 'com.applovin.mediation:yandex-adapter:6.1.0.0' // Assets/MaxSdk/Mediation/Yandex/Editor/Dependencies.xml:4
-    implementation 'com.applovin:applovin-sdk:11.11.3' // Assets/MaxSdk/AppLovin/Editor/Dependencies.xml:4
+    implementation 'com.applovin:applovin-sdk:11.11.0' // Assets/MaxSdk/AppLovin/Editor/Dependencies.xml:4
     implementation 'com.appsflyer:af-android-sdk:6.5.2' // Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml:6
     implementation 'com.appsflyer:unity-wrapper:6.5.2' // Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml:8
     implementation 'com.facebook.android:facebook-applinks:[16.0,17)' // Assets/Base/FacebookSDK/Plugins/Editor/Dependencies.xml:6
