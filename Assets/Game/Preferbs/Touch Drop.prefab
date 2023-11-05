@@ -136,3 +136,6 @@ MonoBehaviour:
   hold: {fileID: 3162670633882303191, guid: 233d70087c5414b41a2a276ab68e73aa, type: 3}
   useBoosterDrill: 0
   useBoosterDestroyScew: 0
+  param: {fileID: 0}
+  gameObjects: []
+  tempMt: {fileID: 2100000, guid: 3681d4c6fc4b5934c975ca8c11d27b65, type: 2}

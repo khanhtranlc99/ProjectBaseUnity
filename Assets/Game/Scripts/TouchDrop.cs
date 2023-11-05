@@ -92,6 +92,15 @@ public class TouchDrop : MonoBehaviour
                             print(" " + _hit.collider.gameObject.name);
                         }
                     }
+
+                    if (_hit.collider.gameObject.CompareTag("FillAds"))
+                    {
+                        if (gameManager.gamestate == GameManager.State.Done)
+                        {
+                            var fillingplace = _hit.collider.gameObject;
+                            fillingplace.GetComponent<FillAds>().OnClick();
+                        }
+                    }
                 }
             }
             if (useBoosterDrill)
@@ -108,8 +117,11 @@ public class TouchDrop : MonoBehaviour
                         GameObject spawnedObject =  Instantiate(hold, spawnPosition, Quaternion.identity);
                         Vector3 surfaceNormal = _hit.normal;
                         spawnedObject.transform.up = surfaceNormal;
+                        var temp = spawnedObject.transform.position;
+                        spawnedObject.transform.position = new Vector3(temp.x, temp.y,-0.7f);
                         useBoosterDrill = false;
                         UIManager.INSTANCE.BlockBooster(true);
+                        TutDrillBooster.Instance.OffTutDrill();
                     }
                 }
 
@@ -129,7 +141,11 @@ public class TouchDrop : MonoBehaviour
             }
         }
     }
+    public void HandleFillAds()
+    {
 
+
+    }
     // ReSharper disable Unity.PerformanceAnalysis
     public void Filling(GameObject fillingreferance)
     {
@@ -273,6 +289,7 @@ public class TouchDrop : MonoBehaviour
 
             useBoosterDestroyScew = false;
             UIManager.INSTANCE.BlockBooster(true);
+            TutDestroyBooster.Instance.OffTutDestroy();
         }
     }
     public void HandleLogicDrill(Vector3 param)
@@ -283,13 +300,30 @@ public class TouchDrop : MonoBehaviour
         useBoosterDrill = false;
     }
     public GameObject param;
+    public List<GameObject> gameObjects;
+    public Material tempMt;
     [Button]
     private void Test()
     {
-        param = GameObject.Find("Board");
+        //param = GameObject.Find("Board");
 
-        param.AddComponent<BoxCollider>().size = new Vector3(0.85f,0.85f,0.85f);
-        param.gameObject.tag = "Broad";
+        //param.AddComponent<BoxCollider>().size = new Vector3(0.85f,0.85f,0.85f);
+        //param.gameObject.tag = "Broad";
+        var temp = GameObject.FindObjectsOfType<GameObject>();
+        gameObjects = new List<GameObject>();
+        foreach (var item in temp)
+        {
+            if(item.name == "polySurface1")
+            {
+                gameObjects.Add(item);
+            }
+            //item.GetComponent<MeshRenderer>().material = tempMt;
+        }
+        foreach (var item in gameObjects)
+        {
+         
+            item.GetComponent<MeshRenderer>().material = tempMt;
+        }
 
     }
 }

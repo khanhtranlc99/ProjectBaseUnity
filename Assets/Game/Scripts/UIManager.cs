@@ -62,6 +62,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
+        Debug.LogError("UseProfile.FirstLoading " + UseProfile.FirstLoading);
         if (helplevel.Contains(LvlNum))
         {
             if (PinObject != null && FillObject != null)
@@ -96,7 +97,7 @@ public class UIManager : MonoBehaviour
     }
     public void HandleUnlock()
     {
-        if(UseProfile.CurrentLevel < 4)
+        if(UseProfile.CurrentLevel < 5)
         {
             btnBoosterDrill.gameObject.SetActive(false);
         }
@@ -104,7 +105,7 @@ public class UIManager : MonoBehaviour
         {
             btnBoosterDrill.gameObject.SetActive(true);
         }
-        if (UseProfile.CurrentLevel < 6)
+        if (UseProfile.CurrentLevel < 7)
         {
             btnDestroyScew.gameObject.SetActive(false);
         }
@@ -382,6 +383,7 @@ public class UIManager : MonoBehaviour
         UseProfile.DrillBooster -= 1;
         HandleShowStateBooster();
         BlockBooster(false);
+        TutDrillBooster.Instance.MoveTutDrill();
     }
     public void HandleBoosterDestroyScew()
     {
@@ -389,6 +391,7 @@ public class UIManager : MonoBehaviour
         UseProfile.DestroyScewBooster -= 1;
         HandleShowStateBooster();
         BlockBooster(false);
+        TutDestroyBooster.Instance.MoveTutDestroy();
     }
     public void ShowSetting()
     {

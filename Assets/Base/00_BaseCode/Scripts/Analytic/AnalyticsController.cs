@@ -96,6 +96,22 @@ public class AnalyticsController : MonoBehaviour
     }
 
     #region Event
+
+    public void LoadingComplete()
+    {
+
+
+        if (!firebaseInitialized) return;
+
+        if (!UseProfile.FirstLoading)
+        {
+            FirebaseAnalytics.LogEvent("first_loading_complete");
+            UseProfile.FirstLoading = true;
+        }
+
+
+    }
+
     public void LogLevelStart(int level)
     {
         if (!firebaseInitialized) return;
@@ -515,6 +531,10 @@ public class AnalyticsController : MonoBehaviour
     {
         SetUserProperties();
     }
+
+
+
+
 }
 
 public enum ActionClick
@@ -548,6 +568,7 @@ public enum ActionWatchVideo
     RewardEndGame = 10,
     DrillBooster,
     DestroyScewBooster,
+    HoldAds
 }
 
 public enum ActionShowInter

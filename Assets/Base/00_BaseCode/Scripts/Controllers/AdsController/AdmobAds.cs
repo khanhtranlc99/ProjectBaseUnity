@@ -626,7 +626,7 @@ public class AdmobAds : MonoBehaviour
     }
     public void ShowAdIfReady()
     {
-        Debug.LogError("ShowAdIfReady");
+        Debug.Log("ShowAdIfReady");
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
             MaxSdk.ShowAppOpenAd(AppOpenId);
@@ -669,7 +669,7 @@ public class AdmobAds : MonoBehaviour
 
         MaxSdk.ShowMRec(MREC_Id);
 
-        Debug.LogError("HandleShowMerec");
+        Debug.Log("HandleShowMerec");
     }
     public void HandleHideMerec()
     {

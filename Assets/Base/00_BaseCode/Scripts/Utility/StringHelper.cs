@@ -4,6 +4,7 @@ using UnityEngine;
 
 public static class StringHelper
 {
+    public const string LOADING_COMPLETE = "LOADING_COMPLETE";
     public const string ONOFF_SOUND = "ONOFF_SOUND";
     public const string ONOFF_MUSIC = "ONOFF_MUSIC";
     public const string ONOFF_VIBRATION = "ONOFF_VIBRATION";

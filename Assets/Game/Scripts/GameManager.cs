@@ -94,6 +94,9 @@ public class GameManager : MonoBehaviour
         }
         dupcolider.GetComponent<CircleCollider2D>().enabled = false;
         Vibration.Init();
+        GameController.Instance.AnalyticsController.LoadingComplete();
+
+
     }
     public bool once;
     void Update()
