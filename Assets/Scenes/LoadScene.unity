@@ -1425,14 +1425,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1961149514}
-  - component: {fileID: 1961149515}
   m_Layer: 0
   m_Name: OpenAppAds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1961149514
 Transform:
   m_ObjectHideFlags: 0
@@ -1447,18 +1446,6 @@ Transform:
   m_Father: {fileID: 8893301430582999387}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1961149515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961149513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b1ee37a662fa17419dbcd9edf1e38c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2054971387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1646,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6545023523613581029}
   - component: {fileID: 7749172274503695240}
-  - component: {fileID: 8071589202860101508}
   m_Layer: 0
   m_Name: AnalyticController
   m_TagString: Untagged
@@ -1988,42 +1974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d630ca840c7a05a468ac0ab9a7c10e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8071589202860101508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340694600124038606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 525ece82a472e4dea837e1ef938fd15d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startManually: 1
-  appToken: 
-  environment: 0
-  logLevel: 3
-  eventBuffering: 0
-  sendInBackground: 0
-  launchDeferredDeeplink: 1
-  needsCost: 0
-  coppaCompliant: 0
-  defaultTracker: 
-  urlStrategy: 0
-  startDelay: 0
-  secretId: 0
-  info1: 0
-  info2: 0
-  info3: 0
-  info4: 0
-  preinstallTracking: 0
-  preinstallFilePath: 
-  playStoreKidsApp: 0
-  iadInfoReading: 1
-  adServicesInfoReading: 1
-  idfaInfoReading: 1
-  skAdNetworkHandling: 1
 --- !u!114 &8381228606123546015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2041,6 +1991,7 @@ MonoBehaviour:
   dataContain: {fileID: 3508337466450210151}
   musicManager: {fileID: 919154514}
   admobAds: {fileID: 1573333644}
+  startLoading: {fileID: 2054971388}
   AnalyticsController: {fileID: 7749172274503695240}
   iapController: {fileID: 5348018437005545746}
   currentScene: 0

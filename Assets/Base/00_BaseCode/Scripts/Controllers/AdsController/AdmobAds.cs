@@ -32,7 +32,7 @@ public class AdmobAds : MonoBehaviour
     {
         countdownAds = 10000;
         #region Applovin Ads
-        CheckResetCaping();
+   
         MaxSdkCallbacks.OnSdkInitializedEvent += (MaxSdkBase.SdkConfiguration sdkConfiguration) =>
         {
             Debug.Log("MAX SDK Initialized");
@@ -40,7 +40,7 @@ public class AdmobAds : MonoBehaviour
             InitRewardVideo();
             InitializeBannerAds();
             InitializeMRecAds();
-
+            InitializeOpenAppAds();
             // MaxSdk.ShowMediationDebugger();
         };
         MaxSdk.SetVerboseLogging(true);
@@ -145,7 +145,7 @@ public class AdmobAds : MonoBehaviour
             {
                 GameController.Instance.AnalyticsController.LoadInterEligible();
 
-                if (countdownAds > RemoteConfigController.GetFloatConfig(FirebaseConfig.DELAY_SHOW_INITSTIALL, 90))
+                if (countdownAds > RemoteConfigController.GetFloatConfig(FirebaseConfig.DELAY_SHOW_INITSTIALL, 30))
                 {
                     ShowInterstitialHandle(isShowImmediatly, actionWatchLog, actionIniterClose, level);
 
@@ -624,9 +624,23 @@ public class AdmobAds : MonoBehaviour
     {
         countdownAds += Time.unscaledDeltaTime;
     }
-    public void ShowAdIfReady()
+    #region AppOpenAds
+    public void InitializeOpenAppAds()
     {
-        Debug.Log("ShowAdIfReady");
+        MaxSdkCallbacks.AppOpen.OnAdLoadedEvent += delegate { ShowOpenAppAdsReady(); };
+        MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { GameController.Instance.startLoading.InitState(); };
+        MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { GameController.Instance.startLoading.InitState(); };
+        MaxSdk.LoadAppOpenAd(AppOpenId);
+    
+
+     
+    
+  
+    }
+
+    public void ShowOpenAppAdsReady()
+    {
+     
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
             MaxSdk.ShowAppOpenAd(AppOpenId);
@@ -634,8 +648,18 @@ public class AdmobAds : MonoBehaviour
         else
         {
             MaxSdk.LoadAppOpenAd(AppOpenId);
+            GameController.Instance.startLoading.InitState();
         }
+    
     }
+    public void OnAppOpenDismissedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
+    {
+        MaxSdk.LoadAppOpenAd(GameController.Instance.admobAds.AppOpenId);
+  
+     
+    }
+    #endregion
+
     public void InitializeMRecAds()
     {
         // MRECs are sized to 300x250 on phones and tablets
@@ -677,5 +701,19 @@ public class AdmobAds : MonoBehaviour
         MaxSdk.HideMRec(MREC_Id);
         ShowBanner();
     }
+ 
 
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        if (!pauseStatus)
+        {
+            if(RemoteConfigController.GetBoolConfig(FirebaseConfig.RESUME_ADS, false))
+            {
+                ShowInterstitial();
+            }
+       
+
+       //   ShowAdIfReady();
+        }
+    }
 }

@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
     public DataContain dataContain;
     public MusicManagerGameBase musicManager;
     public AdmobAds admobAds;
-
+    public StartLoading startLoading;
     [HideInInspector] public AnalyticsController AnalyticsController;
     public IapController iapController;
     [HideInInspector] public SceneType currentScene;
@@ -59,15 +59,17 @@ public class GameController : MonoBehaviour
 
     public void Init()
     {
+        Application.targetFrameRate = 60;
 
 
-        //Application.targetFrameRate = 60;
         //useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
+        startLoading.Init();
         admobAds.Init();
         musicManager.Init();
         iapController.Init();
 
         MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
+        //RemoteConfigController.FetchDataNow();
         // GameController.Instance.admobAds.ShowBanner();
     }
 

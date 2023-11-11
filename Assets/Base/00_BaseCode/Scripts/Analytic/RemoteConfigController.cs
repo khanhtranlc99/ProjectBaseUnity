@@ -63,7 +63,9 @@ public class RemoteConfigController : MonoBehaviour
 
     public static string GetStringConfig(string key, string defaultValue)
     {
-        if (!firebaseRemoteKeys.Contains(key)) return defaultValue;
+     
+        if (!firebaseRemoteKeys.Contains(key))
+            return defaultValue;
         //if (!defaults.ContainsKey(key)) return defaultValue;+
         return FirebaseRemoteConfig.DefaultInstance.GetValue(key).StringValue;
     }
@@ -71,6 +73,7 @@ public class RemoteConfigController : MonoBehaviour
 
     public static bool GetBoolConfig(string key, bool defaultValue)
     {
+        Debug.LogError("Contains " + firebaseRemoteKeys.Contains(key) + " " + key);
         if (!firebaseRemoteKeys.Contains(key)) return defaultValue;
         return FirebaseRemoteConfig.DefaultInstance.GetValue(key).BooleanValue;
     }
@@ -237,15 +240,15 @@ public class RemoteConfigController : MonoBehaviour
     {
         if (fetchTask.IsCanceled)
         {
-            DebugLog("Fetch canceled.");
+            Debug.LogError("Fetch canceled.");
         }
         else if (fetchTask.IsFaulted)
         {
-            DebugLog("Fetch encountered an error.");
+            Debug.LogError("Fetch encountered an error.");
         }
         else if (fetchTask.IsCompleted)
         {
-            DebugLog("Fetch completed successfully!");
+            Debug.LogError("Fetch completed successfully!");
         }
         //Context.Waiting.HideWaiting();
         var info = FirebaseRemoteConfig.DefaultInstance.Info;
@@ -253,26 +256,27 @@ public class RemoteConfigController : MonoBehaviour
         {
             case LastFetchStatus.Success:
                 FetchAndActivateAsync(fetchTask, info);
+         
                 break;
 
             case LastFetchStatus.Failure:
                 switch (info.LastFetchFailureReason)
                 {
                     case FetchFailureReason.Error:
-                        DebugLog("Fetch failed for unknown reason");
+                        Debug.LogError("Fetch failed for unknown reason");
                         break;
 
                     case FetchFailureReason.Throttled:
-                        DebugLog("Fetch throttled until " + info.ThrottledEndTime);
+                        Debug.LogError("Fetch throttled until " + info.ThrottledEndTime);
                         break;
                 }
                 break;
 
             case LastFetchStatus.Pending:
-                DebugLog("Latest Fetch call still pending.");
+                Debug.LogError("Latest Fetch call still pending.");
                 break;
         }
-
+        Debug.LogError("SHOW_OPEN_ADS_FIRST_OPEN " + GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS_FIRST_OPEN, false)) ;
         //AdmobAds.Instance.Init();
     }
 

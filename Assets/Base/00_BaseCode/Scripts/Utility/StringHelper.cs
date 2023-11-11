@@ -162,7 +162,7 @@ public class KeyPref
 public class FirebaseConfig
 {
 
-    public const string DELAY_SHOW_INITSTIALL = "delay_show_initi_ads";//Thời gian giữa 2 lần show inital 30
+  
     public const string LEVEL_START_SHOW_INITSTIALL = "level_start_show_initstiall";//Level bắt đầu show initial//3
 
 
@@ -209,6 +209,15 @@ public class FirebaseConfig
 
 
     public const string REVIEW_IAP_VERSION = "review_iap_version"; // 6H
+
+
+
+    public const string DELAY_SHOW_INITSTIALL = "ads_interval";//Thời gian giữa 2 lần show inital 30
+    public const string RESUME_ADS = "resume_ads";
+    public const string RATING_POPUP = "rating_popup";
+    public const string SHOW_OPEN_ADS = "show_open_ads";
+    public const string SHOW_OPEN_ADS_FIRST_OPEN = "show_open_ads_first_open";
+  
 }
 public class GameData
 {

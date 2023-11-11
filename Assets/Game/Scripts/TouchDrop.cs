@@ -118,7 +118,7 @@ public class TouchDrop : MonoBehaviour
                         Vector3 surfaceNormal = _hit.normal;
                         spawnedObject.transform.up = surfaceNormal;
                         var temp = spawnedObject.transform.position;
-                        spawnedObject.transform.position = new Vector3(temp.x, temp.y,-0.7f);
+                        spawnedObject.transform.position = new Vector3(temp.x, temp.y,-1);
                         useBoosterDrill = false;
                         UIManager.INSTANCE.BlockBooster(true);
                         TutDrillBooster.Instance.OffTutDrill();

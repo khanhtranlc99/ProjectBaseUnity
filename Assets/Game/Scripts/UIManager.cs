@@ -62,7 +62,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        Debug.LogError("UseProfile.FirstLoading " + UseProfile.FirstLoading);
+     
         if (helplevel.Contains(LvlNum))
         {
             if (PinObject != null && FillObject != null)

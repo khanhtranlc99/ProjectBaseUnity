@@ -62,7 +62,7 @@ public class SuggetBox : BaseBox
             }
 
         imgGift.SetNativeSize();
-        
+        GameController.Instance.admobAds.HandleShowMerec();
     }
 
 
@@ -130,6 +130,6 @@ public class SuggetBox : BaseBox
     protected override void OnDisable()
     {
         base.OnDisable();
- 
+        GameController.Instance.admobAds.HandleHideMerec();
     }
 }

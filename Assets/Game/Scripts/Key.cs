@@ -49,10 +49,10 @@ public class Key : MonoBehaviour
                     gamemanager.vibration();
                 }
                 locking.GetComponentInChildren<DOTweenAnimation>().DOPlay();
-                if (!locking.transform.GetComponentInChildren<ParticleSystem>().isPlaying)
-                {
-                    locking.transform.GetComponentInChildren<ParticleSystem>().Play();
-                }
+                //if (!locking.transform.GetComponentInChildren<ParticleSystem>().isPlaying)
+                //{
+                //    locking.transform.GetComponentInChildren<ParticleSystem>().Play();
+                //}
             
             });
         }

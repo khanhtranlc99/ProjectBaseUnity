@@ -135,8 +135,9 @@ public class WinBox : BaseBox
 
         GameController.Instance.admobAds.ShowVideoReward(delegate { ClaimReward(); }, delegate
         {
-            GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp
-            (
+            GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp_UI
+            (   
+                btnDoubleReward.transform,
                 btnDoubleReward.transform.position,
                 "No video at the moment!",
                 Color.white,

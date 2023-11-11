@@ -10,7 +10,7 @@ public class ExampleHomeScreen : MonoBehaviour
         {
             MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += OnAppOpenDismissedEvent;
 
-            GameController.Instance.admobAds.ShowAdIfReady();
+            GameController.Instance.admobAds.ShowOpenAppAdsReady();
         };
 
         MaxSdk.SetSdkKey("YOUR_SDK_KEY");
@@ -26,7 +26,7 @@ public class ExampleHomeScreen : MonoBehaviour
     {
         if (!pauseStatus)
         {
-            GameController.Instance.admobAds.ShowAdIfReady();
+            GameController.Instance.admobAds.ShowOpenAppAdsReady();
         }
     }
 }
