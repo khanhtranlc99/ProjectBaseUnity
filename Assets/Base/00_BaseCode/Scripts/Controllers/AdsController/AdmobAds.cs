@@ -140,8 +140,8 @@ public class AdmobAds : MonoBehaviour
         else
         {
 
-
-            if (UseProfile.CurrentLevel > RemoteConfigController.GetFloatConfig(FirebaseConfig.LEVEL_START_SHOW_INITSTIALL, 3))
+         
+            if (UseProfile.CurrentLevel > RemoteConfigController.GetFloatConfig(FirebaseConfig.LEVEL_START_SHOW_INITSTIALL, 2))
             {
                 GameController.Instance.AnalyticsController.LoadInterEligible();
 
@@ -601,13 +601,13 @@ public class AdmobAds : MonoBehaviour
     new Firebase.Analytics.Parameter("ad_platform", "AppLovin"),
     new Firebase.Analytics.Parameter("ad_source", impressionData.NetworkName),
     new Firebase.Analytics.Parameter("ad_unit_name", impressionData.AdUnitIdentifier),
-   // new Firebase.Analytics.Parameter("ad_format", impressionData.),
+    new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
     new Firebase.Analytics.Parameter("value", revenue),
     new Firebase.Analytics.Parameter("currency", "USD"), // All AppLovin revenue is sent in USD
 };
 
         Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression", impressionParameters);
-      //  GameController.Instance.AnalyticsController.LogRevenueDay01((float)revenue);
+
 
         Dictionary<string, object> paramas = new Dictionary<string, object>();
         FB.LogPurchase((decimal)revenue, "USD", paramas);
@@ -631,19 +631,36 @@ public class AdmobAds : MonoBehaviour
         MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { GameController.Instance.startLoading.InitState(); };
         MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { GameController.Instance.startLoading.InitState(); };
         MaxSdk.LoadAppOpenAd(AppOpenId);
-    
-
-     
-    
-  
     }
 
     public void ShowOpenAppAdsReady()
     {
-     
+
+    
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
-            MaxSdk.ShowAppOpenAd(AppOpenId);
+            if(!UseProfile.FirstLoading)
+            {
+               if(RemoteConfigController.GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS_FIRST_OPEN, false))
+               {
+                    MaxSdk.ShowAppOpenAd(AppOpenId);
+               }
+               else
+                {
+                    GameController.Instance.startLoading.InitState();
+                }    
+            }
+            else
+            {
+                if (RemoteConfigController.GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS, false))
+                {
+                    MaxSdk.ShowAppOpenAd(AppOpenId);
+                }
+                else
+                {
+                    GameController.Instance.startLoading.InitState();
+                }
+            }    
         }
         else
         {
@@ -709,7 +726,7 @@ public class AdmobAds : MonoBehaviour
         {
             if(RemoteConfigController.GetBoolConfig(FirebaseConfig.RESUME_ADS, false))
             {
-                ShowInterstitial();
+                ShowInterstitial(true);
             }
        
 

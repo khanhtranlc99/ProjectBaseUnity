@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
     public Text tvNumDestroyScew;
     public Sprite spritePlus;
     public Sprite spriteNum;
-
+    private bool lockTut;
 
     private void Awake()
     {
@@ -68,6 +68,8 @@ public class UIManager : MonoBehaviour
             if (PinObject != null && FillObject != null)
             {
                 help = true;
+                GameController.Instance.AnalyticsController.StartTut_1();
+                lockTut = true;
             }
 
             if (PinObject != null && FillObject != null)
@@ -160,7 +162,6 @@ public class UIManager : MonoBehaviour
 
     }
 
-
     void Update()
     {
         /*if (levelnum == helplevel)
@@ -177,6 +178,7 @@ public class UIManager : MonoBehaviour
             {
                 PinObject.SetActive(false);
                 FillObject.SetActive(true);
+               
             }
         }
 
@@ -186,6 +188,12 @@ public class UIManager : MonoBehaviour
             {
                 PinObject.SetActive(false);
                 FillObject.SetActive(false);
+                if(lockTut)
+                {
+                    GameController.Instance.AnalyticsController.EndTut_1();
+                    lockTut = false;
+                }
+            
             }
         }
     }
@@ -344,7 +352,7 @@ public class UIManager : MonoBehaviour
 
     public void retryButton()
     {
-        GameController.Instance.admobAds.ShowInterstitial(true, actionIniterClose: () =>
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () =>
         {    
             Reset();
         }, actionWatchLog: "ResetLevel");

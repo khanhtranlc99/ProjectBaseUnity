@@ -74,13 +74,14 @@ public class WinBox : BaseBox
         }
         GameController.Instance.musicManager.PlaySound(winMusic);
         GameController.Instance.admobAds.HandleShowMerec();
+        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
     }
     
     private void HandleOnClickBtnBackHome()
     {
         
 
-        GameController.Instance.admobAds.ShowInterstitial(true,actionIniterClose: () =>
+        GameController.Instance.admobAds.ShowInterstitial(false,actionIniterClose: () =>
         {
             UpdateEgg(score);        
             Initiate.Fade(SceneName.HOME_SCENE, Color.black, 1.5f);
@@ -90,7 +91,7 @@ public class WinBox : BaseBox
 
     private void HandleOnClickBtnNext()
     {
-        GameController.Instance.admobAds.ShowInterstitial(true, actionIniterClose: () =>
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () =>
         {
             //UpdateEgg(score);     
             //Close();

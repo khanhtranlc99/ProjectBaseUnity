@@ -9,6 +9,7 @@ using Firebase.RemoteConfig;
 using System.Threading.Tasks;
 using System.Globalization;
 using Newtonsoft.Json;
+using Firebase.Extensions;
 
 public class RemoteConfigController : MonoBehaviour
 {
@@ -73,7 +74,7 @@ public class RemoteConfigController : MonoBehaviour
 
     public static bool GetBoolConfig(string key, bool defaultValue)
     {
-        Debug.LogError("Contains " + firebaseRemoteKeys.Contains(key) + " " + key);
+  
         if (!firebaseRemoteKeys.Contains(key)) return defaultValue;
         return FirebaseRemoteConfig.DefaultInstance.GetValue(key).BooleanValue;
     }
@@ -240,15 +241,15 @@ public class RemoteConfigController : MonoBehaviour
     {
         if (fetchTask.IsCanceled)
         {
-            Debug.LogError("Fetch canceled.");
+            Debug.Log("Fetch canceled.");
         }
         else if (fetchTask.IsFaulted)
         {
-            Debug.LogError("Fetch encountered an error.");
+            Debug.Log("Fetch encountered an error.");
         }
         else if (fetchTask.IsCompleted)
         {
-            Debug.LogError("Fetch completed successfully!");
+            Debug.Log("Fetch completed successfully!");
         }
         //Context.Waiting.HideWaiting();
         var info = FirebaseRemoteConfig.DefaultInstance.Info;
@@ -276,7 +277,7 @@ public class RemoteConfigController : MonoBehaviour
                 Debug.LogError("Latest Fetch call still pending.");
                 break;
         }
-        Debug.LogError("SHOW_OPEN_ADS_FIRST_OPEN " + GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS_FIRST_OPEN, false)) ;
+    
         //AdmobAds.Instance.Init();
     }
 
@@ -307,27 +308,53 @@ public class RemoteConfigController : MonoBehaviour
         if (isInit) return;
         isInit = true;
         InitSuccess = true;
-        // These are the values that are used if we haven't fetched data from the
-        // server
-        // yet, or if we ask for values that the server doesn't have:
 
-        //FirebaseRemoteConfig.SetDefaults(defaults);
-        DebugLog("RemoteConfig configured and ready!");
 
-        //try
-        //{
-        //    string config_cached = PlayerPrefs.GetString("CONFIG_CACHED", string.Empty);
-        //    if (!string.IsNullOrEmpty(config_cached))
-        //    {
-        //        Debug.Log("RemoteConfigFirebaseInit" + config_cached);
-        //        playfabConfig = JsonUtility.FromJson<Dictionary<string, string>>(config_cached);
-        //    }
-        //}
-        //catch (Exception ex)
-        //{
-        //    DebugManager.LogError(ex.Message);
-        //}
-    }
+        TimeSpan time = new TimeSpan(0, 0, 10);
+        FirebaseRemoteConfig.DefaultInstance.FetchAsync(time).ContinueWithOnMainThread(task =>
+        {
+            var info = FirebaseRemoteConfig.DefaultInstance.Info;
+            if (info.LastFetchStatus == LastFetchStatus.Success)
+            {
+                FirebaseRemoteConfig.DefaultInstance.ActivateAsync();
+                firebaseRemoteKeys.Clear();
+                foreach (var key in FirebaseRemoteConfig.DefaultInstance.Keys)
+                {
+              
+                    firebaseRemoteKeys.Add(key);
+   
+                }
+        
+            }
+        });
+
+
+
+     
+
+       
+
+    // These are the values that are used if we haven't fetched data from the
+    // server
+    // yet, or if we ask for values that the server doesn't have:
+
+    //  FirebaseRemoteConfig.SetDefaults(defaults);
+    //DebugLog("RemoteConfig configured and ready!");
+
+    //try
+    //{
+    //    string config_cached = PlayerPrefs.GetString("CONFIG_CACHED", string.Empty);
+    //    if (!string.IsNullOrEmpty(config_cached))
+    //    {
+    //        Debug.Log("RemoteConfigFirebaseInit" + config_cached);
+    //        playfabConfig = JsonUtility.FromJson<Dictionary<string, string>>(config_cached);
+    //    }
+    //}
+    //catch (Exception ex)
+    //{
+    //    DebugManager.LogError(ex.Message);
+    //}
+}
 
     private static void DebugLog(string s)
     {

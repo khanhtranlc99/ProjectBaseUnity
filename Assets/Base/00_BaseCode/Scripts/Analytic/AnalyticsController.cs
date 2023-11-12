@@ -99,18 +99,50 @@ public class AnalyticsController : MonoBehaviour
 
     public void LoadingComplete()
     {
-
-
         if (!firebaseInitialized) return;
-
         if (!UseProfile.FirstLoading)
         {
             FirebaseAnalytics.LogEvent("first_loading_complete");
             UseProfile.FirstLoading = true;
         }
+    }
+    public void StartTut_1()
+    {
+        if (!firebaseInitialized) return;
+        FirebaseAnalytics.LogEvent("start_tut_1");
+    }
+    public void EndTut_1()
+    {
+        if (!firebaseInitialized) return;
+        FirebaseAnalytics.LogEvent("comple_tut_1");
+    }
 
+    public void StartLevel(int param)
+    {
+        if (!firebaseInitialized) return;
+        if(param < 10)
+        {
+            FirebaseAnalytics.LogEvent("start_level_" + "0" + param);
+        }
+        else
+        {
+            FirebaseAnalytics.LogEvent("start_level_"  + param);
+        }   
+    }
+    public void WinLevel(int param)
+    {
+        if (!firebaseInitialized) return;
+        if (param < 10)
+        {
+            FirebaseAnalytics.LogEvent("win_level_" + "0" + param);
+        }
+        else
+        {
+            FirebaseAnalytics.LogEvent("win_level_" + param);
+        }
 
     }
+
 
     public void LogLevelStart(int level)
     {
