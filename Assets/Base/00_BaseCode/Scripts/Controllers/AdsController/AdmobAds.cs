@@ -41,7 +41,7 @@ public class AdmobAds : MonoBehaviour
             InitializeBannerAds();
             InitializeMRecAds();
             InitializeOpenAppAds();
-            // MaxSdk.ShowMediationDebugger();
+         //   MaxSdk.ShowMediationDebugger();
         };
         MaxSdk.SetVerboseLogging(true);
         MaxSdk.SetSdkKey(MaxSdkKey);
@@ -246,6 +246,15 @@ public class AdmobAds : MonoBehaviour
 
     public bool ShowVideoReward(UnityAction actionReward, UnityAction actionNotLoadedVideo, UnityAction actionClose, ActionWatchVideo actionType, string level)
     {
+        if (GameController.Instance.useProfile.IsRemoveAds)
+        {
+            if (actionReward != null)
+            {
+                actionReward();
+            }
+      
+            return true;
+        }
         if (Application.internetReachability == NetworkReachability.NotReachable)
         {
             actionNotLoadedVideo?.Invoke();
@@ -635,8 +644,13 @@ public class AdmobAds : MonoBehaviour
 
     public void ShowOpenAppAdsReady()
     {
+        if (GameController.Instance.useProfile.IsRemoveAds)
+        {
+            GameController.Instance.startLoading.InitState();
+            return;
+        }
 
-    
+
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
             if(!UseProfile.FirstLoading)
@@ -705,6 +719,8 @@ public class AdmobAds : MonoBehaviour
 
     public void HandleShowMerec()
     {
+        if (GameController.Instance.useProfile.IsRemoveAds)
+            return;
         DestroyBanner();
 
 
@@ -714,7 +730,8 @@ public class AdmobAds : MonoBehaviour
     }
     public void HandleHideMerec()
     {
-     
+        if (GameController.Instance.useProfile.IsRemoveAds)
+            return;
         MaxSdk.HideMRec(MREC_Id);
         ShowBanner();
     }

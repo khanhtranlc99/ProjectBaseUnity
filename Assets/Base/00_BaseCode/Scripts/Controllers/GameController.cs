@@ -61,7 +61,7 @@ public class GameController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
 
-       
+        GameController.Instance.useProfile.IsRemoveAds = true;
         //useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
         startLoading.Init();
         admobAds.Init();

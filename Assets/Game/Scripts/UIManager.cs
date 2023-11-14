@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
+using System;
 
 public class UIManager : BaseScene
 {
@@ -338,7 +340,7 @@ public class UIManager : BaseScene
         //NEXT BUTTON CALL
         if (PlayerPrefs.GetInt("Level", 1) >= SceneManager.sceneCountInBuildSettings - 1)
         {
-            SceneManager.LoadScene(Random.Range(0, SceneManager.sceneCountInBuildSettings - 1));
+            SceneManager.LoadScene(UnityEngine.Random.Range(0, SceneManager.sceneCountInBuildSettings - 1));
             PlayerPrefs.SetInt("Level", (PlayerPrefs.GetInt("Level", 1) + 1));
         }
         else
@@ -435,5 +437,61 @@ public class UIManager : BaseScene
     public override void OnEscapeWhenStackBoxEmpty()
     {
   
+    }
+
+    public GameObject testPanel;
+    public bool isOff = false;
+    public List<Image> lsImage;
+    public List<Text> lsTv;
+    public void  OpenTest()
+    {
+        if(testPanel.activeSelf)
+        {
+            testPanel.SetActive(false);
+        }
+        else
+        {
+            testPanel.SetActive(true);
+        }
+    }
+    public InputField input;
+    public void OnClickPasslevel()
+    {
+        var level = Int32.Parse(input.text);
+        UseProfile.CurrentLevel = level;
+        SceneManager.LoadScene(level);
+    }
+    public void OnOffUI()
+    {
+        if(!isOff)
+        {
+            isOff = true;
+            foreach (var item in lsImage)
+            {
+                item.color = new Color32(0,0,0,0);
+            }
+            foreach(var item in lsTv)
+            {
+                item.color = new Color32(0, 0, 0, 0);
+            }
+        }
+        else
+        {
+            isOff = false;
+            foreach (var item in lsImage)
+            {
+                item.color = new Color32(255, 255, 255, 255);
+            }
+            foreach (var item in lsTv)
+            {
+                item.color = new Color32(255, 255, 255, 255);
+            }
+        }
+    }
+    public void CheatBooster()
+    {
+        UseProfile.DrillBooster += 20;
+        UseProfile.DestroyScewBooster += 20;
+        UseProfile.Coin += 1000000;
     }
 }
