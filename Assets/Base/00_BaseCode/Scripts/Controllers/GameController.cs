@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public AnalyticsController AnalyticsController;
     public IapController iapController;
     [HideInInspector] public SceneType currentScene;
-  
+    public AppReview appReview;
 
 
     protected void Awake()
@@ -61,13 +61,13 @@ public class GameController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
 
-
+       
         //useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
         startLoading.Init();
         admobAds.Init();
         musicManager.Init();
         iapController.Init();
-
+        appReview.Init();
         MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
         //RemoteConfigController.FetchDataNow();
         // GameController.Instance.admobAds.ShowBanner();

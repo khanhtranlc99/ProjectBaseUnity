@@ -99,7 +99,12 @@ public class AnalyticsController : MonoBehaviour
 
     public void LoadingComplete()
     {
-        if (!firebaseInitialized) return;
+      
+        if (!firebaseInitialized)
+        { 
+            return; 
+        } 
+
         if (!UseProfile.FirstLoading)
         {
             FirebaseAnalytics.LogEvent("first_loading_complete");

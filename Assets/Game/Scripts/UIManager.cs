@@ -6,7 +6,7 @@ using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : BaseScene
 {
     public static UIManager INSTANCE;
 
@@ -62,7 +62,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-     
+   
         if (helplevel.Contains(LvlNum))
         {
             if (PinObject != null && FillObject != null)
@@ -383,7 +383,16 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         //winpanel.SetActive(true);
         //StartCoroutine(nextWait());
-        WinBox.Setup(100,false).Show();
+        if (UseProfile.CurrentLevel == RemoteConfigController.GetIntConfig(FirebaseConfig.RATING_POPUP, 5))
+        {
+            
+            DialogueRate.Setup().Show();
+        }
+        else
+        {
+            WinBox.Setup(100, false).Show();
+        }
+     
     }
     public void HandleBoosterDrill()
     {
@@ -417,5 +426,14 @@ public class UIManager : MonoBehaviour
     public void CheatWin()
     {
         WinBox.Setup(100, false).Show();
+    }
+    public void Test()
+    {
+        GameController.Instance.appReview.RateAndReview();
+    }
+
+    public override void OnEscapeWhenStackBoxEmpty()
+    {
+  
     }
 }

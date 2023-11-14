@@ -60,6 +60,7 @@ public static class StringHelper
 
     public const string NUMBER_REWARD_SHOWED = "number_reward_showed";
     public const string NUMBER_INTER_SHOWED = "number_inter_showed";
+    public const string OPEN_LINK_RATE = "";
 
 }
 
