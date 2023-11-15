@@ -69,6 +69,8 @@
     <Compile Include="Assets\MaxSdk\Scripts\IntegrationManager\Editor\AppLovinPostProcessiOS.cs" />
     <Compile Include="Assets\MaxSdk\Scripts\IntegrationManager\Editor\AppLovinMenuItems.cs" />
     <Compile Include="Assets\MaxSdk\Scripts\IntegrationManager\Editor\AppLovinSettings.cs" />
+    <Compile Include="Assets\MaxSdk\Scripts\IntegrationManager\Editor\AppLovinPreProcessiOS.cs" />
+    <Compile Include="Assets\MaxSdk\Scripts\IntegrationManager\Editor\AppLovinPreProcess.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MaxSdk\Scripts\IntegrationManager\Editor\MaxSdk.IntegrationManager.Editor.asmdef" />

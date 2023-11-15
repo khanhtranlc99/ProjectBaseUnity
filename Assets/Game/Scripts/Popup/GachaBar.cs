@@ -18,30 +18,37 @@ public class GachaBar : MonoBehaviour
         {
             if(arrow.transform.position.x >= lsTranformGacha[0].position.x && arrow.transform.position.x < lsTranformGacha[1].position.x)
             {
+              
                 return 2;
             }
             if (arrow.transform.position.x >= lsTranformGacha[1].position.x && arrow.transform.position.x < lsTranformGacha[2].position.x)
             {
+             
                 return 4;
             }
             if (arrow.transform.position.x >= lsTranformGacha[2].position.x && arrow.transform.position.x < lsTranformGacha[3].position.x)
             {
+               
                 return 5;
             }
             if (arrow.transform.position.x >= lsTranformGacha[3].position.x && arrow.transform.position.x < lsTranformGacha[4].position.x)
             {
+           
                 return 3;
             }
             if (arrow.transform.position.x >= lsTranformGacha[4].position.x && arrow.transform.position.x < lsTranformGacha[5].position.x)
             {
+          
                 return 4;
             }
             if (arrow.transform.position.x >= lsTranformGacha[5].position.x && arrow.transform.position.x < lsTranformGacha[6].position.x)
             {
-                return 2;
+            
+                return 3;
             }
             if (arrow.transform.position.x >= lsTranformGacha[6].position.x && arrow.transform.position.x < lsTranformGacha[7].position.x)
             {
+          
                 return 2;
             }
 
@@ -96,8 +103,8 @@ public class GachaBar : MonoBehaviour
 
     public void HandleOnClickStop()
     {
-
-    
-
+        isStop = true;
+        tween.Kill();
+        arrow.DOKill();
     }
 }

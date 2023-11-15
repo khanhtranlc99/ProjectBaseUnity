@@ -40,6 +40,7 @@ public class WinBox : BaseBox
     public List<Transform> lsTranformPost;
     public bool doubleRewardWinBox;
     public AudioClip winMusic;
+    int valueGacha;
     #endregion
 
 
@@ -75,6 +76,7 @@ public class WinBox : BaseBox
         GameController.Instance.musicManager.PlaySound(winMusic);
         GameController.Instance.admobAds.HandleShowMerec();
         GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+        valueGacha = 0;
     }
     
     private void HandleOnClickBtnBackHome()
@@ -83,7 +85,7 @@ public class WinBox : BaseBox
 
         GameController.Instance.admobAds.ShowInterstitial(false,actionIniterClose: () =>
         {
-            UpdateEgg(score);        
+           
             Initiate.Fade(SceneName.HOME_SCENE, Color.black, 1.5f);
 
         }, actionWatchLog: "BackHomeWinBox");
@@ -132,8 +134,8 @@ public class WinBox : BaseBox
     }
     private void HandleOnClickBtnReward()
     {
-
-
+        valueGacha = gachaBar.ValueReward;
+        gachaBar.HandleOnClickStop();
         GameController.Instance.admobAds.ShowVideoReward(delegate { ClaimReward(); }, delegate
         {
             GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp_UI
@@ -153,23 +155,22 @@ public class WinBox : BaseBox
     }
     void ClaimReward()
     {
-        score *= gachaBar.ValueReward;
+        Debug.LogError(valueGacha);
+    
+        var temp =   (100 * valueGacha);
         List<GiftRewardShow> lstReward = new List<GiftRewardShow>();
-        lstReward.Add(new GiftRewardShow() { amount = score, type = GiftType.Coin });
-        UpdateEgg(score);
-  
+        lstReward.Add(new GiftRewardShow() { amount = temp, type = GiftType.Coin });
+
+        UseProfile.Coin += temp;
         RewardIAPBox.Setup2().Show(lstReward, delegate
         {
-            UseProfile.Coin += (100 * gachaBar.ValueReward);
+         
             Next();
-
+            Debug.LogError("ClaimReward ");
         });
+      
     }
-    private void UpdateEgg(int param)
-    {
-        UseProfile.Coin += param;
-     
-    }
+  
     private void CheckOpenGiftBox(bool doubleReward)
     {  
         if (progessLevelChest.gameObject.activeSelf)

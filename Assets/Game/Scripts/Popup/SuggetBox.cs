@@ -95,7 +95,7 @@ public class SuggetBox : BaseBox
                    btnCoin.transform,
                btnCoin.transform.position,
                "Not enought coin",
-               Color.white,
+               Color.red,
                isSpawnItemPlayer: true
            );
            
