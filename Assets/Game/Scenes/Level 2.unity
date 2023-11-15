@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44936514, g: 0.49625617, b: 0.55858654, a: 1}
+  m_IndirectSpecularColor: {r: 0.4493649, g: 0.49625582, b: 0.55858576, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -449,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538770814680146962, guid: 00d90c2676876274faade1192be002fe, type: 3}
       propertyPath: m_BlockingMask.m_Bits
-      value: 130871
+      value: 4919
       objectReference: {fileID: 0}
     - target: {fileID: 2538770814680146963, guid: 00d90c2676876274faade1192be002fe, type: 3}
       propertyPath: m_Name
@@ -1081,6 +1081,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3191572693400800329, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191572693400800329, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3091
+      objectReference: {fileID: 0}
     - target: {fileID: 3711821689369571972, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
       propertyPath: m_Name
       value: Touch Drop
@@ -1128,6 +1136,18 @@ PrefabInstance:
     - target: {fileID: 3711821689369571974, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565350705005368317, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_Size.x
+      value: 55.142204
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565350705005368317, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_Size.y
+      value: 53.486584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565350705005368317, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: m_DrawMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
