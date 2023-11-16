@@ -68,8 +68,9 @@ public class SuggetBox : BaseBox
 
     private void OnButtonWatchClick()
     {
-        GameController.Instance.admobAds.ShowVideoReward(delegate { HandleTakeGift(); } , delegate { GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp
-        (
+        GameController.Instance.admobAds.ShowVideoReward(delegate { HandleTakeGift(); } , delegate { GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp_UI
+        (   
+            btnWatch.transform,
             btnWatch.transform.position,
             "No video at the moment!",
             Color.white,

@@ -96,6 +96,8 @@ public class UIManager : BaseScene
         // level.text = "Level " + LvlNum.ToString();
         //levelnum = currentLevel;
         //AudioManager.instance.Play("BACKGROUND");
+        EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.CHANGE_COIN, HandleShowCoin);
+
     }
     public void HandleUnlock()
     {
@@ -435,5 +437,14 @@ public class UIManager : BaseScene
     public override void OnEscapeWhenStackBoxEmpty()
     {
   
+    }
+    private void HandleShowCoin(object param)
+    {
+        tvCoin.text = "" + UseProfile.Coin;
+
+    }
+    private void OnDestroy()
+    {
+        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.CHANGE_COIN, HandleShowCoin);
     }
 }

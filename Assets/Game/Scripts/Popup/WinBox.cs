@@ -66,8 +66,8 @@ public class WinBox : BaseBox
         
         CheckOpenGiftBox(doubleReward);
 
-  
 
+        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
         UseProfile.CurrentLevel += 1;
         if (UseProfile.CurrentLevel > KeyPref.MAX_LEVEL)
         {
@@ -75,7 +75,7 @@ public class WinBox : BaseBox
         }
         GameController.Instance.musicManager.PlaySound(winMusic);
         GameController.Instance.admobAds.HandleShowMerec();
-        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+    
         valueGacha = 0;
     }
     

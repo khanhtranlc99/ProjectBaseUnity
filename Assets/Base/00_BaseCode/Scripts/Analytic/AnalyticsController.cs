@@ -121,6 +121,16 @@ public class AnalyticsController : MonoBehaviour
         if (!firebaseInitialized) return;
         FirebaseAnalytics.LogEvent("comple_tut_1");
     }
+    public void StartTut_2()
+    {
+        if (!firebaseInitialized) return;
+        FirebaseAnalytics.LogEvent("start_tut_2");
+    }
+    public void EndTut_2()
+    {
+        if (!firebaseInitialized) return;
+        FirebaseAnalytics.LogEvent("comple_tut_2");
+    }
 
     public void StartLevel(int param)
     {

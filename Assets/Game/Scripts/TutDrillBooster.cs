@@ -28,6 +28,7 @@ public class TutDrillBooster : MonoBehaviour
             hand_1.gameObject.SetActive(true);
             booster_Drill.transform.parent = panel_Tut.gameObject.transform;
             booster_Drill.transform.SetAsLastSibling();
+            GameController.Instance.AnalyticsController.StartTut_2();
         }
     }
 
@@ -47,6 +48,7 @@ public class TutDrillBooster : MonoBehaviour
         {
             isTut = false;
             hand_2.gameObject.SetActive(false);
+            GameController.Instance.AnalyticsController.EndTut_2();
         }
     }
 
