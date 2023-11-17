@@ -117,18 +117,14 @@ public class WinBox : BaseBox
 
 
         //NEXT BUTTON CALL
-        if (PlayerPrefs.GetInt("Level", 1) >= SceneManager.sceneCountInBuildSettings - 1)
+        if (UseProfile.CurrentLevel < 60)
         {
-            SceneManager.LoadScene(UnityEngine.Random.Range(0, SceneManager.sceneCountInBuildSettings - 1));
-            PlayerPrefs.SetInt("Level", (PlayerPrefs.GetInt("Level", 1) + 1));
+            SceneManager.LoadScene("Level " + UseProfile.CurrentLevel);
         }
         else
         {
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            PlayerPrefs.SetInt("Level", (PlayerPrefs.GetInt("Level", 1) + 1));
+            SceneManager.LoadScene("Level " + UnityEngine.Random.Range(1, 60));
         }
-        PlayerPrefs.SetInt("levelnumber", PlayerPrefs.GetInt("levelnumber", 1) + 1);
         Close();
     }
     private void HandleOnClickBtnReward()

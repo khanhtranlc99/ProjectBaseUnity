@@ -2305,7 +2305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect key to unlock Bolt
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62d4c585e59b5b9418e094a0aabdc9f3, type: 2}
   m_sharedMaterial: {fileID: -532487293301837256, guid: 62d4c585e59b5b9418e094a0aabdc9f3, type: 2}
@@ -2315,7 +2315,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294009763
-  m_fontColor: {r: 0.6390269, g: 0.38714847, b: 0.9433962, a: 1}
+  m_fontColor: {r: 0.6390269, g: 0.38714847, b: 0.9433962, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

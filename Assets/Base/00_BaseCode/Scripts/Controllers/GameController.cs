@@ -64,13 +64,25 @@ public class GameController : MonoBehaviour
        
         //useProfile.CurrentLevelPlay = UseProfile.CurrentLevel;
         startLoading.Init();
-        admobAds.Init();
-        musicManager.Init();
-        iapController.Init();
-        appReview.Init();
-        MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
-        //RemoteConfigController.FetchDataNow();
-        // GameController.Instance.admobAds.ShowBanner();
+        if (Application.internetReachability != NetworkReachability.NotReachable)
+        {
+            InitTemp();
+        }
+        else
+        {
+            NotiBox.Setup(InitTemp).Show();
+        }    
+          
+       
+         void InitTemp()
+        {
+           admobAds.Init();
+           musicManager.Init();
+           iapController.Init();
+           appReview.Init();
+           MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
+        }
+    
     }
 
     public void LoadScene(string sceneName)

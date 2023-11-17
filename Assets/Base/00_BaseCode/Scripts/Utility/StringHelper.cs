@@ -105,6 +105,7 @@ public class PathPrefabs
     public const string LEVEL_GIFT_BOX = "UI/Popups/LevelGiftBox";
     public const string EGG_GIFT_BOX = "UI/Popups/EggGiftBox";
     public const string AD_BREAK_BOX = "UI/Popups/AdBreakBox";
+    public const string NOTI_BOX = "UI/Popups/Notification";
 }
 
 public class SceneName
