@@ -124,7 +124,7 @@ public class SuggetBox : BaseBox
            }
         rw.amount = 1;
         lstReward.Add(rw);
-        RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { });
+        RewardIAPBox.Setup().Show(lstReward, actionClaim: () => { });
 
     }
 

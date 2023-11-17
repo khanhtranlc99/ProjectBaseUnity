@@ -159,11 +159,11 @@ public class IAPPack
             }
             if (lstReward.Count <= 1)
             {
-                RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+                RewardIAPBox.Setup().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
             }
             else
             {
-                RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+                RewardIAPBox.Setup(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
             }
 
         }
@@ -183,11 +183,11 @@ public class IAPPack
             }
             if (lstReward.Count <= 1)
             {
-                RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+                RewardIAPBox.Setup().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
             }
             else
             {
-                RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+                RewardIAPBox.Setup(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
             }
 
         }

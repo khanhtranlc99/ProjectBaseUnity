@@ -69,7 +69,7 @@ public class RandomWatchVideo : MonoBehaviour
         var gift = lsRandomGifts[temp];
         List<GiftRewardShow> lstReward = new List<GiftRewardShow>();
         lstReward.Add(new GiftRewardShow() { amount = gift.amount , type = gift.giftType });
-        RewardIAPBox.Setup2().Show(lstReward);
+        RewardIAPBox.Setup().Show(lstReward);
 
     }
 

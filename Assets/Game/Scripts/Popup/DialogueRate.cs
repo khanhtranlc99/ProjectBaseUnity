@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
 using System;
+using UnityEngine.SceneManagement;
 
 public class DialogueRate : BaseBox
 {
@@ -89,18 +90,35 @@ public class DialogueRate : BaseBox
             {
                 GameController.Instance.appReview.DirectlyOpen();
             }
-
+            Close();
             WinBox.Setup(100, false).Show();
         }
         else
         {
-           
+            Close();
             WinBox.Setup(100, false).Show();
         }
     }
     public void CloseAction()
     {
+        Close();
         WinBox.Setup(100, false).Show();
+    }
+
+    public void Next()
+    {
+        if (PlayerPrefs.GetInt("Level", 1) >= SceneManager.sceneCountInBuildSettings - 1)
+        {
+            SceneManager.LoadScene(UnityEngine.Random.Range(0, SceneManager.sceneCountInBuildSettings - 1));
+            PlayerPrefs.SetInt("Level", (PlayerPrefs.GetInt("Level", 1) + 1));
+        }
+        else
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("Level", (PlayerPrefs.GetInt("Level", 1) + 1));
+        }
+        PlayerPrefs.SetInt("levelnumber", PlayerPrefs.GetInt("levelnumber", 1) + 1);
     }
 
     public void ShowTextThankRate()

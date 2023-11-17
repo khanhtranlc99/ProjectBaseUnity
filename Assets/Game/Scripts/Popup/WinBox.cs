@@ -128,7 +128,6 @@ public class WinBox : BaseBox
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             PlayerPrefs.SetInt("Level", (PlayerPrefs.GetInt("Level", 1) + 1));
         }
-
         PlayerPrefs.SetInt("levelnumber", PlayerPrefs.GetInt("levelnumber", 1) + 1);
         Close();
     }
@@ -162,7 +161,7 @@ public class WinBox : BaseBox
         lstReward.Add(new GiftRewardShow() { amount = temp, type = GiftType.Coin });
 
         UseProfile.Coin += temp;
-        RewardIAPBox.Setup2().Show(lstReward, delegate
+        RewardIAPBox.Setup().Show(lstReward, delegate
         {
          
             Next();

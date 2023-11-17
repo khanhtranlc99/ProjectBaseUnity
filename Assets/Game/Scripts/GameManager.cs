@@ -470,8 +470,14 @@ public class GameManager : MonoBehaviour
     }
     public void vibration()
     {
-        Vibration.Vibrate(40);
-        print("vibrate");
+        if (GameController.Instance.useProfile.OnVibration)
+        {
+            Vibration.Vibrate(40);
+            print("vibrate");
+        }
+
+
+     
     }
 
    

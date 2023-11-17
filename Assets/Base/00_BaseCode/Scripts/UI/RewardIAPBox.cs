@@ -18,4 +18,9 @@ public class RewardIAPBox : PopupRewardBase
         _instance.InitState(smallReward);
         return _instance;
     }
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+
+    }
 }
