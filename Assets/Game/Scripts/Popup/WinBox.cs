@@ -69,10 +69,10 @@ public class WinBox : BaseBox
 
         GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
         UseProfile.CurrentLevel += 1;
-        if (UseProfile.CurrentLevel > KeyPref.MAX_LEVEL)
-        {
-            UseProfile.CurrentLevel = KeyPref.MAX_LEVEL;
-        }
+        //if (UseProfile.CurrentLevel > KeyPref.MAX_LEVEL)
+        //{
+        //    UseProfile.CurrentLevel = KeyPref.MAX_LEVEL;
+        //}
         GameController.Instance.musicManager.PlaySound(winMusic);
         GameController.Instance.admobAds.HandleShowMerec();
     

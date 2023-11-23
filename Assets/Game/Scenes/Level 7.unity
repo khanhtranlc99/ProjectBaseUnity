@@ -2807,6 +2807,10 @@ PrefabInstance:
       propertyPath: param
       value: 
       objectReference: {fileID: 1274200778}
+    - target: {fileID: 3711821689369571975, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
+      propertyPath: zBooster
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cccc20081cfb3b4aa8814cca3884f53, type: 3}
 --- !u!1001 &8022876660839532710

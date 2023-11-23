@@ -11,28 +11,14 @@ public class PackInShop : MonoBehaviour
     {
         //tvBuy.text = "" + ;
     
-        tvBuy.text =  "" + GameController.Instance.iapController.GetPriceNotInapp(this.typePackIAP);      
+     
         btnBuy.onClick.AddListener(delegate { ButtonOnClick(); });
     
     }
 
     public void ButtonOnClick()
     {
-        var temp = GameController.Instance.iapController.GetPriceNotInapp(this.typePackIAP);
-        if(UseProfile.Coin >= temp)
-        {
-            GameController.Instance.iapController.BuyProductNotInapp(typePackIAP);
-        }
-        else
-        {
-            GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp
-                               (
-                               btnBuy.transform.position,
-                               "No Enought Coin",
-                               Color.white,
-                               isSpawnItemPlayer: true
-                               );
-        }
+        
     }
       
 }

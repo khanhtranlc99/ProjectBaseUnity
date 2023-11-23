@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 #if UNITY_IOS
 using UnityEngine.iOS;
 #elif UNITY_ANDROID
@@ -32,7 +33,7 @@ public class AppReview : MonoBehaviour
 #endif
     }
 
-#if UNITY_ANDROID
+
     private IEnumerator InitReview(bool force = false)
     {
         if (_reviewManager == null) _reviewManager = new ReviewManager();
@@ -66,10 +67,10 @@ public class AppReview : MonoBehaviour
             yield break;
         }
     }
-#endif
 
+    [Button]
     public void DirectlyOpen()
     {
-        Application.OpenURL($"https://play.google.com/store/apps/details?id={Application.identifier}");
+        Application.OpenURL($"https://play.google.com/store/apps/details?id=com.zgames.screw.puzzle.nuts.bolts");
     }
 }

@@ -16,6 +16,7 @@ using com.adjust.sdk;
 public class AnalyticsController : MonoBehaviour
 {
     #region Init
+
     static UnityEvent onFinishFirebaseInit = new UnityEvent();
     private static bool m_firebaseInitialized = false;
     public static bool firebaseInitialized
@@ -39,18 +40,13 @@ public class AnalyticsController : MonoBehaviour
             }
         }
     }
+    public void Init ()
+    {
+        FB.Init("656247548438080");
+    }    
     #endregion
 
-    public const string aj_inters_ad_eligible = "xs6akb";
-    public const string aj_inters_api_called = "ie6sqs";
-    public const string aj_inters_displayed = "id3pn2";
-    public const string aj_level_complete = "bwsipx";
-    public const string aj_purchase = "xrdrbw";
-    public const string aj_rewarded_ad_completed = "gkuzsk";
-    public const string aj_rewarded_ad_eligible = "k8ta2v";
-    public const string aj_rewarded_api_called = "rq0zii";
-    public const string aj_rewarded_displayed = "6x5aw6";
-    public const string aj_tutorial_completion = "l8jo0n";
+    
 
     private static void LogBuyInappAdjust(string inappID, string trancstionID)
     {
@@ -275,16 +271,7 @@ public class AnalyticsController : MonoBehaviour
 
         }
 
-        try
-        {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_level_complete);
-            adjustEvent.addCallbackParameter("level", level.ToString());
-            Adjust.trackEvent(adjustEvent);
-        }
-        catch
-        {
-
-        }
+     
     }
 
     public void LogLevelFail(int level)
@@ -324,8 +311,7 @@ public class AnalyticsController : MonoBehaviour
     {
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_rewarded_ad_eligible);
-            Adjust.trackEvent(adjustEvent);
+         
         }
         catch
         {
@@ -367,8 +353,7 @@ public class AnalyticsController : MonoBehaviour
 
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_rewarded_displayed);
-            Adjust.trackEvent(adjustEvent);
+    
         }
         catch
         {
@@ -411,8 +396,7 @@ public class AnalyticsController : MonoBehaviour
 
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_rewarded_ad_completed);
-            Adjust.trackEvent(adjustEvent);
+      
         }
         catch
         {
@@ -451,8 +435,7 @@ public class AnalyticsController : MonoBehaviour
     {
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_inters_ad_eligible);
-            Adjust.trackEvent(adjustEvent);
+       
         }
         catch
         {
@@ -475,8 +458,7 @@ public class AnalyticsController : MonoBehaviour
 
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_inters_displayed);
-            Adjust.trackEvent(adjustEvent);
+      
         }
         catch
         {
@@ -494,8 +476,7 @@ public class AnalyticsController : MonoBehaviour
     {
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_inters_api_called);
-            Adjust.trackEvent(adjustEvent);
+     
         }
         catch
         {
@@ -507,8 +488,7 @@ public class AnalyticsController : MonoBehaviour
     {
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_rewarded_api_called);
-            Adjust.trackEvent(adjustEvent);
+  
         }
         catch
         {
@@ -545,10 +525,7 @@ public class AnalyticsController : MonoBehaviour
 
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_tutorial_completion);
-            adjustEvent.addCallbackParameter("level", level.ToString());
-            adjustEvent.addCallbackParameter("tutorial_id", level.ToString());
-            Adjust.trackEvent(adjustEvent);
+      
         }
         catch
         {
@@ -560,12 +537,7 @@ public class AnalyticsController : MonoBehaviour
     {
         try
         {
-            AdjustEvent adjustEvent = new AdjustEvent(aj_purchase);
-            adjustEvent.addCallbackParameter("level", level.ToString());
-            adjustEvent.addCallbackParameter("productID", productID.ToString());
-            adjustEvent.addCallbackParameter("price", price.ToString());
-            adjustEvent.addCallbackParameter("currency", currency.ToString());
-            Adjust.trackEvent(adjustEvent);
+      
         }
         catch
         {

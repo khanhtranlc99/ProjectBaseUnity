@@ -38,9 +38,9 @@ public class Finish : MonoBehaviour
             {
                 other.gameObject.GetComponentInChildren<Rigidbody>().isKinematic = false;
             }
-            
-            Destroy(other.gameObject.GetComponent<Rigidbody2D>());
-            Destroy(other.gameObject.GetComponent<PolygonCollider2D>());
+            other.gameObject.SetActive(false);
+            //Destroy(other.gameObject.GetComponent<Rigidbody2D>());
+            //Destroy(other.gameObject.GetComponent<PolygonCollider2D>());
            
         }
     }

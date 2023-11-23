@@ -9,19 +9,26 @@ public class StartLoading : MonoBehaviour
     public Text txtLoading;
     public Image progressBar;
     private string sceneName;
+    public bool wasRunLoad;
+    private int prevenOpenAppAds;
 
     public void Init()
     {
-    
+        wasRunLoad = false;
         progressBar.fillAmount = 0f;
 
         StartCoroutine(LoadingText());
+        StartCoroutine(ChangeScene());
     }
     public void InitState()
     {
 
-
-        StartCoroutine(ChangeScene());
+        if(!wasRunLoad)
+        {
+            wasRunLoad = true;
+        
+        }
+   
 
     }
 
@@ -29,10 +36,19 @@ public class StartLoading : MonoBehaviour
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(2f);
+        sceneName = "";
+        if (UseProfile.CurrentLevel < 60)
+        {
+            sceneName = "Level " + UseProfile.CurrentLevel;
+        }
+        else
+        {
+            sceneName = "Level " + UnityEngine.Random.Range(1, 60);
+        }
 
-        var _asyncOperation = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("levelnumber", 1) > SceneManager.sceneCountInBuildSettings - 1
-         ? Random.Range(1, SceneManager.sceneCountInBuildSettings - 1)
-         : PlayerPrefs.GetInt("levelnumber", 1), LoadSceneMode.Single);
+
+
+        var _asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 
         while (!_asyncOperation.isDone)
         {
@@ -57,4 +73,11 @@ public class StartLoading : MonoBehaviour
 
         }
     }
+    private IEnumerator OnChangeScene()
+    {
+        yield return new WaitForSeconds(1);
+        prevenOpenAppAds += 1;
+   
+    }
+
 }

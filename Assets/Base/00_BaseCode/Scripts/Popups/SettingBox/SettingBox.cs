@@ -150,7 +150,7 @@ public class SettingBox : BaseBox
 
     private void OnClickRestorePurchase()
     {
-        GameController.Instance.iapController.RestorePurchases();
+     
     }    
 
 }

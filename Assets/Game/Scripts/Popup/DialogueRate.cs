@@ -69,33 +69,26 @@ public class DialogueRate : BaseBox
             UseProfile.CanShowRate = false;
 
             try
-            {
-#if UNITY_ANDROID
-             
-                    if (Context.GetSDKLevel() >= MIN_API_LEVEL_REVIEW)
-                    {
-                        GameController.Instance.appReview.RateAndReview();
-                    }
-                    else
-                    {
-                        GameController.Instance.appReview.DirectlyOpen();
-                    }
-
-#else
-             GameController.Instance.appReview.DirectlyOpen();
-           // OnCloseWithNeverShow();
-#endif
+            {          
+             if (Context.GetSDKLevel() >= MIN_API_LEVEL_REVIEW)
+             {
+                 GameController.Instance.appReview.RateAndReview();
+             }
+             else
+             {
+                 GameController.Instance.appReview.DirectlyOpen();
+             }
             }
             catch
             {
                 GameController.Instance.appReview.DirectlyOpen();
             }
-            Close();
+          
             WinBox.Setup(100, false).Show();
         }
         else
         {
-            Close();
+        
             WinBox.Setup(100, false).Show();
         }
     }

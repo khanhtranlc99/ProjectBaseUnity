@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
         Vibration.Init();
         GameController.Instance.AnalyticsController.LoadingComplete();
         GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
+        HandleCanculateCamera();
 
     }
     public bool once;
@@ -479,6 +480,34 @@ public class GameManager : MonoBehaviour
 
      
     }
+    public Camera camera;
+    public float weight;
+    public float height;
+    public void HandleCanculateCamera()
+    {
+        if (Application.internetReachability != NetworkReachability.NotReachable)
+        {
+            GameController.Instance.admobAds.ShowOpenAppAdsReady();
+        }
+        else
+        {
+            NotiBox.Setup(delegate { NotiBox.Setup(null).Close(); }).Show();
+        }
+        weight = Screen.width;
+        height = Screen.height;
+        var temp = Math.Round(weight / (float)height,2) ;
 
+        camera = Camera.main;
+        if (temp <= 0.43f)
+        {
+         
+            camera.fieldOfView = 72f;
+        }    
    
+    
+
+
+
+    }
+
 }

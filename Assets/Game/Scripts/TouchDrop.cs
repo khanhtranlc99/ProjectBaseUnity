@@ -6,6 +6,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
+using UnityEngine.SceneManagement;
 
 public class TouchDrop : MonoBehaviour
 {
@@ -31,7 +32,8 @@ public class TouchDrop : MonoBehaviour
     public GameObject hold;
     public bool useBoosterDrill;
     public bool useBoosterDestroyScew;
-
+    public float zBooster;
+    public GameObject holdInGame;
     private void Awake()
     {
         instance = this;
@@ -51,6 +53,8 @@ public class TouchDrop : MonoBehaviour
         {
             start = true;
         }
+        holdInGame = GameObject.FindGameObjectWithTag("Fill");
+      
     }
 
 
@@ -108,9 +112,7 @@ public class TouchDrop : MonoBehaviour
 
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out _hit))
-                {
-                    Debug.LogError("Raycast");
-
+                {        
                     if (_hit.collider.gameObject.CompareTag("Broad"))
                     {
                         Vector3 spawnPosition = _hit.point;
@@ -118,7 +120,9 @@ public class TouchDrop : MonoBehaviour
                         Vector3 surfaceNormal = _hit.normal;
                         spawnedObject.transform.up = surfaceNormal;
                         var temp = spawnedObject.transform.position;
-                        spawnedObject.transform.position = new Vector3(temp.x, temp.y,-1);
+                        spawnedObject.transform.position = new Vector3(temp.x, temp.y, temp.z );
+                        spawnedObject.transform.parent = holdInGame.transform.parent;
+                        spawnedObject.transform.position = new Vector3(temp.x, temp.y, holdInGame.transform.position.z);
                         useBoosterDrill = false;
                         UIManager.INSTANCE.BlockBooster(true);
                         TutDrillBooster.Instance.OffTutDrill();
@@ -140,6 +144,18 @@ public class TouchDrop : MonoBehaviour
                 }
             }
         }
+        //if(Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    UseProfile.CurrentLevel += 1;
+        //    if (UseProfile.CurrentLevel < 60)
+        //    {
+        //        SceneManager.LoadScene("Level " + UseProfile.CurrentLevel);
+        //    }
+        //    else
+        //    {
+        //        SceneManager.LoadScene("Level " + UnityEngine.Random.Range(1, 60));
+        //    }
+        //}
     }
     public void HandleFillAds()
     {
@@ -326,4 +342,24 @@ public class TouchDrop : MonoBehaviour
         }
 
     }
+
+    private string sceneName;
+    public int idLevel;
+    [Button]
+    private void ChangeScene()
+    {
+
+        sceneName = "";
+        if (UseProfile.CurrentLevel < 60)
+        {
+            sceneName = "Level " + idLevel;
+        }
+        else
+        {
+            sceneName = "Level " + idLevel;
+        }
+        SceneManager.LoadScene(sceneName);
+    }
+
+
 }

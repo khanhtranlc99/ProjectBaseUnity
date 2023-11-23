@@ -12,7 +12,7 @@ public class AdmobAds : MonoBehaviour
 
     public float countdownAds;
 
-
+    public bool wasShowMer;
     private bool _isInited;
 
 #if UNITY_ANDROID
@@ -32,7 +32,7 @@ public class AdmobAds : MonoBehaviour
     {
         countdownAds = 10000;
         #region Applovin Ads
-   
+        wasShowMer = false;
         MaxSdkCallbacks.OnSdkInitializedEvent += (MaxSdkBase.SdkConfiguration sdkConfiguration) =>
         {
             Debug.Log("MAX SDK Initialized");
@@ -41,14 +41,15 @@ public class AdmobAds : MonoBehaviour
             InitializeBannerAds();
             InitializeMRecAds();
             InitializeOpenAppAds();
-            // MaxSdk.ShowMediationDebugger();
+            MaxSdk.ShowMediationDebugger();
         };
         MaxSdk.SetVerboseLogging(true);
         MaxSdk.SetSdkKey(MaxSdkKey);
         MaxSdk.InitializeSdk();
         #endregion
         _isInited = true;
-
+        lockAds = false;
+    
     }
 
     #region Interstitial
@@ -114,10 +115,10 @@ public class AdmobAds : MonoBehaviour
         MaxSdkCallbacks.OnInterstitialHiddenEvent += OnInterstitialHiddenEvent;
         MaxSdkCallbacks.OnInterstitialClickedEvent += MaxSdkCallbacks_OnInterstitialClickedEvent;
         MaxSdkCallbacks.OnInterstitialDisplayedEvent += MaxSdkCallbacks_OnInterstitialDisplayedEvent;
-
+        MaxSdkCallbacks.Interstitial.OnAdRevenuePaidEvent += OnAdRevenuePaidEvent;
         RequestInterstitial();
 
-        MaxSdkCallbacks.Interstitial.OnAdRevenuePaidEvent += OnAdRevenuePaidEvent;
+ 
         // MaxSdkCallbacks.
 
     }
@@ -506,7 +507,7 @@ public class AdmobAds : MonoBehaviour
         else
             MaxSdk.SetBannerWidth(BanerAdUnitId, 320);
 
-        GameController.Instance.admobAds.ShowBanner();
+        ShowBanner();
     }
 
 
@@ -552,7 +553,13 @@ public class AdmobAds : MonoBehaviour
     public void ShowBanner()
     {
         if (GameController.Instance.useProfile.IsRemoveAds)
+        {
             return;
+        }    
+        if(wasShowMer)
+        {
+            return;
+        }    
 
 
         //if (DataManager.RemoveAds != 0)
@@ -604,13 +611,13 @@ public class AdmobAds : MonoBehaviour
     new Firebase.Analytics.Parameter("ad_format", impressionData.AdFormat),
     new Firebase.Analytics.Parameter("value", revenue),
     new Firebase.Analytics.Parameter("currency", "USD"), // All AppLovin revenue is sent in USD
-};
+    };
 
         Firebase.Analytics.FirebaseAnalytics.LogEvent("ad_impression", impressionParameters);
 
 
         Dictionary<string, object> paramas = new Dictionary<string, object>();
-        FB.LogPurchase((decimal)revenue, "USD", paramas);
+        //FB.LogPurchase((decimal)revenue, "USD", paramas);
     }
 
     private void OnLevelWasLoaded(int level)
@@ -627,16 +634,20 @@ public class AdmobAds : MonoBehaviour
     #region AppOpenAds
     public void InitializeOpenAppAds()
     {
-        MaxSdkCallbacks.AppOpen.OnAdLoadedEvent += delegate { ShowOpenAppAdsReady(); };
+        MaxSdkCallbacks.AppOpen.OnAdLoadedEvent += delegate { };
         MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { GameController.Instance.startLoading.InitState(); };
         MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { GameController.Instance.startLoading.InitState(); };
+        MaxSdkCallbacks.AppOpen.OnAdRevenuePaidEvent += delegate { GameController.Instance.startLoading.InitState(); };
         MaxSdk.LoadAppOpenAd(AppOpenId);
     }
-
+    private bool lockAds = false;
     public void ShowOpenAppAdsReady()
     {
-
-    
+        if(lockAds)
+        {
+            return;
+        }
+        lockAds = true;
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
             if(!UseProfile.FirstLoading)
@@ -664,14 +675,14 @@ public class AdmobAds : MonoBehaviour
         }
         else
         {
-            MaxSdk.LoadAppOpenAd(AppOpenId);
+         
             GameController.Instance.startLoading.InitState();
         }
     
     }
     public void OnAppOpenDismissedEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
     {
-        MaxSdk.LoadAppOpenAd(GameController.Instance.admobAds.AppOpenId);
+        MaxSdk.LoadAppOpenAd(AppOpenId);
   
      
     }
@@ -707,15 +718,16 @@ public class AdmobAds : MonoBehaviour
     {
         DestroyBanner();
 
-
+        wasShowMer = true;
         MaxSdk.ShowMRec(MREC_Id);
 
-        Debug.Log("HandleShowMerec");
+     
     }
     public void HandleHideMerec()
     {
-     
+       
         MaxSdk.HideMRec(MREC_Id);
+        wasShowMer = false;
         ShowBanner();
     }
  

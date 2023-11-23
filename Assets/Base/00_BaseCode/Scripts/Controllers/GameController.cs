@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
     public AdmobAds admobAds;
     public StartLoading startLoading;
     [HideInInspector] public AnalyticsController AnalyticsController;
-    public IapController iapController;
+
     [HideInInspector] public SceneType currentScene;
     public AppReview appReview;
 
@@ -76,11 +76,13 @@ public class GameController : MonoBehaviour
        
          void InitTemp()
         {
+            AnalyticsController.Init();
            admobAds.Init();
            musicManager.Init();
-           iapController.Init();
+    
            appReview.Init();
            MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
+
         }
     
     }
@@ -89,8 +91,7 @@ public class GameController : MonoBehaviour
     {
         Initiate.Fade(sceneName.ToString(), Color.black, 2f);
     }
-
-  
+    
 }
 public enum SceneType
 {

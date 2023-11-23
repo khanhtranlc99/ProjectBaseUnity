@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Purchasing;
+//using UnityEngine.Purchasing;
 using UnityEngine.Events;
 using Newtonsoft.Json;
 public enum TypePackIAP
@@ -73,7 +73,7 @@ public class IAPPack
 
     public string namePack;
     public TypePackIAP type;
-    public ProductType productType;
+    //public ProductType productType;
     public TypeBuy typeBuy;
     [HideInInspector] public bool isNotInappPack { get { return typeBuy != TypeBuy.Inapp ? true : false; } }
     public string shortID;
@@ -199,38 +199,38 @@ public class IAPPack
                 GameController.Instance.dataContain.giftDatabase.Claim(item.Key, item.Value);
             }
                 
-            if (typeBuy == TypeBuy.Inapp && productType == ProductType.NonConsumable)
-            {
-                if (isIapInited)
-                {
-                    if (!IsBought)
-                    {
-                        if (lstReward.Count <= 1)
-                        {
-                            //  RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
-                           // NotificationPopup.instance.AddNotification("Buy Success!");
-                        }
-                        else
-                        {
-                            //  RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
-                        //    NotificationPopup.instance.AddNotification("Buy Success!");
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if (lstReward.Count <= 1)
-                {
-                    // RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
-                 //   NotificationPopup.instance.AddNotification("Buy Success!");
-                }
-                else
-                {
-                    //   RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
-                   // NotificationPopup.instance.AddNotification("Buy Success!");
-                }
-            }    
+            //if (typeBuy == TypeBuy.Inapp && productType == ProductType.NonConsumable)
+            //{
+            //    if (isIapInited)
+            //    {
+            //        if (!IsBought)
+            //        {
+            //            if (lstReward.Count <= 1)
+            //            {
+            //                //  RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+            //               // NotificationPopup.instance.AddNotification("Buy Success!");
+            //            }
+            //            else
+            //            {
+            //                //  RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+            //            //    NotificationPopup.instance.AddNotification("Buy Success!");
+            //            }
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    if (lstReward.Count <= 1)
+            //    {
+            //        // RewardIAPBox.Setup2().Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+            //     //   NotificationPopup.instance.AddNotification("Buy Success!");
+            //    }
+            //    else
+            //    {
+            //        //   RewardIAPBox.Setup2(true).Show(lstReward, actionClaim: () => { actClaimDone?.Invoke(); });
+            //       // NotificationPopup.instance.AddNotification("Buy Success!");
+            //    }
+            //}    
         
             IsBought = true;
         }

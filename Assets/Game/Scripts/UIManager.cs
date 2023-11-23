@@ -51,7 +51,7 @@ public class UIManager : BaseScene
     public Sprite spritePlus;
     public Sprite spriteNum;
     private bool lockTut;
-
+    //public Button btnTest;
     private void Awake()
     {
         INSTANCE = this;
@@ -97,7 +97,7 @@ public class UIManager : BaseScene
         //levelnum = currentLevel;
         //AudioManager.instance.Play("BACKGROUND");
         EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.CHANGE_COIN, HandleShowCoin);
-
+        //btnTest.onClick.AddListener(delegate { Debug.LogError("123"); appreview1.instance.Show();  });
     }
     public void HandleUnlock()
     {
