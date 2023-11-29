@@ -219,7 +219,8 @@ public class FirebaseConfig
     public const string RATING_POPUP = "rating_popup";
     public const string SHOW_OPEN_ADS = "show_open_ads";
     public const string SHOW_OPEN_ADS_FIRST_OPEN = "show_open_ads_first_open";
-  
+    public const string SHOW_IAR = "show_iar";
+
 }
 public class GameData
 {

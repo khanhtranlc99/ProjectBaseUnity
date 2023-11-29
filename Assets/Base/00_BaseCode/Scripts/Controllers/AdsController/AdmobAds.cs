@@ -41,7 +41,7 @@ public class AdmobAds : MonoBehaviour
             InitializeBannerAds();
             InitializeMRecAds();
             InitializeOpenAppAds();
-            MaxSdk.ShowMediationDebugger();
+        //    MaxSdk.ShowMediationDebugger();
         };
         MaxSdk.SetVerboseLogging(true);
         MaxSdk.SetSdkKey(MaxSdkKey);
@@ -738,6 +738,10 @@ public class AdmobAds : MonoBehaviour
         {
             if(RemoteConfigController.GetBoolConfig(FirebaseConfig.RESUME_ADS, false))
             {
+                if(UseProfile.CurrentLevel == 6)
+                {
+                    return;
+                }
                 ShowInterstitial(true);
             }
        

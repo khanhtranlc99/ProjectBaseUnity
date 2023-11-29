@@ -95,7 +95,7 @@ public class Wednesday : MonoBehaviour
         seq.AppendCallback(() =>
         {
             Player.GetComponent<SplineFollower>().enabled = true;
-            Player.GetComponent<SplineFollower>().spline = GameManager.instance.playerspline;
+            Player.GetComponent<SplineFollower>().spline = GameManager_Scew_Old.instance.playerspline;
             Player.GetComponent<Animator>().SetTrigger("Run");
             //Player.GetComponent<SplineFollower>().follow = true;
             Hand.transform.parent.DORotate(new Vector3(82, 120, 240), 0.5f);
@@ -134,7 +134,7 @@ public class Wednesday : MonoBehaviour
                                 {
                                     if (!UIManager.INSTANCE.win)
                                     {
-                                        GameManager.instance.winning();
+                                        GameManager_Scew_Old.instance.winning();
                                     }
                                 });
                             thief.GetComponent<Animation>().enabled = false;

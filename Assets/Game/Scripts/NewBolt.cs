@@ -9,10 +9,10 @@ public class NewBolt : MonoBehaviour
     public List<GameObject> connectedBodylist;
     public List<GameObject> previousbodies = new List<GameObject>();
 
-    public GameManager gamemanger;
+    public GameManager_Scew_Old gamemanger;
     void Start()
     {
-        gamemanger=GameManager.instance;
+        gamemanger=GameManager_Scew_Old.instance;
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class NewBolt : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CUBE"))
         {
-            if (gamemanger.gamestate == GameManager.State.Idle)
+            if (gamemanger.gamestate == GameManager_Scew_Old.State.Idle)
             {
                 if (!connectedBodylist.Contains(other.gameObject))
                 {

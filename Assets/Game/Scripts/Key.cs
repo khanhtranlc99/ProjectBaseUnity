@@ -10,7 +10,7 @@ public class Key : MonoBehaviour
 
     public GameObject locking;
 
-    public GameManager gamemanager;
+    public GameManager_Scew_Old gamemanager;
     private void Awake()
     {
         instance = this;
@@ -18,7 +18,7 @@ public class Key : MonoBehaviour
 
     void Start()
     {
-        gamemanager=GameManager.instance;
+        gamemanager=GameManager_Scew_Old.instance;
         
     }
 

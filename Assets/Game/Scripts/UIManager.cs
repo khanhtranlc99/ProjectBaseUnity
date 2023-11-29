@@ -332,7 +332,7 @@ public class UIManager : BaseScene
         if (AudioManager.instance)
         {
             AudioManager.instance.Play("Fill");
-            GameManager.instance.vibration();
+            GameManager_Scew_Old.instance.vibration();
         }
 
         Debug.Log($"Level Attempts::{levelAttempts}");
@@ -364,7 +364,7 @@ public class UIManager : BaseScene
             if (AudioManager.instance)
             {
                 AudioManager.instance.Play("Fill");
-                GameManager.instance.vibration();
+                GameManager_Scew_Old.instance.vibration();
             }
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

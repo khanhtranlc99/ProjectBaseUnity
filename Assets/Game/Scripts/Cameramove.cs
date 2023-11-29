@@ -23,7 +23,7 @@ public class Cameramove : MonoBehaviour
     void Start()
     {
         //originalpos = transform;
-        if ((GameManager.instance.gamemodes == GameManager.Modes.Wednesday))
+        if ((GameManager_Scew_Old.instance.gamemodes == GameManager_Scew_Old.Modes.Wednesday))
         {
             transform.DOMove(wedcam.position, 2f).SetEase(Ease.Linear).OnComplete(() =>
             {
@@ -55,7 +55,7 @@ public class Cameramove : MonoBehaviour
             TouchDrop.instance.start = true;
         });
         transform.rotation = changePos.transform.rotation;
-        GameManager.instance.test = true;
+        GameManager_Scew_Old.instance.test = true;
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
@@ -63,7 +63,7 @@ public class Cameramove : MonoBehaviour
     {
         transform.DOMove(originalpos.position, 2.5f).OnComplete(() =>
         { 
-            GameManager.instance.DoorOpen();
+            GameManager_Scew_Old.instance.DoorOpen();
         });
         transform.rotation = originalpos.rotation;
     }
@@ -77,12 +77,12 @@ public class Cameramove : MonoBehaviour
                 transform.DOMove(FailCam.position, 1.5f);
                 transform.rotation = FailCam.rotation;
             });*/
-        if (GameManager.instance.gamemodes == GameManager.Modes.Pig || GameManager.instance.gamemodes == GameManager.Modes.Kingkong )
+        if (GameManager_Scew_Old.instance.gamemodes == GameManager_Scew_Old.Modes.Pig || GameManager_Scew_Old.instance.gamemodes == GameManager_Scew_Old.Modes.Kingkong )
         {
             transform.DOMove(FailCam.position, 1.5f).OnComplete(() =>
         {
             //Animalanim.DOPlay();
-            GameManager.instance.Animal.GetComponent<Animator>().SetTrigger("Fail");
+            GameManager_Scew_Old.instance.Animal.GetComponent<Animator>().SetTrigger("Fail");
         });
         transform.rotation = FailCam.rotation;
             

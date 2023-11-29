@@ -68,29 +68,21 @@ public class DialogueRate : BaseBox
         {
             UseProfile.CanShowRate = false;
 
-            try
-            {          
-             if (Context.GetSDKLevel() >= MIN_API_LEVEL_REVIEW)
-             {
-                 GameController.Instance.appReview.RateAndReview();
-             }
-             else
-             {
-                 GameController.Instance.appReview.DirectlyOpen();
-             }
-            }
-            catch
-            {
-                GameController.Instance.appReview.DirectlyOpen();
-            }
-          
+            GameController.Instance.appReview.DirectlyOpen();
             WinBox.Setup(100, false).Show();
+
+
+            //
         }
         else
         {
         
             WinBox.Setup(100, false).Show();
         }
+    }
+    private void ShowWinBox()
+    {
+        WinBox.Setup(100, false).Show();
     }
     public void CloseAction()
     {

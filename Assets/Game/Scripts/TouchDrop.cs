@@ -16,7 +16,7 @@ public class TouchDrop : MonoBehaviour
 
     private RaycastHit _hit;
     [Header("Scripts")]
-    public GameManager gameManager;
+    public GameManager_Scew_Old gameManager;
 
     public float boltremoveheight;
 
@@ -42,14 +42,14 @@ public class TouchDrop : MonoBehaviour
 
     void Start()
     {
-        gameManager = GameManager.instance;
+        gameManager = GameManager_Scew_Old.instance;
 
         if (AudioManager.instance)
         {
             audioManager = AudioManager.instance;
         }
 
-        if (gameManager.gamemodes == GameManager.Modes.Null)
+        if (gameManager.gamemodes == GameManager_Scew_Old.Modes.Null)
         {
             start = true;
         }
@@ -79,7 +79,7 @@ public class TouchDrop : MonoBehaviour
                 {
                     if (_hit.collider.gameObject.CompareTag("BOLT"))
                     {
-                        if (gameManager.gamestate == GameManager.State.Done)
+                        if (gameManager.gamestate == GameManager_Scew_Old.State.Done)
                         {
                             var selectObject = _hit.collider.gameObject;
                             Boltshifting(selectObject);
@@ -89,7 +89,7 @@ public class TouchDrop : MonoBehaviour
 
                     if (_hit.collider.gameObject.CompareTag("Fill"))
                     {
-                        if (gameManager.gamestate == GameManager.State.Done)
+                        if (gameManager.gamestate == GameManager_Scew_Old.State.Done)
                         {
                             var fillingplace = _hit.collider.gameObject;
                             Filling(fillingplace);
@@ -99,7 +99,7 @@ public class TouchDrop : MonoBehaviour
 
                     if (_hit.collider.gameObject.CompareTag("FillAds"))
                     {
-                        if (gameManager.gamestate == GameManager.State.Done)
+                        if (gameManager.gamestate == GameManager_Scew_Old.State.Done)
                         {
                             var fillingplace = _hit.collider.gameObject;
                             fillingplace.GetComponent<FillAds>().OnClick();
@@ -196,7 +196,7 @@ public class TouchDrop : MonoBehaviour
                     {
                         gameManager.dupcolider.GetComponent<CircleCollider2D>().enabled = false;
                         parent.GetComponent<CircleCollider2D>().enabled = true;
-                        gameManager.gamestate = GameManager.State.Done;
+                        gameManager.gamestate = GameManager_Scew_Old.State.Done;
                     });
             });
             gameManager.dupPlug = null;
@@ -218,20 +218,20 @@ public class TouchDrop : MonoBehaviour
             if (gameManager.dupPlug == (boltreferance))
             {
 
-                gameManager.gamestate = GameManager.State.Select;
+                gameManager.gamestate = GameManager_Scew_Old.State.Select;
                 gameManager.dupPlug = null;
                 var parent = boltreferance.transform.parent;
                 parent.DOLocalMoveZ(parent.localPosition.z + boltremoveheight, 0.3f).SetEase(Ease.Linear).OnComplete(
                     () =>
                     {
-                        gameManager.gamestate = GameManager.State.Done;
+                        gameManager.gamestate = GameManager_Scew_Old.State.Done;
                     });
                 //gameManager.gamestate = GameManager.State.Select;
 
             }
             else if (gameManager.dupPlug != (boltreferance))
             {
-                gameManager.gamestate = GameManager.State.Select;
+                gameManager.gamestate = GameManager_Scew_Old.State.Select;
                 var parent = gameManager.dupPlug.transform.parent;
                 parent.DOLocalMoveZ(parent.localPosition.z + boltremoveheight, 0.3f).SetEase(Ease.Linear);
                 gameManager.dupPlug = null;
@@ -241,14 +241,14 @@ public class TouchDrop : MonoBehaviour
                 parent1.DOLocalMoveZ(parent1.localPosition.z - boltremoveheight, 0.3f).SetEase(Ease.Linear).OnComplete(
                     () =>
                     {
-                        gameManager.gamestate = GameManager.State.Done;
+                        gameManager.gamestate = GameManager_Scew_Old.State.Done;
                     });
             }
         }
 
         else if (gameManager.dupPlug == null)
         {
-            gameManager.gamestate = GameManager.State.Select;
+            gameManager.gamestate = GameManager_Scew_Old.State.Select;
             if (UIManager.INSTANCE.pin)
             {
                 UIManager.INSTANCE.pin = false;
@@ -259,7 +259,7 @@ public class TouchDrop : MonoBehaviour
             var parent = boltreferance.transform.parent;
             parent.DOLocalMoveZ(parent.localPosition.z - boltremoveheight, 0.3f).SetEase(Ease.Linear).OnComplete(() =>
             {
-                gameManager.gamestate = GameManager.State.Done;
+                gameManager.gamestate = GameManager_Scew_Old.State.Done;
             });
             gameManager.dupPlug = boltreferance;
         }
@@ -298,7 +298,7 @@ public class TouchDrop : MonoBehaviour
                     {
                         gameManager.dupcolider.GetComponent<CircleCollider2D>().enabled = false;
                         parent.GetComponent<CircleCollider2D>().enabled = true;
-                        gameManager.gamestate = GameManager.State.Done;
+                        gameManager.gamestate = GameManager_Scew_Old.State.Done;
                     });
             });
             gameManager.dupPlug = null;

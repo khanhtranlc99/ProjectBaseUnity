@@ -84,7 +84,7 @@ public class KingKong : MonoBehaviour
             {
                 DOVirtual.DelayedCall(3f, () =>
                 {
-                    GameManager.instance.winning();
+                    GameManager_Scew_Old.instance.winning();
                 });
             }
         });

@@ -33,7 +33,7 @@ public class Finish : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CUBE"))
         {
-            GameManager.instance.donecount++;
+            GameManager_Scew_Old.instance.donecount++;
             if (other.gameObject.GetComponentInChildren<Rigidbody>().isKinematic == true)
             {
                 other.gameObject.GetComponentInChildren<Rigidbody>().isKinematic = false;

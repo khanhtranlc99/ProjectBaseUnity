@@ -93,15 +93,21 @@ public class WinBox : BaseBox
 
     private void HandleOnClickBtnNext()
     {
-        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () =>
+        if(UseProfile.CurrentLevel == 6 )
         {
-            //UpdateEgg(score);     
-            //Close();
-            //Initiate.Fade(SceneName.GAME_PLAY, Color.black, 2);
             UseProfile.Coin += 100;
             Next();
+        }   
+        else
+        {
+            GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () =>
+            {
+                UseProfile.Coin += 100;
+                Next();
 
-        }, actionWatchLog: "NextLevel");
+            }, actionWatchLog: "NextLevel");
+        }
+     
       
        
         // SceneManager.LoadScene(SceneName.GAME_PLAY);
@@ -112,7 +118,7 @@ public class WinBox : BaseBox
         if (AudioManager.instance)
         {
             AudioManager.instance.Play("Fill");
-            GameManager.instance.vibration();
+            GameManager_Scew_Old.instance.vibration();
         }
 
 
