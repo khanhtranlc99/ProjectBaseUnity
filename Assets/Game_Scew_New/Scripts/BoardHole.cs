@@ -34,8 +34,23 @@ public class BoardHole : MonoBehaviour
 
     public void RewardHole()
     {
+        GameController.Instance.admobAds.ShowVideoReward(delegate { CompleteMethod_1(); }, delegate
+        {
+            GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp
+            (
+             
+                this.transform.position,
+                "No video at the moment!",
+                Color.white,
+                isSpawnItemPlayer: true
+            );
+        }, delegate { }, ActionWatchVideo.RewardEndGame, UseProfile.CurrentLevel.ToString());
 
-        Advertisements.Instance.ShowRewardedVideo(CompleteMethod);
+        void CompleteMethod_1()
+        {
+            Reward = false;
+            transform.GetChild(2).gameObject.SetActive(false);
+        }
     }
 
     private void CompleteMethod(bool completed, string advertiser)

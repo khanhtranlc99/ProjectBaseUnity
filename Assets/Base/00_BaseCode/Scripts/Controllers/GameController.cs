@@ -79,7 +79,7 @@ public class GameController : MonoBehaviour
             AnalyticsController.Init();
            admobAds.Init();
            musicManager.Init();
-    
+            startLoading.LoadGamePlay();
            appReview.Init();
            MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
 

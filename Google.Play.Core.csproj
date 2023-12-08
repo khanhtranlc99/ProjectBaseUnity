@@ -56,15 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreOnFailureListener.cs" />
-    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayServicesTask.cs" />
-    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\TaskOnFailureListener.cs" />
-    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreConstants.cs" />
     <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\TaskOnSuccessListener.cs" />
-    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreHelper.cs" />
     <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreEventHandler.cs" />
-    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreOnSuccessListener.cs" />
+    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\TaskOnFailureListener.cs" />
+    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreOnFailureListener.cs" />
+    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreHelper.cs" />
+    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreConstants.cs" />
     <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\ActivityResult.cs" />
+    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayServicesTask.cs" />
+    <Compile Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Scripts\Internal\PlayCoreOnSuccessListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GooglePlayPlugins\com.google.play.core\Runtime\Google.Play.Core.asmdef" />
@@ -337,9 +337,6 @@
     <Reference Include="Google.PackageManagerResolver">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.RemoteConfig">
       <HintPath>Library\PackageCache\com.google.firebase.remote-config@857f0ad3a432\Firebase\Plugins\Firebase.RemoteConfig.dll</HintPath>
     </Reference>
@@ -391,14 +388,17 @@
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Google.VersionHandlerImpl">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.VersionHandlerImpl.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver">
-      <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.JarResolver.dll</HintPath>
-    </Reference>
     <Reference Include="WinWsInterface">
       <HintPath>Assets\Base\3Party\Adjust\Windows\Stubs\WinWsInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.JarResolver.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>

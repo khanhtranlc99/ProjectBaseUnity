@@ -29,8 +29,12 @@ public class GameManager : MonoBehaviour
     Bolt SelectedBolt;
     Bar[] bars;
     bool isGameFinished;
+    public bool isUseDrillBooster;
+    public bool isUseDestroyScewBooster;
+    public GameObject prefabHold;
 
     public static GameManager instance;
+    public GameScene gameScene;
     private void Awake()
     {
         instance = this;
@@ -41,17 +45,20 @@ public class GameManager : MonoBehaviour
         _camera = Camera.main;
         SoundAudioSource = GetComponent<AudioSource>();
         bars = FindObjectsOfType<Bar>().ToArray();
-        if (PlayerPrefs.GetInt("CanPlayMusic", 1) == 0)
-        {
-            MusicBtn.sprite = musicOff;
-            MusicAudioSource.volume = 0;
-        }
-        if (PlayerPrefs.GetInt("CanPlaySounds", 1) == 0)
-        {
-            SoundBtn.sprite = soundOff;
+        MusicAudioSource.volume = 0;
+        //if (PlayerPrefs.GetInt("CanPlayMusic", 1) == 0)
+        //{
+        //    MusicBtn.sprite = musicOff;
+        //    MusicAudioSource.volume = 0;
+        //}
+        //if (PlayerPrefs.GetInt("CanPlaySounds", 1) == 0)
+        //{
+        //    SoundBtn.sprite = soundOff;
 
-        }
-
+        //}
+        gameScene.Init();
+        GameController.Instance.AnalyticsController.LoadingComplete();
+        GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
     }
 
 
@@ -89,11 +96,30 @@ public class GameManager : MonoBehaviour
                     if (hits[i].transform.gameObject.layer == 6)
                     {
                         bolt = hits[i].transform.GetComponent<Bolt>();
+                    
                     }
                     else if (hits[i].transform.gameObject.layer == 8)
                     {
                         hole = hits[i].transform.GetComponent<BoardHole>();
+      
                     }
+                    else if (hits[i].transform.gameObject.layer == 17)
+                    {
+                        if(isUseDrillBooster)
+                        {
+                            var temp = Instantiate(prefabHold);
+                            var tempPost = _camera.ScreenToWorldPoint(Input.mousePosition);
+                            temp.transform.position = new Vector3(tempPost.x, tempPost.y , 0);
+                            isUseDrillBooster = false;
+                            gameScene.BlockBooster(true);
+                            if (UseProfile.CurrentLevel == 5)
+                            {
+                                TutBoosterDrill.Instance.Step_2();
+                            }
+                        }
+                   
+                    }
+
                 }
 
                 if (bolt != null && !bolt.Locked)
@@ -190,6 +216,7 @@ public class GameManager : MonoBehaviour
         }
         print(currentLevel);
         Instantiate(Levels[currentLevel]);
+    
     }
 
 
@@ -212,12 +239,13 @@ public class GameManager : MonoBehaviour
         Instantiate(WinVfx);
         PlayClip(WinSound);
         yield return new WaitForSeconds(1.5f);
-        WinPanel.SetActive(true);
+        //WinPanel.SetActive(true);
+        WinBox.Setup(100, false).Show();
     }
 
     public void NextLevelBtn()
     {
-        Advertisements.Instance.ShowInterstitial();
+    
 
         PlayerPrefs.SetInt("CurrentBG", UnityEngine.Random.Range(0, BackGrounds.Length));
         PlayerPrefs.SetInt("CurrentLevel", PlayerPrefs.GetInt("CurrentLevel", 0) + 1);
@@ -225,13 +253,33 @@ public class GameManager : MonoBehaviour
     }
     public void ReplayLevelBtn()
     {
-        Advertisements.Instance.ShowInterstitial();
-        SceneManager.LoadScene(1);
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () =>
+        {
+            GameController.Instance.admobAds.ShowInterstitial();
+            SceneManager.LoadScene(1);
+        }, actionWatchLog: "ReplayLevelBtn");
+
+        GameController.Instance.musicManager.PlayClickSound();
     }
     public void ReviveBtn()
     {
-        Advertisements.Instance.ShowRewardedVideo(ReviveCompleteMethod);
+        GameController.Instance.admobAds.ShowVideoReward(delegate { ClaimAds(); }, delegate {
+            GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp(
+            this.transform.position,
+            "No video at the moment!",
+            Color.white,
+            isSpawnItemPlayer: true
+            );
+        }, delegate { }, ActionWatchVideo.HoldAds, UseProfile.CurrentLevel.ToString());
 
+        void ClaimAds()
+        {
+            GameController.Instance.musicManager.PlayClickSound();
+            isGameFinished = false;
+            targetTime = 60;
+            LosePanel.SetActive(false);
+        }
+     
     }
 
     private void ReviveCompleteMethod(bool completed, string advertiser)
@@ -250,7 +298,8 @@ public class GameManager : MonoBehaviour
     }
     public void ShowSettingsPanel()
     {
-        SettingsPanel.SetActive(true);
+        //SettingsPanel.SetActive(true);
+        SettingBox.Setup().Show();
     }
     public void HideSettingsPanel()
     {

@@ -77,8 +77,8 @@
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableBeginDragTrigger.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\Operators\Repeat.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\InspectableReactiveProperty.cs" />
-    <Compile Include="Assets\Base\3Party\UniRx\Scripts\InternalUtil\ImmutableList.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\Tasks\TaskObservableExtensions.cs" />
+    <Compile Include="Assets\Base\3Party\UniRx\Scripts\InternalUtil\ImmutableList.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTransformChangedTrigger.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\Notifiers\MessageBroker.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\UnityEventExtensions.cs" />
@@ -241,8 +241,8 @@
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableAnimatorTrigger.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\Disposables\BooleanDisposable.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\Observable.Conversions.cs" />
-    <Compile Include="Assets\Base\3Party\UniRx\Scripts\Disposables\ICancelable.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\Operators\First.cs" />
+    <Compile Include="Assets\Base\3Party\UniRx\Scripts\Disposables\ICancelable.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableLateUpdateTrigger.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\Diagnostics\LogEntryExtensions.cs" />
     <Compile Include="Assets\Base\3Party\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableEndDragTrigger.cs" />
@@ -477,6 +477,9 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
     </Reference>
@@ -518,9 +521,6 @@
     </Reference>
     <Reference Include="DOTween50">
       <HintPath>Assets\Game\Demigiant\DOTween\DOTween50.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Android">
       <HintPath>Assets\Base\FacebookSDK\Plugins\Android\Facebook.Unity.Android.dll</HintPath>

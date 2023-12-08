@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
+using System.Collections.Generic;
 #if UNITY_IOS
 using UnityEngine.iOS;
 #elif UNITY_ANDROID
@@ -68,9 +69,51 @@ public class AppReview : MonoBehaviour
         }
     }
 
+    public List<GameObject> lsBolt;
+    public List<GameObject> lsBroad;
+
+    public Material tempMt;
+    public GameObject Broad;
+    public List<Sprite> lsSprite;
     [Button]
+    private void Test()
+    {
+
+        var temp = GameObject.FindObjectsOfType<GameObject>();
+        lsBolt = new List<GameObject>();
+        lsBroad = new List<GameObject>();
+        foreach (var item in temp)
+        {
+            if (item.name == "oc_tron")
+            {
+                lsBolt.Add(item);
+            }
+            if (item.name == "Board")
+            {
+                lsBroad.Add(item);
+            }
+          
+
+        }
+        //foreach (var item in lsBolt)
+        //{
+
+        //    item.GetComponent<MeshRenderer>().material = tempMt;
+        //}
+        foreach (var item in lsBroad)
+        {
+
+            item.GetComponent<SpriteRenderer>().color = new Color32(0,0,0,0);
+            var temp1 = Instantiate(Broad);
+            temp1.transform.position = item.transform.position;
+            temp1.transform.parent = item.transform;
+        }
+        Debug.LogError("Test" + temp.Length);
+    }
     public void DirectlyOpen()
     {
         Application.OpenURL($"https://play.google.com/store/apps/details?id=com.zgames.screw.puzzle.nuts.bolts");
     }
+
+
 }

@@ -52,12 +52,11 @@ public class GiftDatabase : SerializedScriptableObject
                 break;
             case GiftType.DestroyScewBooster:
                 UseProfile.DestroyScewBooster += amount;
-                UIManager.INSTANCE.HandleShowStateBooster();
-            
+                GameManager.instance.gameScene.HandleShowStateBooster();
                 break;
             case GiftType.DrillBooster:
                 UseProfile.DrillBooster += amount;
-                UIManager.INSTANCE.HandleShowStateBooster();
+              GameManager.instance.gameScene.HandleShowStateBooster();
                 break;
          
 

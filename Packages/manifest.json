@@ -8,6 +8,7 @@
     "com.google.firebase.remote-config": "file:../Assets/Base/3Party/Third/com.google.firebase.remote-config-9.5.0.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.17.2",
+    "com.unity.formats.fbx": "5.1.0",
     "com.unity.ide.rider": "3.0.15",
     "com.unity.ide.visualstudio": "2.0.16",
     "com.unity.ide.vscode": "1.2.5",

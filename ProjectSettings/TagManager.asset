@@ -4,12 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - CUBE
-  - BOLT
-  - MASk
-  - Fill
-  - Broad
-  - FillAds
+  - Key
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -17,18 +13,18 @@ TagManager:
   - 
   - Water
   - UI
-  - cubes
-  - Obstacles
-  - Top
-  - Down
-  - 
-  - 
-  - CubeMask
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bolt
+  - BarHole
+  - BoardHole
+  - Bar1
+  - Bar2
+  - Bar3
+  - Bar4
+  - Bar5
+  - Bar6
+  - Bar7
+  - VFX
+  - Broad
   - 
   - 
   - 
@@ -46,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bar
+    uniqueID: 4275573765
+    locked: 0
+  - name: Screw
+    uniqueID: 1231799565
     locked: 0

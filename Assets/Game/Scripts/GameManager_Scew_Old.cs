@@ -473,8 +473,7 @@ public class GameManager_Scew_Old : MonoBehaviour
     {
         if (GameController.Instance.useProfile.OnVibration)
         {
-            Vibration.Vibrate(40);
-            print("vibrate");
+            Vibration.Vibrate(40);    
         }
 
 

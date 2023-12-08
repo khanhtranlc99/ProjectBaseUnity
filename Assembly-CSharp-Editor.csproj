@@ -56,19 +56,26 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Common\Editor\AssetVersion.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\About\Editor\AssetStorePackage.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\SplineTriggersEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplinePositionerEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\Editor\SettingsWindow.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\SplineDebugEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditorToolbar.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointNormalModule.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineMeshEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\SpiralEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Common\Editor\PreprocessorDirective.cs" />
     <Compile Include="Assets\MyTools\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\WaveformGeneratorEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointMirrorModule.cs" />
     <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\WelcomeWindow.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\Editor\AdSettingsDataEditor.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeSettings.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\WelcomeScreen.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Common\Editor\Constants.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\About\Editor\EditorFileLoader.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\DSCreatePointModule.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\RangeSliderEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\ComputerEditor.cs" />
@@ -78,22 +85,29 @@
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\RectangleEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\TubeGeneratorEditor.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\Editor\ArabicSupportTool.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Common\Editor\EditorUtilities.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\uGUITools.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\ParticleControllerEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\Toolbar.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\UpdateTool.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\IsRewardedVideoAvailableEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineFollowerEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SetConsentToYesEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\EditorGUIEvents.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Editor\CustomPostprocessScript.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\SplineSampleModifierEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\AccordionElementEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\RoundedRectangleEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\CUIBezierCurveEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\About\Editor\AssetVersions.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\IsInterstitialAvailableEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\PrimitivesModule.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\Explorer.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\About\Editor\AssetState.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\TransformModuleEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SetDistanceWindow.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineUserEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\UserConsentWasSetEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditorGUI.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\PrimitiveEditor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustSettings.cs" />
@@ -126,7 +140,9 @@
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\LengthCalculatorEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\CapsuleEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointMoveModule.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowRewardedVideoEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SurfaceGeneratorEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\InitializeGleyAdsEditor.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeEditorTools.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\DreamteckSplinesEditor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustSettingsEditor.cs" />
@@ -139,11 +155,13 @@
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\UILocalizeEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\CreatePointModule.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\BoxSliderEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowInterstitialEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\CUIGraphicEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\EditorModule.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Editor\LocalizeParse.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\MeshGenEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\ObjectControllerEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Common\Editor\ImportRequiredPackages.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicIconEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\AudioUtility.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\SplineRendererEditor.cs" />
@@ -151,14 +169,19 @@
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\ObjectSpawnTool.cs" />
     <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\FindDerivedClasses.cs" />
     <Compile Include="Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\ShowBannerEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\RemoveAdsEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\SizeModifierEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Sample Modifiers\Editor\RotationModifierEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\NonDrawingGraphicEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\Editor\PostBuildStep.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicRenameEditor.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\TextPicEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\About\Editor\GleyAboutWindow.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\ReadOnlyDrawer.cs" />
-    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\ImportTool.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Editor\CUIImageEditor.cs" />
+    <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Tools\ImportTool.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\HideBannerEditor.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustEditorPreprocessor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\NgonEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Components\Editor\ObjectBenderEditor.cs" />
@@ -168,6 +191,8 @@
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\DS Editor\ComputerEditorModule.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\SplineEditor\Point Modules\PointModule.cs" />
     <Compile Include="Assets\Base\3Party\Adjust\Editor\AdjustEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\Ads\Scripts\VisualScriptingSupport\GameFlowSupport\Editor\SetConsentToNoEditor.cs" />
+    <Compile Include="Assets\Game_Scew_New\GleyPlugins\About\Editor\IconReferences.cs" />
     <Compile Include="Assets\Game\Dreamteck\Utilities\Editor\DreamteckEditorGUI.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\LineEditor.cs" />
     <Compile Include="Assets\Game\Dreamteck\Splines\Editor\Primitives\StarEditor.cs" />
@@ -179,20 +204,26 @@
     <None Include="Assets\MaxSdk\AppLovin\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\Google\Editor\Dependencies.xml" />
     <None Include="Assets\Base\FacebookSDK\Plugins\Editor\Dependencies.xml" />
+    <None Include="Assets\GooglePlayPlugins\com.google.play.core\Editor\Dependencies.xml" />
     <None Include="Assets\Game\Demigiant\DOTween\Editor\DOTweenEditor.dll" />
     <None Include="Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenProEditor.XML" />
     <None Include="Assets\Game\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll" />
     <None Include="Assets\MaxSdk\Mediation\Yandex\Editor\Dependencies.xml" />
+    <None Include="Assets\GooglePlayPlugins\com.google.play.review\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\ByteDance\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\BigoAds\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\IronSource\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\UnityAds\Editor\Dependencies.xml" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.137.0.txt" />
+    <None Include="Assets\BigoSDK\Editor\Dependencies.xml" />
     <None Include="Assets\Game\Dreamteck\Splines\Editor\changelog.txt" />
     <None Include="Assets\MaxSdk\Mediation\Verve\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\InMobi\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Vungle\Editor\Dependencies.xml" />
     <None Include="Assets\Game\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Game\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\MaxSdk\Mediation\Fyber\Editor\Dependencies.xml" />
+    <None Include="Assets\MaxSdk\Mediation\Facebook\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\GoogleAdManager\Editor\Dependencies.xml" />
     <None Include="Assets\MaxSdk\Mediation\MyTarget\Editor\Dependencies.xml" />
     <None Include="Assets\Base\Plugins\Sirenix\Odin Inspector\Assets\Editor\Bootstrap License.txt" />
@@ -475,9 +506,6 @@
     <Reference Include="Google.PackageManagerResolver">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.RemoteConfig">
       <HintPath>Library\PackageCache\com.google.firebase.remote-config@857f0ad3a432\Firebase\Plugins\Firebase.RemoteConfig.dll</HintPath>
     </Reference>
@@ -529,14 +557,17 @@
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Google.VersionHandlerImpl">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.VersionHandlerImpl.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver">
-      <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.JarResolver.dll</HintPath>
-    </Reference>
     <Reference Include="WinWsInterface">
       <HintPath>Assets\Base\3Party\Adjust\Windows\Stubs\WinWsInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.JarResolver.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
@@ -978,10 +1009,6 @@
       <Project>{2CEA6CFC-E2A8-6545-8674-618E7DA46F5A}</Project>
       <Name>ACTk.Examples.Genuine.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{85DD3479-153C-B45F-7B17-4FC7E6DD579A}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{210128AD-7C39-82CE-6A16-E1DEDEE0774D}</Project>
       <Name>Unity.VSCode.Editor</Name>
@@ -989,10 +1016,6 @@
     <ProjectReference Include="Unity.Recorder.Base.csproj">
       <Project>{D7CE0073-44BF-8328-EBDA-E763A693C9EF}</Project>
       <Name>Unity.Recorder.Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{082FDB0D-1195-96DA-EF87-FC4DD86CBE5E}</Project>
-      <Name>UnityEngine.Purchasing</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{833BB4B2-AC47-82D1-3581-71BA2CF99CF9}</Project>
@@ -1002,41 +1025,45 @@
       <Project>{AB310E97-111C-E40F-69F9-86D0DB5E7B3B}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{D6038578-B8B9-27BB-3617-44ABD27C5DF1}</Project>
-      <Name>Unity.Timeline</Name>
+    <ProjectReference Include="Autodesk.Fbx.Editor.csproj">
+      <Project>{5E8F4317-B11E-E10E-0CC1-E8398CB42043}</Project>
+      <Name>Autodesk.Fbx.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Analytics.Editor.csproj">
-      <Project>{022939E0-7E25-695E-E737-ADE33F20673A}</Project>
-      <Name>Unity.Services.Analytics.Editor</Name>
+    <ProjectReference Include="Google.Play.Core.csproj">
+      <Project>{8CB65CE9-17D3-1090-2E27-A44E28CC37D3}</Project>
+      <Name>Google.Play.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{607561CF-7871-275F-38A5-1D347D8900EC}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{D0ECB850-8E77-10A3-10C0-7AB2A702023C}</Project>
-      <Name>UnityEngine.Purchasing.SecurityStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
-      <Project>{51ECC520-9CB4-3AD2-95D8-C05A84536F38}</Project>
-      <Name>MoreMountains.NiceVibrations</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Analytics.csproj">
-      <Project>{491C0C32-46BF-6FD3-8633-88D32BBFEF18}</Project>
-      <Name>Unity.Services.Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{181E0AC8-78AF-60E6-89B7-05BE59BE330B}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
+    <ProjectReference Include="Unity.Formats.Fbx.Editor.csproj">
+      <Project>{FA9CD9A2-37B9-FC58-255C-15546A4D326C}</Project>
+      <Name>Unity.Formats.Fbx.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="AppsFlyer.csproj">
       <Project>{F89467CB-4238-7E5D-E564-17B6ACF3E542}</Project>
       <Name>AppsFlyer</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{D6038578-B8B9-27BB-3617-44ABD27C5DF1}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{607561CF-7871-275F-38A5-1D347D8900EC}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.NiceVibrations.csproj">
+      <Project>{51ECC520-9CB4-3AD2-95D8-C05A84536F38}</Project>
+      <Name>MoreMountains.NiceVibrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{181E0AC8-78AF-60E6-89B7-05BE59BE330B}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="AppsFlyer.Editor.csproj">
       <Project>{20EA2A42-D90E-4B37-3EE2-162031498AF1}</Project>
       <Name>AppsFlyer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{EBE3BA89-3205-3CC4-E967-791539A0A8FC}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Haptics.csproj">
       <Project>{487097C6-10E7-C6AD-6205-BA1ADBD64A20}</Project>
@@ -1046,10 +1073,6 @@
       <Project>{D4748EA4-99F7-EC32-6381-121F18087CF2}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{EBE3BA89-3205-3CC4-E967-791539A0A8FC}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{B2FB5D5C-EC62-3F48-D71C-FD70CE86398D}</Project>
       <Name>UnityEditor.UI</Name>
@@ -1057,6 +1080,10 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{A46373E6-F23E-72C7-AB63-EFD9AE4E3DD4}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Play.Review.csproj">
+      <Project>{291DDF64-90B3-F657-9F0A-AC2F7CE40983}</Project>
+      <Name>Google.Play.Review</Name>
     </ProjectReference>
     <ProjectReference Include="ACTk.Runtime.csproj">
       <Project>{1CE39435-F741-93DB-7619-E8B2CF2A5C31}</Project>
@@ -1066,65 +1093,53 @@
       <Project>{C71C4739-7B07-9624-D7DE-FDA8120CB2D4}</Project>
       <Name>ACTk.Examples.Genuine.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Autodesk.Fbx.csproj">
+      <Project>{135FD392-98FF-35F2-A8B4-7BB76ADA4CBF}</Project>
+      <Name>Autodesk.Fbx</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.NiceVibrations.Demos.csproj">
       <Project>{10129E79-8BBE-92AC-BD09-3753A3269239}</Project>
       <Name>MoreMountains.NiceVibrations.Demos</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{34D92FB6-CA28-8DC5-D39A-9F8D639B79AD}</Project>
-      <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="UniRx.csproj">
       <Project>{FB81C02F-7366-FA1F-40E5-32C601A7FD5B}</Project>
       <Name>UniRx</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
-      <Project>{6A57BA69-247F-989B-4151-3347829CAD5A}</Project>
-      <Name>Unity.Services.Core.Analytics</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{CF771724-C2ED-9D4F-019B-E6AF90175BC4}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore</Name>
-    </ProjectReference>
     <ProjectReference Include="MaxSdk.Scripts.Editor.csproj">
       <Project>{C5D2AAD4-B6B9-385D-7180-4FCBE0D60CB9}</Project>
       <Name>MaxSdk.Scripts.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
-      <Project>{B3532415-5D7E-C639-D69F-E178585F8022}</Project>
-      <Name>UnityEngine.Purchasing.Codeless</Name>
     </ProjectReference>
     <ProjectReference Include="ACTk.Examples.Runtime.csproj">
       <Project>{1A805F67-60DD-024D-9F46-4934BFCBEBFC}</Project>
       <Name>ACTk.Examples.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
-      <Project>{B59DA7D0-B4E6-77FF-D567-EA8EA3829C9A}</Project>
-      <Name>Unity.Services.Core.Environments</Name>
+    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
+      <Project>{58C1C5BF-A36C-9FDE-68BB-A259543C9825}</Project>
+      <Name>Unity.Formats.Fbx.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
       <Project>{940E9644-5A70-A6CF-B2BD-C0122CC2ECEE}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
-      <Project>{A2234948-84A1-8087-5CDC-674BEA966AB6}</Project>
-      <Name>UnityEngine.Purchasing.Stores</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.Purchasing.csproj">
-      <Project>{95639A13-B67E-B95E-EAD9-041FD4993986}</Project>
-      <Name>UnityEditor.Purchasing</Name>
+    <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
+      <Project>{7FE104F8-15EE-FCBB-7536-0B27E3598396}</Project>
+      <Name>MoreMountains.NiceVibrations.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MaxSdk.Scripts.csproj">
       <Project>{03496232-2FDA-90B4-2196-7556F27136E0}</Project>
       <Name>MaxSdk.Scripts</Name>
     </ProjectReference>
-    <ProjectReference Include="MoreMountains.NiceVibrations.Editor.csproj">
-      <Project>{7FE104F8-15EE-FCBB-7536-0B27E3598396}</Project>
-      <Name>MoreMountains.NiceVibrations.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="MaxSdk.Scripts.IntegrationManager.Editor.csproj">
       <Project>{85342D5C-6F5F-73B1-ED53-6A3405E6B146}</Project>
       <Name>MaxSdk.Scripts.IntegrationManager.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Android.AppBundle.Editor.csproj">
+      <Project>{3BDDCF93-978D-71FA-1F9A-0663542EEE95}</Project>
+      <Name>Google.Android.AppBundle.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Play.Common.csproj">
+      <Project>{EB3A92AD-F564-AFDF-3C97-135AA7FD4CF6}</Project>
+      <Name>Google.Play.Common</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Recorder.csproj">
       <Project>{1E8F33E3-5708-FA07-816F-52132461BCAF}</Project>

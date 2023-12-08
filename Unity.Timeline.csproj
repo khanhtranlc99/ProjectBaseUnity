@@ -56,82 +56,82 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\Signals\SignalAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\Signals\CustomSignalEventDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\FrameRate.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Animation\AnimationPreviewUpdateCallback.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\TimelinePlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\IPropertyPreview.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\ClipCaps.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\TimelineAsset_CreateRemove.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\IPropertyCollector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Attributes\TimelineHelpURLAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Audio\AudioTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\TimelineAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\DirectorControlPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\AnimationPreviewUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\INotificationOptionProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\TimelineCreateUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\HashUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Evaluation\RuntimeClip.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Animation\ICurvesOwner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\AssetUpgrade\TrackUpgrade.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Animation\AnimationTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Extensions\TrackExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Activation\ActivationTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Activation\ActivationMixerPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\PrefabControlPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\Signals\SignalReceiver.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Control\ControlPlayableAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\ILayerable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\TimelineClip.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Animation\AnimationOutputWeightProcessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\Marker.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\DiscreteTime.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\TimeNotificationBehaviour.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Attributes\TrackColorAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\AssetUpgrade\TimelineUpgrade.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\AssetUpgrade\ClipUpgrade.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Evaluation\ScheduleRuntimeClip.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\AnimatorBindingCache.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Activation\ActivationPlayableAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\TimelineClipExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\MarkerList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\TimelineUndo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\ParticleControlPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Animation\AnimationPlayableAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Evaluation\RuntimeElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\GroupTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Properties\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\AssetUpgrade\AnimationPlayableAssetUpgrade.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\IMarker.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Evaluation\RuntimeClipBase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\MarkerTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Timeline.deprecated.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Evaluation\InfiniteRuntimeClip.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\ITimeControl.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\NotificationUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\WeightUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\TrackAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\TimeUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Scripting\PlayableTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Audio\AudioClipProperties.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\BasicScriptPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Audio\AudioPlayableAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Evaluation\IntervalTree.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\NotificationFlags.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\SignalTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\TimelineAttributes.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Control\ControlTrack.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Audio\AudioMixerProperties.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\AssetUpgrade\AnimationTrackUpgrade.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\ActivationControlPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Events\Signals\SignalEmitter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Playables\TimeControlPlayable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Utilities\Extrapolation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\Signals\SignalAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\Signals\CustomSignalEventDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\FrameRate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Animation\AnimationPreviewUpdateCallback.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\TimelinePlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\IPropertyPreview.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\ClipCaps.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\TimelineAsset_CreateRemove.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\IPropertyCollector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Attributes\TimelineHelpURLAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Audio\AudioTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\TimelineAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\DirectorControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\AnimationPreviewUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\INotificationOptionProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\TimelineCreateUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\HashUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Evaluation\RuntimeClip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Animation\ICurvesOwner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\AssetUpgrade\TrackUpgrade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Animation\AnimationTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Extensions\TrackExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Activation\ActivationTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Activation\ActivationMixerPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\PrefabControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\Signals\SignalReceiver.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Control\ControlPlayableAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\ILayerable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\TimelineClip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Animation\AnimationOutputWeightProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\Marker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\DiscreteTime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\TimeNotificationBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Attributes\TrackColorAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\AssetUpgrade\TimelineUpgrade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\AssetUpgrade\ClipUpgrade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Evaluation\ScheduleRuntimeClip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\AnimatorBindingCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Activation\ActivationPlayableAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\TimelineClipExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\MarkerList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\TimelineUndo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\ParticleControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Animation\AnimationPlayableAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Evaluation\RuntimeElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\GroupTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Properties\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\AssetUpgrade\AnimationPlayableAssetUpgrade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\IMarker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Evaluation\RuntimeClipBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\MarkerTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Timeline.deprecated.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Evaluation\InfiniteRuntimeClip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\ITimeControl.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\NotificationUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\WeightUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\TrackAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\TimeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Scripting\PlayableTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Audio\AudioClipProperties.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\BasicScriptPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Audio\AudioPlayableAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Evaluation\IntervalTree.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\NotificationFlags.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\SignalTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\TimelineAttributes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Control\ControlTrack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Audio\AudioMixerProperties.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\AssetUpgrade\AnimationTrackUpgrade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\ActivationControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Events\Signals\SignalEmitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Playables\TimeControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Utilities\Extrapolation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.timeline@1.6.4\Runtime\Unity.Timeline.asmdef" />
+    <None Include="Library\PackageCache\com.unity.timeline@1.7.1\Runtime\Unity.Timeline.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -401,9 +401,6 @@
     <Reference Include="Google.PackageManagerResolver">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.PackageManagerResolver.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.RemoteConfig">
       <HintPath>Library\PackageCache\com.google.firebase.remote-config@857f0ad3a432\Firebase\Plugins\Firebase.RemoteConfig.dll</HintPath>
     </Reference>
@@ -455,14 +452,17 @@
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Google.VersionHandlerImpl">
       <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.VersionHandlerImpl.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver">
-      <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.JarResolver.dll</HintPath>
-    </Reference>
     <Reference Include="WinWsInterface">
       <HintPath>Assets\Base\3Party\Adjust\Windows\Stubs\WinWsInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Library\PackageCache\com.google.external-dependency-manager@ba0856d357b9\ExternalDependencyManager\Editor\1.2.175\Google.JarResolver.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities">
       <HintPath>Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>

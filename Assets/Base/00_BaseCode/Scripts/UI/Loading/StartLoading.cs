@@ -18,7 +18,7 @@ public class StartLoading : MonoBehaviour
         progressBar.fillAmount = 0f;
 
         StartCoroutine(LoadingText());
-        StartCoroutine(ChangeScene());
+     
     }
     public void InitState()
     {
@@ -31,23 +31,17 @@ public class StartLoading : MonoBehaviour
    
 
     }
+    public void LoadGamePlay()
+    {
+        StartCoroutine(ChangeScene());
+    }
 
     // Use this for initialization
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(2f);
-        sceneName = "";
-        if (UseProfile.CurrentLevel < 60)
-        {
-            sceneName = "Level " + UseProfile.CurrentLevel;
-        }
-        else
-        {
-            sceneName = "Level " + UnityEngine.Random.Range(1, 60);
-        }
-
-
-
+        sceneName = "Game Scene";
+       
         var _asyncOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 
         while (!_asyncOperation.isDone)

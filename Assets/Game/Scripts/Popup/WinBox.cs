@@ -77,6 +77,7 @@ public class WinBox : BaseBox
         GameController.Instance.admobAds.HandleShowMerec();
     
         valueGacha = 0;
+       
     }
     
     private void HandleOnClickBtnBackHome()
@@ -123,14 +124,9 @@ public class WinBox : BaseBox
 
 
         //NEXT BUTTON CALL
-        if (UseProfile.CurrentLevel < 60)
-        {
-            SceneManager.LoadScene("Level " + UseProfile.CurrentLevel);
-        }
-        else
-        {
-            SceneManager.LoadScene("Level " + UnityEngine.Random.Range(1, 60));
-        }
+     
+        //PlayerPrefs.SetInt("CurrentLevel", PlayerPrefs.GetInt("CurrentLevel", 0) + 1);
+        SceneManager.LoadScene(1);
         Close();
     }
     private void HandleOnClickBtnReward()

@@ -5,13 +5,13 @@ using UnityEngine;
 public static class StringHelper
 {
     public const string LOADING_COMPLETE = "LOADING_COMPLETE";
-    public const string ONOFF_SOUND = "ONOFF_SOUND";
+    public const string ONOFF_SOUND = "CanPlaySounds";
     public const string ONOFF_MUSIC = "ONOFF_MUSIC";
     public const string ONOFF_VIBRATION = "ONOFF_VIBRATION";
     public const string FIRST_TIME_INSTALL = "FIRST_TIME_INSTALL";
     public const string VERSION_FIRST_INSTALL = "VERSION_FIRST_INSTALL";
     public const string REMOVE_ADS = "REMOVE_ADS";
-    public const string CURRENT_LEVEL = "CURRENT_LEVEL";
+    public const string CURRENT_LEVEL = "CurrentLevel";
     public const string CURRENT_LEVEL_PLAY = "CURRENT_LEVEL_PLAY";
     public const string PATH_CONFIG_LEVEL = "Levels/Level_";
     public const string PATH_CONFIG_LEVEL_TEST = "LevelTest/Level_{0}";

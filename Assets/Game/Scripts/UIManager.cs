@@ -122,8 +122,7 @@ public class UIManager : BaseScene
 
     public void HandleShowStateBooster()
     {
-        //btnBoosterDrill.onClick.AddListener(HandleBoosterDrill);
-        //btnDestroyScew.onClick.AddListener(HandleBoosterDestroyScew);
+        
         btnBoosterDrill.onClick.RemoveAllListeners();
         btnDestroyScew.onClick.RemoveAllListeners();
         btnNumDrill.onClick.RemoveAllListeners();
