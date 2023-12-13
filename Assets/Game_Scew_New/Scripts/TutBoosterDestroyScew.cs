@@ -10,6 +10,7 @@ public class TutBoosterDestroyScew : MonoBehaviour
     {
         Instance = this;
         CheckIsReady();
+        endTut = false;
     }
 
     public void CheckIsReady()
@@ -24,8 +25,13 @@ public class TutBoosterDestroyScew : MonoBehaviour
         hand_1.SetActive(false);
         TutorialSuport.Instance.handSuport.SetActive(true);
     }
+    public bool endTut;
     public void Step_2()
     {
-        TutorialSuport.Instance.handSuport.SetActive(false);
+        if (!endTut)
+        {
+            TutorialSuport.Instance.handSuport.SetActive(false);
+            endTut = true;
+        }
     }
 }

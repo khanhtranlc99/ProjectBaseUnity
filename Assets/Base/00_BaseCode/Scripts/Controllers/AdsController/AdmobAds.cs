@@ -634,20 +634,16 @@ public class AdmobAds : MonoBehaviour
     #region AppOpenAds
     public void InitializeOpenAppAds()
     {
-        MaxSdkCallbacks.AppOpen.OnAdLoadedEvent += delegate { };
-        MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { GameController.Instance.startLoading.InitState(); };
-        MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { GameController.Instance.startLoading.InitState(); };
-        MaxSdkCallbacks.AppOpen.OnAdRevenuePaidEvent += delegate { GameController.Instance.startLoading.InitState(); };
+        MaxSdkCallbacks.AppOpen.OnAdLoadedEvent += delegate { ShowOpenAppAdsReady(); };
+        MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { Debug.LogError("khong load dc"); };
+        MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { };
+        MaxSdkCallbacks.AppOpen.OnAdRevenuePaidEvent += delegate {  };
         MaxSdk.LoadAppOpenAd(AppOpenId);
     }
     private bool lockAds = false;
     public void ShowOpenAppAdsReady()
     {
-        if(lockAds)
-        {
-            return;
-        }
-        lockAds = true;
+     
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
             if(!UseProfile.FirstLoading)
@@ -658,7 +654,7 @@ public class AdmobAds : MonoBehaviour
                }
                else
                 {
-                    GameController.Instance.startLoading.InitState();
+              
                 }    
             }
             else
@@ -666,17 +662,18 @@ public class AdmobAds : MonoBehaviour
                 if (RemoteConfigController.GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS, false))
                 {
                     MaxSdk.ShowAppOpenAd(AppOpenId);
+                    Debug.LogError("ShowAppOpenAd");
                 }
                 else
                 {
-                    GameController.Instance.startLoading.InitState();
+                    Debug.LogError("confignoShow");
                 }
             }    
         }
         else
         {
-         
-            GameController.Instance.startLoading.InitState();
+            Debug.LogError("NotReady");
+
         }
     
     }

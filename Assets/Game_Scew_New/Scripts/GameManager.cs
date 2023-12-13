@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
         //    SoundBtn.sprite = soundOff;
 
         //}
+
         gameScene.Init();
         GameController.Instance.AnalyticsController.LoadingComplete();
         GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
@@ -211,14 +212,30 @@ public class GameManager : MonoBehaviour
 
         if (currentLevel >= Levels.Count)
         {
-            PlayerPrefs.SetInt("CurrentLevel", 0);
-            currentLevel = 0;
+            //PlayerPrefs.SetInt("CurrentLevel", 0);
+            //currentLevel = 0;
+          
+            GameController.Instance.moneyEffectController.SpawnEffectText_FlyUp(Vector3.zero, "New level is comming soon!", Color.white);
+            Instantiate(Levels[Levels.Count -1]);
+            return;
         }
         print(currentLevel);
         Instantiate(Levels[currentLevel]);
     
     }
 
+    public bool OutLevel
+    {
+        get
+        {
+            int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
+            if (currentLevel >= Levels.Count)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
 
 
     public void PlayClip(AudioClip clip)
@@ -240,7 +257,16 @@ public class GameManager : MonoBehaviour
         PlayClip(WinSound);
         yield return new WaitForSeconds(1.5f);
         //WinPanel.SetActive(true);
-        WinBox.Setup(100, false).Show();
+        if (UseProfile.CurrentLevel == RemoteConfigController.GetIntConfig(FirebaseConfig.RATING_POPUP, 5))
+        {
+
+            DialogueRate.Setup().Show();
+        }
+        else
+        {
+            WinBox.Setup(100, false).Show();
+        }
+      
     }
 
     public void NextLevelBtn()

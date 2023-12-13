@@ -63,12 +63,22 @@ public class WinBox : BaseBox
         gachaBar.InitState();
         score = paramScore;
         tvScore.text = "Claim" + "\n" + score;
-        
-        CheckOpenGiftBox(doubleReward);
+        if (GameManager.instance.OutLevel)
+        {
+            broadProgess.SetActive(false);
+            btnNext.interactable = true;
+            btnDoubleReward.interactable = true;
+        }
+        else
+        {
+            CheckOpenGiftBox(doubleReward);
+            GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+            UseProfile.CurrentLevel += 1;
+        }
+      
 
 
-        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
-        UseProfile.CurrentLevel += 1;
+     
         //if (UseProfile.CurrentLevel > KeyPref.MAX_LEVEL)
         //{
         //    UseProfile.CurrentLevel = KeyPref.MAX_LEVEL;
@@ -77,7 +87,7 @@ public class WinBox : BaseBox
         GameController.Instance.admobAds.HandleShowMerec();
     
         valueGacha = 0;
-       
+      
     }
     
     private void HandleOnClickBtnBackHome()

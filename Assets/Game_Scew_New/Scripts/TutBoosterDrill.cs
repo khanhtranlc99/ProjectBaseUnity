@@ -10,6 +10,7 @@ public class TutBoosterDrill : MonoBehaviour
     {
         Instance = this;
         CheckIsReady();
+        endTut = false;
     }
 
     public void CheckIsReady()
@@ -25,9 +26,16 @@ public class TutBoosterDrill : MonoBehaviour
         hand_1.SetActive(false);
         TutorialSuport.Instance.handSuport.SetActive(true);
     }
+    public bool endTut;
     public void Step_2()
     {
-        TutorialSuport.Instance.handSuport.SetActive(false);
-        GameController.Instance.AnalyticsController.EndTut_2();
+        if(!endTut)
+        {
+            TutorialSuport.Instance.handSuport.SetActive(false);
+            GameController.Instance.AnalyticsController.EndTut_2();
+            endTut = true;
+        } 
+      
+      
     }
 }

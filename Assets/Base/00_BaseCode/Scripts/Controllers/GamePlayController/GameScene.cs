@@ -7,7 +7,7 @@ using DG.Tweening;
 using System;
 using MoreMountains.NiceVibrations;
 using UnityEngine.Events;
-
+using TMPro;
 public class GameScene : BaseScene
 {
 
@@ -24,7 +24,15 @@ public class GameScene : BaseScene
 
     public void Init()
     {
-        tvLevel.text = "Level " + UseProfile.CurrentLevel;
+        if(UseProfile.CurrentLevel > 99)
+        {
+            tvLevel.text = "Level " + 99;
+        }
+        else
+        {
+            tvLevel.text = "Level " + UseProfile.CurrentLevel;
+        }
+    
         tvCoin.text = "" + UseProfile.Coin;
         EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.CHANGE_COIN, HandleShowCoin);
         HandleShowStateBooster();
@@ -32,7 +40,7 @@ public class GameScene : BaseScene
         OffBoosterSpecial();
         if (Application.internetReachability != NetworkReachability.NotReachable)
         {
-            GameController.Instance.admobAds.ShowOpenAppAdsReady();
+          //  GameController.Instance.admobAds.ShowOpenAppAdsReady();
         }
         else
         {
@@ -41,7 +49,7 @@ public class GameScene : BaseScene
     }
     public void OffBoosterSpecial()
     {
-      if ( UseProfile.CurrentLevel == 15 || UseProfile.CurrentLevel == 25 || UseProfile.CurrentLevel == 40 || UseProfile.CurrentLevel == 60 || UseProfile.CurrentLevel == 80 || UseProfile.CurrentLevel == 90 )
+      if ( UseProfile.CurrentLevel == 14 || UseProfile.CurrentLevel == 24 || UseProfile.CurrentLevel == 39 || UseProfile.CurrentLevel == 59 || UseProfile.CurrentLevel == 79 || UseProfile.CurrentLevel == 89 )
         {
             btnBoosterDrill.gameObject.SetActive(false);
         }
@@ -155,5 +163,65 @@ public class GameScene : BaseScene
     public override void OnEscapeWhenStackBoxEmpty()
     {
     
+    }
+
+
+    public GameObject testPanel;
+    public bool isOff = false;
+    public List<Image> lsImage;
+    public List<Text> lsTv;
+    public TMP_Text tMP;
+    public void OpenTest()
+    {
+        if (testPanel.activeSelf)
+        {
+            testPanel.SetActive(false);
+        }
+        else
+        {
+            testPanel.SetActive(true);
+        }
+    }
+    public InputField input;
+    public void OnClickPasslevel()
+    {
+        var level = Int32.Parse(input.text);
+        UseProfile.CurrentLevel = level;
+        SceneManager.LoadScene(1);
+    }
+    public void OnOffUI()
+    {
+        if (!isOff)
+        {
+            isOff = true;
+            foreach (var item in lsImage)
+            {
+                item.color = new Color32(0, 0, 0, 0);
+            }
+            foreach (var item in lsTv)
+            {
+                item.color = new Color32(0, 0, 0, 0);
+            }
+            tMP.color = new Color32(0, 0, 0, 0);
+        }
+        else
+        {
+            isOff = false;
+            foreach (var item in lsImage)
+            {
+                item.color = new Color32(255, 255, 255, 255);
+            }
+            foreach (var item in lsTv)
+            {
+                item.color = new Color32(255, 255, 255, 255);
+            }
+            tMP.color = new Color32(255, 255, 255, 255);
+        }
+    }
+    public void CheatBooster()
+    {
+        UseProfile.DrillBooster += 20;
+        UseProfile.DestroyScewBooster += 20;
+        UseProfile.Coin += 1000000;
     }
 }

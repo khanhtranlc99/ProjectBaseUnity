@@ -25,6 +25,7 @@ public class Bolt : MonoBehaviour
         {
             Vector3 DesireRotation = new Vector3(35, 0, 0);
             transform.Rotate(DesireRotation);
+            GameManager.instance.gameScene.BlockBooster(false);
         }
 
         if (UseProfile.CurrentLevel == 1)
@@ -36,16 +37,20 @@ public class Bolt : MonoBehaviour
         {
             TutBoosterDestroyScew.Instance.Step_2();
         }
-        vibration();
+     
     }
 
-    public void Deselect(){
-        transform.rotation= Quaternion.identity;
+    public void Deselect()
+    {
+      
+            transform.rotation = Quaternion.identity;
+        
+     
         if (UseProfile.CurrentLevel == 1)
         {
             TutFirstGame.Instance.Step_2();
         }
-           vibration();
+        GameManager.instance.gameScene.BlockBooster(true);
     }
 
     public void Unlock(){
