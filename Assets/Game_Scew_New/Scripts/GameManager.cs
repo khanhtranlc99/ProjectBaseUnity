@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     Camera _camera;
     public AudioSource SoundAudioSource, MusicAudioSource;
-    Bolt SelectedBolt;
+    public Bolt SelectedBolt;
     Bar[] bars;
     bool isGameFinished;
     public bool isUseDrillBooster;
@@ -60,8 +60,10 @@ public class GameManager : MonoBehaviour
         gameScene.Init();
         GameController.Instance.AnalyticsController.LoadingComplete();
         GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
+        GameController.Instance.admobAds.canShowInter = true;
     }
-
+   public  BoardHole hole ;
+    public Bolt bolt ;
 
     void Update()
     {
@@ -89,8 +91,8 @@ public class GameManager : MonoBehaviour
 
             if (hits.Length > 0)
             {
-                BoardHole hole = null;
-                Bolt bolt = null;
+                 hole = null;
+                 bolt = null;
 
                 for (var i = 0; i < hits.Length; i++)
                 {

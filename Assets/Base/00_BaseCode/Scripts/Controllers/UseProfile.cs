@@ -18,6 +18,18 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+    public static bool FirstShowOpenAds
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.FIRST_SHOW_OPEN_ADS, 0) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.FIRST_SHOW_OPEN_ADS, value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
 
     public static int CurrentLevel
     {

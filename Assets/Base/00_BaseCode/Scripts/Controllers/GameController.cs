@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public AnalyticsController AnalyticsController;
 
     [HideInInspector] public SceneType currentScene;
-    public AppReview appReview;
+ 
 
 
     protected void Awake()
@@ -80,7 +80,7 @@ public class GameController : MonoBehaviour
            admobAds.Init();
            musicManager.Init();
             startLoading.LoadGamePlay();
-           appReview.Init();
+           
            MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
 
         }

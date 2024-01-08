@@ -430,7 +430,7 @@ public class UIManager : BaseScene
     }
     public void Test()
     {
-        GameController.Instance.appReview.RateAndReview();
+       
     }
 
     public override void OnEscapeWhenStackBoxEmpty()

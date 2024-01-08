@@ -68,7 +68,7 @@ public class DialogueRate : BaseBox
         {
             UseProfile.CanShowRate = false;
 
-            GameController.Instance.appReview.DirectlyOpen();
+            
             WinBox.Setup(100, false).Show();
 
 

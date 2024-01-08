@@ -25,6 +25,7 @@ public class StartLoading : MonoBehaviour
 
         if(!wasRunLoad)
         {
+            StartCoroutine(ChangeScene());
             wasRunLoad = true;
         
         }
@@ -33,7 +34,7 @@ public class StartLoading : MonoBehaviour
     }
     public void LoadGamePlay()
     {
-        StartCoroutine(ChangeScene());
+      
     }
 
     // Use this for initialization

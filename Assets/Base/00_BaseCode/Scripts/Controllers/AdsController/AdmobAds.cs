@@ -27,12 +27,15 @@ public class AdmobAds : MonoBehaviour
     private const string InterstitialAdUnitId = "c8d31e48f08ed31e";
     private const string RewardedAdUnitId = "02932bb866cbb369";
     private const string BanerAdUnitId = "ff665c0a75cadcc4";
+        public  string AppOpenId = "a12343b1d3422351";
+    private const string MREC_Id = "3cb3f478429821c2";
 #endif
     public void Init()
     {
         countdownAds = 10000;
         #region Applovin Ads
         wasShowMer = false;
+      
         MaxSdkCallbacks.OnSdkInitializedEvent += (MaxSdkBase.SdkConfiguration sdkConfiguration) =>
         {
             Debug.Log("MAX SDK Initialized");
@@ -149,7 +152,7 @@ public class AdmobAds : MonoBehaviour
                 if (countdownAds > RemoteConfigController.GetFloatConfig(FirebaseConfig.DELAY_SHOW_INITSTIALL, 30))
                 {
                     ShowInterstitialHandle(isShowImmediatly, actionWatchLog, actionIniterClose, level);
-
+                    Debug.LogError("AdsBuyPause");
                 }
                 else
                 {
@@ -635,43 +638,47 @@ public class AdmobAds : MonoBehaviour
     public void InitializeOpenAppAds()
     {
         MaxSdkCallbacks.AppOpen.OnAdLoadedEvent += delegate { ShowOpenAppAdsReady(); };
-        MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { Debug.LogError("khong load dc"); };
-        MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { };
+        MaxSdkCallbacks.AppOpen.OnAdLoadFailedEvent += delegate { Debug.LogError("khong load dc"); GameController.Instance.startLoading.InitState(); };
+        MaxSdkCallbacks.AppOpen.OnAdHiddenEvent += delegate { countdownAds = 0; GameController.Instance.startLoading.InitState(); };
         MaxSdkCallbacks.AppOpen.OnAdRevenuePaidEvent += delegate {  };
         MaxSdk.LoadAppOpenAd(AppOpenId);
     }
     private bool lockAds = false;
     public void ShowOpenAppAdsReady()
     {
-     
+        countdownAds = 0;
         if (MaxSdk.IsAppOpenAdReady(AppOpenId))
         {
-            if(!UseProfile.FirstLoading)
+            if(!UseProfile.FirstShowOpenAds)
             {
                if(RemoteConfigController.GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS_FIRST_OPEN, false))
                {
                     MaxSdk.ShowAppOpenAd(AppOpenId);
-               }
+                    Debug.LogError("SHOW_OPEN_ADS_FIRST_OPEN");
+                }
                else
                 {
-              
-                }    
+                    GameController.Instance.startLoading.InitState();
+                }
+                UseProfile.FirstShowOpenAds = true;
             }
             else
             {
                 if (RemoteConfigController.GetBoolConfig(FirebaseConfig.SHOW_OPEN_ADS, false))
                 {
                     MaxSdk.ShowAppOpenAd(AppOpenId);
-                    Debug.LogError("ShowAppOpenAd");
+                    Debug.LogError("SHOW_OPEN_ADS");
                 }
                 else
                 {
+                    GameController.Instance.startLoading.InitState();
                     Debug.LogError("confignoShow");
                 }
             }    
         }
         else
         {
+            GameController.Instance.startLoading.InitState();
             Debug.LogError("NotReady");
 
         }
@@ -727,7 +734,7 @@ public class AdmobAds : MonoBehaviour
         wasShowMer = false;
         ShowBanner();
     }
- 
+    public bool canShowInter = false;
 
     private void OnApplicationPause(bool pauseStatus)
     {
@@ -739,7 +746,12 @@ public class AdmobAds : MonoBehaviour
                 {
                     return;
                 }
-                ShowInterstitial(true);
+                if(canShowInter)
+                {
+                    ShowInterstitial(false, "", delegate { });
+                }
+               
+       
             }
        
 

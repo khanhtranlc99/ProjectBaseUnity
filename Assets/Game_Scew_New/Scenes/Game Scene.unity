@@ -1409,10 +1409,13 @@ MonoBehaviour:
   - {fileID: 8096985288257152162, guid: 0d906cc3916a6034b92067fd10642f2a, type: 3}
   SoundAudioSource: {fileID: 610563820}
   MusicAudioSource: {fileID: 610563821}
+  SelectedBolt: {fileID: 0}
   isUseDrillBooster: 0
   isUseDestroyScewBooster: 0
   prefabHold: {fileID: 2958004196877001083, guid: fdaa2d90a5a4f3945bd58bf10c31c17b, type: 3}
   gameScene: {fileID: 2142094446}
+  hole: {fileID: 0}
+  bolt: {fileID: 0}
 --- !u!82 &610563820
 AudioSource:
   m_ObjectHideFlags: 0

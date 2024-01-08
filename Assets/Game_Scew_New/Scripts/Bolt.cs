@@ -44,8 +44,8 @@ public class Bolt : MonoBehaviour
     {
       
             transform.rotation = Quaternion.identity;
-        
-     
+        GameManager.instance.SelectedBolt = null;
+
         if (UseProfile.CurrentLevel == 1)
         {
             TutFirstGame.Instance.Step_2();
